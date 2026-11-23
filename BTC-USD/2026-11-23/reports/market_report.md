@@ -1,40 +1,39 @@
 ## BTC-USD — technical read as of 2026-11-23
 
-**Overall:** BTC-USD remains in a strong short- and medium-term downtrend. The last few verified closes have risen from the recent closing low in the supplied series, suggesting a short-term pause or bounce attempt, but price is still well below key moving averages and momentum remains negative. That leaves room for further recovery, but the available indicators do **not** yet confirm a trend reversal.
+**Overall:** BTC-USD remains in a pronounced short-term downtrend, despite a modest recovery over the last few closes. Momentum is still bearish, while RSI is near—but not below—the conventional oversold threshold. The price is above the 200-day SMA but well below the 10-day EMA and 50-day SMA, leaving the near-term and medium-term picture weak and the longer-term moving-average signal mixed.
 
 ### Data note
 
-The initial historical-data output lists the 2026-11-23 close as **$61,332.04**. The required verified snapshot reports **$61,279.91** for that date. I use the verified snapshot as the source of truth below; the close discrepancy is unresolved. Its verified OHLCV row is: open **$61,162.20**, high **$61,684.55**, low **$60,367.81**, close **$61,279.91**, volume **27,749,713,920**.
+The initial price-data output reports a 2026-11-23 close of **62,097.11**, while the verified snapshot reports **62,093.38**. I use the verified snapshot as the source of truth for price and indicator levels below. The snapshot gives the day’s OHLCV as **open 61,162.20, high 64,217.27, low 60,367.81, close 62,093.38**, with volume **41,870,991,360**.
 
 ### Selected indicators and what they show
 
-These eight indicators provide complementary views of trend, momentum, volatility, and potential price reference points without adding multiple versions of the same signal:
+I selected eight complementary indicators: **close_10_ema, close_50_sma, close_200_sma, macd, rsi, boll_ub, boll_lb, and atr**. The three averages give short-, medium-, and long-term trend context; MACD and RSI capture momentum from different angles; the Bollinger outer bands frame volatility and price position; ATR supports risk sizing. I did not add MACD signal or histogram as separate selections because they would overlap with MACD; the verified snapshot includes those values for context.
 
-- **close_10_ema:** **$63,295.40**. BTC-USD is below this short-term average, consistent with a weak near-term trend. A sustained reclaim would be an early improvement, not by itself a reversal confirmation.
-- **close_50_sma:** **$76,159.91**. Price is substantially below this medium-term trend measure, reinforcing the bearish picture.
-- **close_200_sma:** **$72,232.43**. Price is also below the long-term benchmark. The 50-day average remains above the 200-day average, but that historical-average relationship does not offset the fact that current price is beneath both.
-- **macd:** **−4,803.24**. The verified snapshot also puts the MACD signal at **−4,266.64** and histogram at **−536.60**: MACD is negative and below its signal, so momentum remains bearish. The MACD line became somewhat less negative over the last three readings returned by the indicator tool, but it remains a tentative easing, not confirmation of a bullish turn.
-- **rsi:** **27.28**. This is below the conventional 30 oversold threshold. It flags stretched downside momentum, but in a persistent selloff RSI can remain low; it is not a buy signal on its own.
-- **atr:** **$2,844.94**. Daily volatility is elevated in dollar terms, so close stops or position sizes based on ordinary conditions may be inappropriate. ATR is a volatility measure, not a directional signal.
-- **boll_ub:** **$81,554.44**.
-- **boll_lb:** **$55,478.90**. The verified Bollinger middle is **$68,516.67**. BTC-USD is well below the middle and upper band, consistent with weakness; it is above the lower band. The lower band is a volatility reference, **not** established support.
+- **Moving averages:** BTC-USD closed at **62,093.38**, below its **10-day EMA at 63,443.30** and **50-day SMA at 76,176.18**, a bearish short- and medium-term configuration. It remains above the **200-day SMA at 72,236.50**? No—the close is **below** that average as well. This places price below all three selected averages, so the longer-term benchmark is not currently providing confirmation of strength. The averages are reference points, not validated support or resistance.
+- **MACD:** The verified MACD is **−4,738.35**, with MACD signal **−4,253.66** and histogram **−484.69**. The negative MACD and histogram below zero indicate bearish momentum; the MACD line below its signal adds to that caution.
+- **RSI:** At **30.29**, RSI is close to the conventional 30 oversold threshold, but remains slightly above it. That suggests selling pressure has been intense, not that a reversal is confirmed. In a strong downtrend, RSI can stay low.
+- **Bollinger Bands:** The verified middle line is **68,557.34**, the upper band **81,509.35**, and the lower band **55,605.34**. BTC-USD is below the middle line and closer to the lower than upper band, consistent with recent weakness. The lower band is a volatility reference—not proof of support or a reversal level.
+- **ATR:** ATR is **3,025.85**, indicating substantial daily range in dollar terms. Traders using stop-based risk controls may want to account for this volatility and size positions accordingly; a tight stop can be vulnerable to ordinary BTC-USD price swings.
 
-### Price action and trade implications
+### Price action and practical scenarios
 
-The verified closes show a modest rebound attempt: **$58,798.98** on Nov. 20, **$60,094.09** on Nov. 21, **$61,161.91** on Nov. 22, and **$61,279.91** on Nov. 23. That sequence is constructive in the very short term, but it has not yet reversed the broader signal: BTC-USD remains below the 10 EMA, 50 SMA, and 200 SMA, while MACD remains negative and below its signal.
+The recent verified closes show a sustained decline through November: BTC-USD closed at **80,405.29 on 2026-11-04**, then **68,249.27 on 2026-11-13**, and **58,798.98 on 2026-11-20**. The latest three closes rose in sequence—**60,094.09 on November 21, 61,161.91 on November 22, and 62,093.38 on November 23**. That is a short-term recovery in closing prices, but it has not yet reversed the broader weakness: the latest close remains below each of the selected moving averages and below the Bollinger middle line.
 
-For a **cautious bullish case**, traders could look for BTC-USD to hold the recent improvement and reclaim the **$63,295** 10 EMA, then assess whether price can approach the **$68,517** Bollinger middle with momentum improving. Those are reference levels from the indicators, not guaranteed resistance or targets. A move above the 10 EMA alone would be an early signal; stronger evidence would require follow-through and improvement in MACD, rather than relying on oversold RSI.
+For a **cautious bullish case**, traders could look for follow-through in the recent recovery, a sustained close back above the **10-day EMA (63,443.30)**, and improving momentum—particularly a narrowing MACD gap versus its signal. A single move above the EMA would not, by itself, establish a trend reversal. Reclaiming the **200-day SMA (72,236.50)** and then the **50-day SMA (76,176.18)** would be further, higher hurdles to monitor.
 
-For a **bearish continuation case**, failure to sustain the recent rebound would keep the prevailing downtrend in focus. The **$55,479** lower Bollinger band is a potential volatility reference if weakness resumes, but should not be treated as a price floor. Given ATR near **$2,845**, risk controls should account for large daily swings and the possibility of false breakouts.
+For a **bearish continuation case**, failure to sustain the recent recovery, renewed weakness in momentum, or a move toward the lower Bollinger Band would keep downside risk prominent. The **55,605.34** lower band is a reference for current volatility, not a confirmed floor. RSI near 30 may make chasing a sharp selloff less attractive for some strategies, but it is not a standalone buy signal.
 
-**Bottom line:** BTC-USD shows a possible short-term stabilization after a sharp decline, alongside oversold RSI, but trend and MACD signals remain bearish. The clearest change in evidence would be a sustained reclaim of nearer trend measures followed by improving momentum; until then, treat the rebound as unconfirmed.
+**Bottom line:** The short-term bounce is worth monitoring, but the indicator mix remains predominantly bearish. For directional entries, consider waiting for confirmation rather than treating near-oversold RSI or the recent sequence of higher closes as a confirmed reversal. ATR-based risk controls are especially relevant given current volatility.
 
-| Area | Verified reading | Trading interpretation |
+| Indicator / evidence | Verified reading | Trading interpretation |
 |---|---:|---|
-| Latest close | $61,279.91 | Use verified snapshot; historical CSV differs |
-| Short-term trend | 10 EMA $63,295.40 | Price below; reclaim would be an early improvement |
-| Medium-/long-term trend | 50 SMA $76,159.91; 200 SMA $72,232.43 | Price below both; broader trend remains weak |
-| Momentum | MACD −4,803.24; RSI 27.28 | Bearish MACD; oversold RSI is not a standalone reversal signal |
-| Volatility | ATR $2,844.94 | Allow for substantial daily swings |
-| Bollinger references | Middle $68,516.67; lower $55,478.90 | Price below middle but above lower band; neither level guarantees a reaction |
-| Recent closes | Nov. 20 $58,798.98 → Nov. 23 $61,279.91 | Short-term rebound attempt; trend reversal unconfirmed |
+| Latest close | 62,093.38 on 2026-11-23 | Verified snapshot value; source discrepancy noted above |
+| 10-day EMA | 63,443.30 | Price below it; near-term recovery would need to reclaim it |
+| 50-day SMA | 76,176.18 | Price well below it; medium-term trend remains weak |
+| 200-day SMA | 72,236.50 | Price below it; long-term average does not currently confirm strength |
+| MACD / signal / histogram | −4,738.35 / −4,253.66 / −484.69 | Bearish momentum configuration |
+| RSI | 30.2949 | Near oversold, but not a reversal signal on its own |
+| Bollinger middle / lower / upper | 68,557.34 / 55,605.34 / 81,509.35 | Price below middle and nearer lower band; bands are references, not confirmed levels |
+| ATR | 3,025.85 | Elevated dollar-range context; account for volatility in position sizing and stops |
+| Recent closes | 58,798.98 (Nov 20) → 60,094.09 (Nov 21) → 61,161.91 (Nov 22) → 62,093.38 (Nov 23) | Short-term recovery sequence, still below key averages |

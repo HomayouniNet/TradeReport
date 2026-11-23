@@ -1,11 +1,11 @@
 **Action**: Sell
 
-**Reasoning**: The research plan calls for an underweight BTC-USD allocation, not an outright exit or short: price is below the 10-day EMA, 50-day SMA, and 200-day SMA, while MACD remains negative and below its signal. The rebound and RSI of 27.28 argue for measured exposure reduction rather than an aggressive bearish trade; elevated ATR also favors smaller sizing. If BTC-USD closes below $55,250 on two consecutive days, the plan calls for reducing further and reassessing, while a sustained reclaim of the updated 10-day EMA with improving MACD and ETF-flow evidence would warrant reconsideration.
+**Reasoning**: The research plan calls for an underweight tactical allocation, not a full exit, and the supplied BTC-USD snapshot supports trimming exposure above roughly half of the standard unlevered allocation. Price is below the 10-day EMA, 50-day SMA, and 200-day SMA, while MACD remains negative and below its signal; the recent bounce and RSI near 30 argue for measured reductions rather than aggressive selling or a short position. The supplied levels are historical and must be refreshed before execution; no automatic averaging down is warranted.
 
 **Entry Price**: not provided
 
 **Stop Loss**: not provided
 
-**Position Sizing**: Target 75% of the standard allocation, subject to the portfolio risk budget; if above target, trim the excess in two roughly equal tranches. Do not initiate solely to reach target, use leverage, or establish a short.
+**Position Sizing**: Target approximately 50% of standard unlevered allocation over a several-week horizon; trim only holdings above target in 2–3 liquid execution windows. Do not add if already below target; avoid leverage and short positions.
 
 FINAL TRANSACTION PROPOSAL: **SELL**
