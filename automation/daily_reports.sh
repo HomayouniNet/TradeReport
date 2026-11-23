@@ -1,5 +1,6 @@
 #!/bin/bash
 set -u
+export HOME="${HOME:-/root}"
 REPO="$HOME/TradeReport"
 AGENTS="$HOME/TradingAgents"
 LOCK="$REPO/automation/daily.lock"
