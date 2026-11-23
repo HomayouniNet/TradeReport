@@ -377,6 +377,7 @@ RATING_FA = {
     "Underweight": "کم‌وزن",
     "Sell": "فروش",
     "Bearish": "نزولی",
+    "Mildly Bearish": "کمی نزولی",
     "Bullish": "صعودی",
     "Mixed": "مختلط",
     "Neutral": "خنثی",
