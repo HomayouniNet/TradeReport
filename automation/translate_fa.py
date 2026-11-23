@@ -52,7 +52,6 @@ Rules:
 def translate(client: OpenAI, model: str, text: str) -> str:
     response = client.chat.completions.create(
         model=model,
-        temperature=0.2,
         messages=[
             {"role": "system", "content": SYSTEM},
             {"role": "user", "content": text},
