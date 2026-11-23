@@ -782,7 +782,7 @@ a.badge {{ text-decoration: none; }}
   <header class="hero">
     <p class="kicker">Trade Desk</p>
     <h1>گزارش‌های روزانه</h1>
-    <p class="sub">هر روز دو صفحه دارد: متن اصلی انگلیسی و ترجمهٔ فارسی. گزارش ۲۲ نوامبر طلا از اول فارسی بوده و صفحهٔ انگلیسی‌اش ترجمه است.</p>
+    <p class="sub"></p>
   </header>
   <div class="grid">
     {''.join(cards)}
