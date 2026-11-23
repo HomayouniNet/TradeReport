@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BTC-USD: if exposure exceeds roughly 50% of your normal BTC-USD allocation, reduce it in stages toward that level, rather than exit outright or open a short; if already near or below target, do not force a trade. Keep residual exposure unleveraged and scale the pace to your risk tolerance and BTC-USD’s reported $2,944 ATR. Over the coming weeks, reassess on a sustained break below the referenced $58,680 low, with $56,119 a further downside reference, or a sustained recovery above $63,675 with improving momentum. Refresh prices before trading: the supplied close and technical levels are not live, and no entry price, holdings, or risk budget was provided for a fixed stop.
+
+**Investment Thesis**: The bearish case outweighs the rebound case but supports partial de-risking rather than a full Sell rating for BTC-USD. The supplied $60,784.79 close follows a roughly 24.8% decline and sits below the 10-day EMA ($63,674.72), 200-day SMA ($72,324.19), and 50-day SMA ($76,656.38), with negative MACD and reported restrictive macro conditions. Conversely, RSI of 25.42 and ATR around 4.8% of the supplied close make a violent relief rally credible; the purported $86,000 miner-cost figure does not confirm reserve sales or establish a floor, security concerns remain unverified, and the $50,000 downside case is a scenario rather than a target. A sustained recovery above $63,675 with higher lows and improving MACD would argue against further cuts; holding above $69,301 and then $72,324, alongside easing yields and evidence miner sales are slowing, would strengthen the case for restoring a standard BTC-USD allocation. A sustained breakdown below $58,680 with worsening macro conditions would favor another measured reduction, not an automatic leveraged short.
+
+**Price Target**: not provided
+
+**Time Horizon**: Coming weeks; reassess as levels and momentum evolve

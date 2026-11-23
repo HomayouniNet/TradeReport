@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTC-USD · Bitcoin — Sunday, 22 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --paper: #f4f0e6;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #6d655c;
+  --line: #e3d9c8;
+  --accent: #8d5a16;
+  --accent-soft: #f3e4cc;
+  --warn: #8d2f24;
+  --warn-soft: #f8e4df;
+  --good: #1d6b45;
+  --good-soft: #e3f2e9;
+  --mixed: #3e5c4e;
+  --mixed-soft: #e4eee8;
+  --shadow: 0 16px 40px rgba(58, 42, 18, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(141, 90, 22, 0.08), transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+body.lang-fa {
+  font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+body.kind-btc {
+  --accent: #c2410c;
+  --accent-soft: #fde6d8;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
+    var(--paper);
+}
+a { color: var(--accent); }
+.wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 8px;
+}
+.brand {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+.lang { display: flex; gap: 6px; }
+.lang a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang a.on { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+.hero { padding: 12px 0 8px; }
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+body.lang-fa h1, body.lang-fa h2, body.lang-fa h3, body.lang-fa h4 {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
+.sub { margin: 8px 0 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.good { background: var(--good-soft); color: var(--good); }
+.badge.mixed { background: var(--mixed-soft); color: var(--mixed); }
+.badge.neutral { background: #eeeae3; color: #4d463f; }
+.badge small { font-weight: 500; opacity: 0.8; }
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.section { scroll-margin-top: 72px; }
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 22px 22px 8px;
+  margin: 0 0 16px;
+}
+.section h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; }
+.section h3 { margin: 1.3em 0 0.4em; font-size: 22px; line-height: 1.35; }
+.section h4 { margin: 1.1em 0 0.3em; font-size: 18px; }
+.section p { margin: 0.7em 0; }
+.section ul, .section ol { margin: 0.6em 0 0.8em; padding-inline-start: 1.3em; }
+.section li { margin: 0.28em 0; }
+.section hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
+blockquote {
+  margin: 1em 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+body.lang-fa blockquote { border-radius: 12px 0 0 12px; }
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86em;
+  background: #f3ecdf;
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+}
+.formula {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f7f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.table-wrap { overflow-x: auto; margin: 0.8em 0 1em; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.55; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 650; }
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0 36px;
+}
+@media print {
+  body { background: white; }
+  .toc, .lang { display: none; }
+  .section { box-shadow: none; break-inside: avoid; }
+}
+
+</style>
+</head>
+<body class="lang-en kind-btc">
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">Trade Desk</div>
+    <nav class="lang">
+      <a class="on" href="report.html">English</a>
+      <a class="" href="report-fa.html">فارسی</a>
+    </nav>
+  </div>
+  <header class="hero">
+    <p class="kicker">BTC-USD · BTC-USD spot</p>
+    <h1>Bitcoin</h1>
+    <p class="sub">Sunday, 22 November 2026</p>
+    <div class="badges"><span class="badge warn">Underweight · کم‌وزن <small>Rating</small></span><span class="badge warn">Sell · فروش <small>Trader action</small></span><span class="badge warn">Bearish · نزولی 2.8/10 <small>Sentiment</small></span></div>
+  </header>
+  <nav class="toc"><a href="#final">Final decision</a><a href="#trader">Trader plan</a><a href="#plan">Investment plan</a><a href="#market">Market</a><a href="#news">News and macro</a><a href="#sentiment">Sentiment</a></nav>
+  <section class="section" id="final"><h2>Final decision</h2><p><strong>Rating</strong>: Underweight</p>
+<p><strong>Executive Summary</strong>: Underweight BTC-USD: if exposure exceeds roughly 50% of your normal BTC-USD allocation, reduce it in stages toward that level, rather than exit outright or open a short; if already near or below target, do not force a trade. Keep residual exposure unleveraged and scale the pace to your risk tolerance and BTC-USD’s reported $2,944 ATR. Over the coming weeks, reassess on a sustained break below the referenced $58,680 low, with $56,119 a further downside reference, or a sustained recovery above $63,675 with improving momentum. Refresh prices before trading: the supplied close and technical levels are not live, and no entry price, holdings, or risk budget was provided for a fixed stop.</p>
+<p><strong>Investment Thesis</strong>: The bearish case outweighs the rebound case but supports partial de-risking rather than a full Sell rating for BTC-USD. The supplied $60,784.79 close follows a roughly 24.8% decline and sits below the 10-day EMA ($63,674.72), 200-day SMA ($72,324.19), and 50-day SMA ($76,656.38), with negative MACD and reported restrictive macro conditions. Conversely, RSI of 25.42 and ATR around 4.8% of the supplied close make a violent relief rally credible; the purported $86,000 miner-cost figure does not confirm reserve sales or establish a floor, security concerns remain unverified, and the $50,000 downside case is a scenario rather than a target. A sustained recovery above $63,675 with higher lows and improving MACD would argue against further cuts; holding above $69,301 and then $72,324, alongside easing yields and evidence miner sales are slowing, would strengthen the case for restoring a standard BTC-USD allocation. A sustained breakdown below $58,680 with worsening macro conditions would favor another measured reduction, not an automatic leveraged short.</p>
+<p><strong>Price Target</strong>: not provided</p>
+<p><strong>Time Horizon</strong>: Coming weeks; reassess as levels and momentum evolve</p></section><section class="section" id="trader"><h2>Trader plan</h2><p><strong>Action</strong>: Sell</p>
+<p><strong>Reasoning</strong>: The research plan is Underweight, which maps to Sell, because BTC-USD remains in a strongly bearish structure: the latest close of $60,784.79 is below the 10-day EMA at $63,674.72, the 200-day SMA at $72,324.19, and the 50-day SMA at $76,656.38, while MACD remains negative. Although RSI at 25.42 creates meaningful relief-rally risk, there is no confirmed reversal; therefore this is a cautious reduction or underweight recommendation rather than an aggressive short, with exposure kept unleveraged and reduced in light of the $2,944.47 ATR.</p>
+<p><strong>Entry Price</strong>: not provided</p>
+<p><strong>Stop Loss</strong>: not provided</p>
+<p><strong>Position Sizing</strong>: Target roughly 50% of a standard BTC-USD allocation, with a cautious 25–50% range; trim gradually if above target. Do not initiate a full standard position, and keep any remaining exposure unleveraged.</p>
+<p>FINAL TRANSACTION PROPOSAL: <strong>SELL</strong></p></section><section class="section" id="plan"><h2>Investment plan</h2><p><strong>Recommendation</strong>: Underweight</p>
+<p><strong>Rationale</strong>: For BTC-USD, the bull makes a credible case for a sharp rebound: the reported 24.8% decline, RSI of 25.42 and depressed, low-confidence news sentiment support a small, unleveraged long-term option on recovery. But none establishes a bottom or that BTC-USD is cheap. The bear's stronger, observable case is that the last supplied close of $60,784.79 remains below the 10-day EMA ($63,674.72), 200-day SMA ($72,324.19) and 50-day SMA ($76,656.38), with negative MACD, roughly $2,944 ATR and reported restrictive macro conditions. Miner selling is a plausible risk, though the $86,000 cost estimate is not a price floor; security concerns are unverified. Falling yields, improving demand and exhausted selling are possible, not yet evidenced. That warrants a cautious Underweight rather than Sell: oversold conditions could produce a rapid reversal. The debate does not provide current prices, independently verified miner flows or resolution of security concerns, so the cited levels are reference points, not live signals.</p>
+<p><strong>Strategic Actions</strong>: Target roughly 50% of a standard BTC-USD allocation (a cautious 25–50% range is reasonable given volatility); the trader and portfolio manager should translate this relative target into actual trades based on holdings, which the research team does not see. Trim gradually if above target, especially into rebounds; if flat, do not initiate a full standard position or mechanically buy an oversold reading. Keep any exposure unleveraged. Monitor the $58,680 recent low and $56,119 lower Bollinger Band: a sustained break, especially alongside worsening macro conditions, warrants reassessing for a further reduction. Reconsider adding only after BTC-USD sustains a recovery above $63,675 with improving momentum; a hold above $69,301, then $72,324, plus easing yields and evidence miner selling is slowing, would justify working back toward a standard allocation. Verify reported security issues before increasing risk; these historical levels require refreshed market data before execution.</p></section><section class="section" id="market"><h2>Market</h2><h3>BTC-USD Technical Analysis — 2026-11-22</h3>
+<h3>Executive view</h3>
+<p><strong>BTC-USD is in a strongly bearish short- and medium-term trend, with momentum deeply oversold but no confirmed reversal yet.</strong> The latest verified close is <strong>$60,784.79</strong>, below the 10-day EMA, 50-day SMA, and 200-day SMA. The moving-average structure is bearish, MACD remains negative, and recent closes show persistent downside pressure.</p>
+<p>At the same time, the <strong>RSI of 25.42</strong> indicates an oversold condition. This raises the probability of a relief rally, but oversold readings alone are not a buy signal: RSI can remain below 30 during sustained declines. The more important question is whether BTC-USD can reclaim short-term trend levels and produce improving momentum.</p>
+<p>The primary tactical stance is therefore:</p>
+<ul><li><strong>Trend-following traders:</strong> remain defensive or favor short exposure until BTC-USD reclaims key moving-average or Bollinger levels.</li><li><strong>Countertrend traders:</strong> only consider a highly controlled rebound trade after confirmation, rather than buying solely because RSI is oversold.</li><li><strong>Investors:</strong> use smaller position sizes and staged entries because volatility is elevated and the long-term trend has weakened.</li></ul>
+<blockquote><p>The verified snapshot is treated as the source of truth. The raw price-data output reported a 2026-11-22 close of $60,787.13, while the verified snapshot reports $60,784.79. This report uses the verified value of <strong>$60,784.79</strong>.</p></blockquote>
+<hr>
+<h3>Selected indicators</h3>
+<p>The eight selected indicators are:</p>
+<ol><li><strong>close_10_ema</strong></li><li><strong>close_50_sma</strong></li><li><strong>close_200_sma</strong></li><li><strong>macd</strong></li><li><strong>rsi</strong></li><li><strong>boll_ub</strong></li><li><strong>boll_lb</strong></li><li><strong>atr</strong></li></ol>
+<p>These provide complementary information across short-, medium-, and long-term trend, momentum, volatility, and potential price extremes. The MACD family was intentionally limited to the main MACD line rather than adding multiple highly correlated MACD components as separate decision tools.</p>
+<hr>
+<h3>1. Price and recent trend</h3>
+<p>The latest verified BTC-USD session was:</p>
+<ul><li><strong>Open:</strong> $60,093.01</li><li><strong>High:</strong> $61,328.95</li><li><strong>Low:</strong> $58,680.21</li><li><strong>Close:</strong> $60,784.79</li><li><strong>Volume:</strong> 29,283,012,608</li></ul>
+<p>Recent closing prices show a clear deterioration:</p>
+<ul><li>October 24: <strong>$80,790.84</strong></li><li>November 4: <strong>$80,405.29</strong></li><li>November 12: <strong>$71,342.97</strong></li><li>November 14: <strong>$64,128.05</strong></li><li>November 20: <strong>$58,798.98</strong></li><li>November 22: <strong>$60,784.79</strong></li></ul>
+<p>From October 24 to November 22, the verified close declined by approximately <strong>24.8%</strong>. The decline accelerated particularly during the second half of November, with BTC-USD falling from $71,342.97 on November 12 to $58,798.98 on November 20 before recovering modestly.</p>
+<p>The two most recent closes show a small rebound from $58,798.98 to $60,094.09 and then $60,784.79. However, this is not yet enough evidence to classify the move as a durable reversal. It may simply represent a short-term bounce after an aggressive selloff.</p>
+<hr>
+<h3>2. Moving-average structure</h3>
+<h4>10-day EMA: $63,674.72</h4>
+<p>BTC-USD is approximately <strong>$2,890 below</strong> the 10-day EMA. The 10-day EMA is the most responsive trend measure in the selected set, and its position above price indicates that short-term sellers remain in control.</p>
+<p>A sustained close above approximately <strong>$63,675</strong> would be an initial sign that downside momentum is easing. However, because the EMA is declining rapidly, merely touching it would not be sufficient confirmation. A stronger signal would be a reclaim followed by several closes above it.</p>
+<h4>50-day SMA: $76,656.38</h4>
+<p>The 50-day SMA is well above the current price. BTC-USD is approximately <strong>20.7% below</strong> this average, reflecting substantial medium-term weakness.</p>
+<p>The 50-day SMA has also been declining recently. Therefore, BTC-USD is not just trading below a flat moving average; it is trading beneath a weakening medium-term trend benchmark. A recovery toward this level would likely encounter significant overhead supply, although the moving average should be viewed as a trend reference rather than a guaranteed resistance level.</p>
+<h4>200-day SMA: $72,324.19</h4>
+<p>BTC-USD is approximately <strong>16.0% below</strong> its 200-day SMA. This is important because the 200-day SMA is commonly used as a broad long-term trend filter.</p>
+<p>The relationship between the averages is currently bearish:</p>
+<p class="formula">10-day EMA &lt; 200-day SMA &lt; 50-day SMA</p>
+<p>More precisely:</p>
+<ul><li>10-day EMA: $63,674.72</li><li>200-day SMA: $72,324.19</li><li>50-day SMA: $76,656.38</li></ul>
+<p>The 50-day SMA remains above the 200-day SMA, so a formal medium-term “death cross” is not confirmed by these two averages at the latest snapshot. However, the price is below both, and the 200-day SMA has begun declining. That combination suggests that the long-term trend has materially weakened even though the slower crossover signal has not fully completed.</p>
+<h4>Practical interpretation</h4>
+<p>The moving averages point to a <strong>bear-market rally risk rather than a confirmed bottom</strong>. A recovery above the 10-day EMA would improve the short-term picture, but reclaiming the 200-day SMA near $72,324 would be a much more meaningful test of whether the broader downtrend is changing.</p>
+<hr>
+<h3>3. MACD momentum</h3>
+<p>The verified MACD readings are:</p>
+<ul><li><strong>MACD:</strong> -4,925.94</li><li><strong>MACD signal:</strong> -4,138.51</li><li><strong>MACD histogram:</strong> -787.44</li></ul>
+<p>The MACD line is below both zero and its signal line. This indicates that downside momentum remains dominant.</p>
+<p>There is one modestly constructive detail: the recent raw indicator series showed the MACD becoming slightly less negative from November 21 to November 22. That suggests the rate of deterioration may have slowed marginally during the latest bounce. However, the MACD remains substantially negative, and the histogram is still negative. This is not yet a bullish crossover.</p>
+<p>For a more credible reversal signal, traders should look for:</p>
+<ol><li>MACD histogram moving toward zero and then becoming positive;</li><li>MACD line crossing above the signal line;</li><li>Price reclaiming the 10-day EMA at the same time;</li><li>Preferably, improving volume on the advance.</li></ol>
+<p>A price bounce without MACD improvement would carry a higher risk of being a temporary relief rally.</p>
+<hr>
+<h3>4. RSI and oversold conditions</h3>
+<p>The verified RSI is <strong>25.42</strong>, below the conventional 30 oversold threshold.</p>
+<p>This confirms that BTC-USD has experienced unusually strong recent downside momentum. RSI at this level can support a tactical rebound thesis, particularly after the sharp fall from $80,790.84 on October 24 to $60,784.79 on November 22.</p>
+<p>However, there are two important cautions:</p>
+<ul><li>RSI below 30 does not identify the exact bottom.</li><li>In strong downtrends, RSI can remain oversold while price continues lower.</li></ul>
+<p>Accordingly, RSI should be used as a <strong>condition for monitoring a reversal</strong>, not as a standalone entry signal. More constructive evidence would be:</p>
+<ul><li>RSI reclaiming 30;</li><li>then establishing higher lows;</li><li>price holding above a recent swing low;</li><li>and MACD beginning to improve.</li></ul>
+<p>Until those conditions occur, oversold RSI is better interpreted as a warning that volatility and rebound risk are elevated, not as confirmation that downside risk has ended.</p>
+<hr>
+<h3>5. Bollinger Bands</h3>
+<p>Verified Bollinger readings:</p>
+<ul><li><strong>Middle band:</strong> $69,301.07</li><li><strong>Upper band:</strong> $82,483.42</li><li><strong>Lower band:</strong> $56,118.73</li></ul>
+<p>BTC-USD is below the middle band and above the lower band. The price is approximately:</p>
+<ul><li><strong>12.3% below</strong> the middle band;</li><li><strong>8.3% above</strong> the lower band.</li></ul>
+<p>This configuration is bearish because price is trading well below its 20-day benchmark. The lower band at approximately <strong>$56,119</strong> provides a volatility-based downside reference, but it should not be treated as a guaranteed floor. In a strong selloff, price can move along or temporarily below the lower band.</p>
+<p>A move back toward the middle band near $69,301 would represent a meaningful recovery from current levels, but it would still be a rebound within a damaged structure unless accompanied by improved moving-average and MACD readings.</p>
+<p>Potential interpretations:</p>
+<ul><li><strong>Below $56,119:</strong> downside volatility may be accelerating; risk management becomes more important than mean-reversion assumptions.</li><li><strong>Between $56,119 and $63,675:</strong> oversold stabilization zone, but still beneath short-term trend confirmation.</li><li><strong>Above $63,675:</strong> first short-term improvement signal.</li><li><strong>Above $69,301:</strong> stronger evidence that the rebound is extending beyond a routine relief bounce.</li></ul>
+<p>These are analytical thresholds, not confirmed support or resistance levels.</p>
+<hr>
+<h3>6. Volatility and ATR-based risk management</h3>
+<p>The verified ATR is <strong>$2,944.47</strong>. Relative to the verified close of $60,784.79, this is approximately <strong>4.8% of price per ATR</strong>.</p>
+<p>That is a substantial daily volatility allowance. A stop placed only a few hundred dollars away from an entry would be vulnerable to ordinary BTC-USD noise. Traders should account for ATR when sizing positions and setting invalidation levels.</p>
+<p>For example:</p>
+<ul><li>A one-ATR move is approximately $2,944.</li><li>A 1.5-ATR move is approximately $4,417.</li><li>A 2-ATR move is approximately $5,889.</li></ul>
+<p>These are not recommended stop distances by themselves, but they demonstrate why position size should be reduced in the current environment. A strategy risking a fixed dollar amount should use smaller exposure when ATR rises.</p>
+<p>Because ATR has increased from the lower levels observed earlier in the indicator series, volatility is expanding as price declines. That is generally unfavorable for highly leveraged long positions.</p>
+<hr>
+<h3>Trading scenarios</h3>
+<h4>Bearish continuation scenario</h4>
+<p>The bearish case remains dominant while BTC-USD trades below the 10-day EMA and the Bollinger middle band.</p>
+<p>Confirmation would come from:</p>
+<ul><li>A decisive break below the latest verified low of <strong>$58,680.21</strong>;</li><li>continued negative MACD momentum;</li><li>RSI remaining below 30 without bullish divergence;</li><li>expanding ATR or wider daily ranges.</li></ul>
+<p>The lower Bollinger Band near <strong>$56,118.73</strong> is a relevant downside reference in this scenario, but a break below it would not automatically imply a reversal. Traders should avoid assuming that a band touch guarantees a bounce.</p>
+<h4>Relief-rally scenario</h4>
+<p>A countertrend rebound is plausible because RSI is oversold and BTC-USD has already experienced a substantial decline.</p>
+<p>The first meaningful confirmation would be a close above the 10-day EMA near <strong>$63,674.72</strong>. A more convincing recovery would require:</p>
+<ol><li>Holding above the 10-day EMA;</li><li>MACD histogram improving toward zero;</li><li>RSI reclaiming 30 and then forming higher lows;</li><li>Price moving toward the Bollinger middle band near <strong>$69,301.07</strong>.</li></ol>
+<p>Even if this occurs, the 200-day SMA near <strong>$72,324.19</strong> and 50-day SMA near <strong>$76,656.38</strong> remain major trend references above the market. A rally that fails beneath those areas could still be a bear-market rally.</p>
+<h4>Reversal and trend-recovery scenario</h4>
+<p>A more durable trend reversal would require more than an oversold bounce. The strongest evidence would be:</p>
+<ul><li>BTC-USD reclaiming the 200-day SMA;</li><li>the 10-day EMA turning upward;</li><li>MACD crossing above its signal line and moving toward positive territory;</li><li>RSI stabilizing above 50 rather than merely bouncing from oversold;</li><li>price holding higher lows after the initial recovery.</li></ul>
+<p>Until that combination develops, the broader technical evidence favors caution.</p>
+<hr>
+<h3>Actionable risk framework</h3>
+<ul><li><strong>Avoid buying solely because RSI is 25.42.</strong> Wait for evidence of stabilization or momentum improvement.</li><li><strong>Use $63,675 as an initial short-term trend checkpoint.</strong> A close above it would improve the tactical outlook, but would not confirm a full reversal.</li><li><strong>Monitor $69,301 as the Bollinger middle-band recovery level.</strong> Failure near this level would suggest that the rebound is still corrective.</li><li><strong>Treat $72,324 and $76,656 as higher-level trend tests.</strong> Reclaiming them would materially improve the medium- and long-term picture.</li><li><strong>Use the latest low of $58,680.21 as a downside invalidation reference for rebound trades.</strong></li><li><strong>Account for the $2,944 ATR.</strong> Position sizes and leverage should be reduced because normal daily price movement is large relative to the current price.</li><li><strong>For short exposure, avoid chasing after an extended decline.</strong> Oversold conditions increase the probability of sharp countertrend rallies even when the underlying trend remains bearish.</li><li><strong>For longer-term accumulation, consider staged entries rather than a single large purchase.</strong> The price is materially below its moving averages, but the declining trend and elevated volatility mean that a bottom is not yet confirmed.</li></ul>
+<h3>Key points</h3>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Area</th><th style="text-align:end">Verified reading / observation</th><th style="text-align:start">Interpretation</th><th style="text-align:start">Trading implication</th></tr></thead><tbody><tr><td style="text-align:start">Latest close</td><td style="text-align:end">$60,784.79 on 2026-11-22</td><td style="text-align:start">Price remains under significant trend benchmarks</td><td style="text-align:start">Defensive bias remains appropriate</td></tr><tr><td style="text-align:start">10-day EMA</td><td style="text-align:end">$63,674.72</td><td style="text-align:start">Short-term trend is bearish</td><td style="text-align:start">Reclaim would be an initial recovery signal</td></tr><tr><td style="text-align:start">50-day SMA</td><td style="text-align:end">$76,656.38</td><td style="text-align:start">Medium-term trend is substantially above price</td><td style="text-align:start">Large overhead trend gap</td></tr><tr><td style="text-align:start">200-day SMA</td><td style="text-align:end">$72,324.19</td><td style="text-align:start">Price is below the long-term trend filter</td><td style="text-align:start">Long-term trend has weakened materially</td></tr><tr><td style="text-align:start">MACD</td><td style="text-align:end">-4,925.94; histogram -787.44</td><td style="text-align:start">Momentum remains negative</td><td style="text-align:start">No confirmed bullish crossover</td></tr><tr><td style="text-align:start">RSI</td><td style="text-align:end">25.42</td><td style="text-align:start">Deeply oversold</td><td style="text-align:start">Rebound risk is elevated, but no bottom confirmation</td></tr><tr><td style="text-align:start">Bollinger middle</td><td style="text-align:end">$69,301.07</td><td style="text-align:start">Price is well below its 20-day benchmark</td><td style="text-align:start">Recovery toward this level would be a key test</td></tr><tr><td style="text-align:start">Bollinger lower</td><td style="text-align:end">$56,118.73</td><td style="text-align:start">Downside volatility reference</td><td style="text-align:start">Not guaranteed support</td></tr><tr><td style="text-align:start">ATR</td><td style="text-align:end">$2,944.47</td><td style="text-align:start">Approximately 4.8% of price</td><td style="text-align:start">Reduce leverage and widen risk assumptions</td></tr><tr><td style="text-align:start">Recent trend</td><td style="text-align:end">$80,790.84 on Oct. 24 to $60,784.79 on Nov. 22</td><td style="text-align:start">Approximately 24.8% decline</td><td style="text-align:start">Trend-following bias remains bearish</td></tr><tr><td style="text-align:start">Primary bullish checkpoint</td><td style="text-align:end">Above $63,674.72, then $69,301.07</td><td style="text-align:start">Would indicate improving short-term structure</td><td style="text-align:start">Require confirmation from MACD and RSI</td></tr><tr><td style="text-align:start">Primary bearish checkpoint</td><td style="text-align:end">Below $58,680.21</td><td style="text-align:start">Would indicate renewed downside pressure</td><td style="text-align:start">Reassess risk rather than assume immediate rebound</td></tr></tbody></table></div></section><section class="section" id="news"><h2>News and macro</h2><h3>BTC-USD: Weekly Macro and News Report</h3>
+<p><strong>Period reviewed:</strong> November 15–22, 2026 <strong>Asset:</strong> BTC-USD (Bitcoin USD)</p>
+<h3>Executive summary</h3>
+<p>BTC-USD remains in a risk-off, liquidity-driven environment. News coverage places BTC-USD below <strong>$60,000</strong> after a sharp selloff, despite a rebound of more than 3% over the latest 24-hour period. The broader backdrop remains unfavorable: Treasury yields have risen materially, markets are pricing a restrictive Federal Reserve, and technology-equity weakness is spilling into crypto.</p>
+<p>The most important near-term forces are:</p>
+<ol><li><strong>Tighter liquidity and higher rates:</strong> The 10-year Treasury yield rose approximately 100 basis points year over year to 5.04%, while news reports cite an 88.6% probability of a December Fed rate hike.</li><li><strong>Cross-asset deleveraging:</strong> Gold, silver, equities, technology stocks, and BTC-USD have reportedly fallen together, suggesting forced selling and cash hoarding rather than a BTC-USD-specific event alone.</li><li><strong>Miner stress:</strong> Reports indicate BTC-USD is trading substantially below JPMorgan’s estimated mining-cost level of approximately $86,000. Falling mining profitability could encourage reserve sales and add supply pressure.</li><li><strong>Technical and sentiment deterioration:</strong> Analysts cited in the news place downside risk near $50,000 if Nasdaq weakness persists. BTC-USD is also reported to be near two-year lows, although the recent rebound raises the possibility of a short-covering rally.</li><li><strong>Limited evidence of imminent macro relief:</strong> Polymarket prices a 98% probability that there will be no Fed rate cuts during 2026, while the US recession probability by year-end is only 3%. This combination implies markets expect restrictive policy without a major near-term US recession—a difficult environment for speculative liquidity-sensitive assets.</li></ol>
+<p><strong>Trading stance:</strong> The evidence favors a defensive bias toward BTC-USD until either Treasury yields stabilize, Nasdaq leadership improves, or BTC-USD reclaims important breakdown levels with convincing volume. The recent bounce should initially be treated as a potential relief rally rather than confirmation of a durable bottom.</p>
+<hr>
+<h3>1. BTC-USD-specific news and market structure</h3>
+<h4>Price weakness and potential rebound</h4>
+<p>Recent reporting describes BTC-USD as remaining below $60,000 after a sharp decline, with a rebound of more than 3% over 24 hours. This creates a two-sided setup:</p>
+<ul><li><strong>Bearish interpretation:</strong> The bounce follows a major drawdown and may represent short covering or dip buying inside a broader downtrend.</li><li><strong>Bullish interpretation:</strong> A strong reaction from two-year lows could indicate capitulation and the early stages of accumulation.</li></ul>
+<p>Confirmation would require BTC-USD to hold above the rebound low and subsequently produce higher highs and higher lows. A failure to do so would leave the reported $50,000 downside scenario technically relevant, particularly if Nasdaq weakness continues.</p>
+<h4>Miner economics and supply pressure</h4>
+<p>News reports cite JPMorgan’s estimate that BTC-USD’s mining cost is approximately <strong>$86,000</strong>, materially above the reported market price. The implications are significant:</p>
+<ul><li>Marginal miners may sell BTC-USD reserves to fund operating expenses.</li><li>Highly leveraged miners could reduce holdings, curtail expansion, or seek financing.</li><li>Hash-rate or network-security concerns may increase if less efficient miners exit.</li><li>Miner selling can amplify declines during already weak liquidity conditions.</li></ul>
+<p>The mining-cost estimate should not be treated as a hard price floor. Mining costs vary by energy prices, machine efficiency, financing, and geographic concentration. However, the gap between reported market price and estimated mining cost is a useful indicator of stress within the mining complex.</p>
+<h4>Network and security concerns</h4>
+<p>Investing.com reporting references newly disclosed network-security vulnerabilities alongside collapsing mining profitability. This is a material sentiment risk even if the vulnerability does not lead to a successful exploit. Traders should distinguish between:</p>
+<ul><li>A confirmed protocol-level security event,</li><li>A limited implementation or infrastructure vulnerability, and</li><li>Generalized commentary about network security.</li></ul>
+<p>A verified exploit or significant chain disruption would represent a substantially more severe downside catalyst than ordinary miner stress.</p>
+<h4>Institutional and corporate spillovers</h4>
+<p>The news flow also points to weakness in Bitcoin-related equities, including mining companies and Bitcoin treasury companies. MSCI’s reported decision to remove Strategy and Metaplanet from certain indexes could reduce passive demand for those equities and weaken a secondary channel of BTC-USD exposure.</p>
+<p>This matters because:</p>
+<ul><li>Falling mining-equity prices can reduce miners’ ability to raise capital.</li><li>Treasury-company discounts or forced deleveraging can undermine speculative demand.</li><li>Correlations between BTC-USD, crypto equities, and high-beta technology stocks may remain elevated during deleveraging.</li></ul>
+<p>Positive adoption headlines—such as consumer spending initiatives, promotional Bitcoin distributions, and merchant sales claims—are constructive for long-term awareness but appear too small to offset the current macro and positioning pressures.</p>
+<hr>
+<h3>2. Macro backdrop</h3>
+<h4>Federal Reserve and liquidity</h4>
+<p>The effective federal funds rate was <strong>3.88% in October 2026</strong>, unchanged from October 2025 but higher than the mid-2026 readings near 3.63%. The weekly news flow reports that CME FedWatch pricing implied an <strong>88.6% chance of a December rate hike</strong>.</p>
+<p>The policy message is therefore restrictive:</p>
+<ul><li>The market is not expecting rapid monetary easing.</li><li>Higher short-term rates raise the opportunity cost of holding a non-yielding asset such as BTC-USD.</li><li>Tighter liquidity tends to pressure leveraged crypto positions and speculative growth assets.</li></ul>
+<p>There is an apparent timing distinction between the FRED effective rate data and the news-based December pricing: the FRED series is monthly and currently available through October, whereas the FedWatch figure reflects a forward meeting expectation. They should not be treated as contradictory.</p>
+<p>Polymarket assigns a <strong>98% probability to no Fed rate cuts during 2026</strong>, reinforcing the conclusion that a near-term liquidity rescue is unlikely.</p>
+<h4>Treasury yields</h4>
+<p>The US 10-year Treasury yield was <strong>5.04% on November 19, 2026</strong>, up from 4.04% around late November 2025—a rise of approximately 100 basis points.</p>
+<p>This is one of the clearest macro headwinds for BTC-USD:</p>
+<ul><li>Higher real and nominal yields compete with speculative assets.</li><li>Rising discount rates pressure technology equities and other long-duration exposures.</li><li>Higher yields can attract capital away from crypto and toward cash or fixed income.</li><li>A rapid yield increase can trigger portfolio deleveraging across multiple asset classes.</li></ul>
+<p>The weekly news flow describes simultaneous weakness in gold, silver, technology stocks, and BTC-USD. That pattern is consistent with a broad cash-raising episode rather than a simple rotation from crypto into precious metals.</p>
+<h4>Yield curve</h4>
+<p>The 10-year minus 2-year Treasury spread was <strong>+0.29 percentage points on November 20</strong>, down from +0.58 a year earlier.</p>
+<p>The curve remains positively sloped, so it does not currently signal the same recession warning associated with a deeply inverted curve. However, the decline in the spread indicates flattening:</p>
+<ul><li>Long-term yields have risen relative to short-term rates.</li><li>The market may be pricing persistent inflation, fiscal risk, or a higher term premium.</li><li>A flatter curve combined with higher absolute yields remains restrictive for risk assets.</li></ul>
+<h4>Inflation</h4>
+<p>The CPI index increased <strong>3.82% year over year</strong> from November 2025 to October 2026 based on the available FRED observations. This is not a low-inflation environment from a central-bank perspective, particularly when combined with rising long-term yields.</p>
+<p>For BTC-USD, persistent inflation has two opposing effects:</p>
+<ul><li><strong>Positive long-term narrative:</strong> Inflation can support demand for scarce or alternative monetary assets.</li><li><strong>Negative near-term macro effect:</strong> If inflation prevents rate cuts or drives rate hikes, liquidity conditions become less favorable.</li></ul>
+<p>At present, the second effect appears dominant.</p>
+<h4>Employment and recession risk</h4>
+<p>The US unemployment rate was <strong>4.1% in October 2026</strong>, down from 4.5% in November 2025. Polymarket prices only a <strong>3% probability of a US recession by the end of 2026</strong>.</p>
+<p>This is a challenging combination for BTC-USD:</p>
+<ul><li>The economy is not weak enough to force rapid monetary easing.</li><li>Employment remains sufficiently firm to permit restrictive policy.</li><li>The lack of an imminent recession reduces expectations for emergency liquidity support.</li><li>At the same time, elevated rates and yields can still weaken risk appetite.</li></ul>
+<p>The market may therefore experience a “higher for longer” regime rather than a rapid shift from tightening to aggressive easing.</p>
+<hr>
+<h3>3. Global market conditions</h3>
+<p>The global news flow is dominated by:</p>
+<ul><li>Sharp declines in gold and silver,</li><li>Broad weakness in UK and Canadian equities,</li><li>A technology and AI-related equity selloff,</li><li>Lower commodity prices and risk reduction,</li><li>Concerns about cash scarcity and forced selling.</li></ul>
+<p>The reported Nvidia decline and Nasdaq weakness are particularly relevant because BTC-USD has behaved as a high-beta liquidity asset during many recent risk episodes. If technology shares continue falling, BTC-USD may remain correlated with equity volatility rather than trade independently as a safe haven.</p>
+<p>The reported gold decline is also noteworthy. BTC-USD and gold falling together suggests that the current market is not simply seeking inflation hedges or alternative stores of value. Instead, investors may be prioritizing liquidity and reducing positions across both traditional and digital alternatives.</p>
+<p>Japan’s 2026 recession probability is reported at 16%, higher than the US figure, but the available data do not establish a direct BTC-USD catalyst from Japan. It is more relevant as a broader indicator of global growth uncertainty.</p>
+<hr>
+<h3>4. Forward-looking scenarios</h3>
+<h4>Bear case</h4>
+<p>The bearish scenario becomes more likely if:</p>
+<ul><li>BTC-USD fails to hold the recent rebound,</li><li>Nasdaq and AI-linked equities continue declining,</li><li>The 10-year yield remains above 5% or rises further,</li><li>Miner reserve sales increase,</li><li>The Fed delivers or signals further tightening,</li><li>A credible network-security incident emerges.</li></ul>
+<p>Under this scenario, the reported <strong>$50,000 area</strong> becomes a plausible downside reference. A break below recent lows accompanied by increasing volume would suggest that the market has not yet completed capitulation.</p>
+<h4>Base case</h4>
+<p>The base case is a volatile consolidation below major resistance:</p>
+<ul><li>BTC-USD remains sensitive to equity-market moves.</li><li>Short covering produces sharp countertrend rallies.</li><li>Miners and leveraged holders continue to create supply overhang.</li><li>Traders rotate between expectations of a bottom and renewed downside.</li></ul>
+<p>Under this scenario, range trading and reduced position size are preferable to aggressive directional exposure.</p>
+<h4>Bull case</h4>
+<p>A durable recovery would require more than a one-day bounce. Positive confirmation would include:</p>
+<ul><li>A sustained decline in the 10-year Treasury yield,</li><li>Stabilization or recovery in Nasdaq and technology shares,</li><li>A reduction in expected Fed tightening,</li><li>Evidence that miner selling has subsided,</li><li>BTC-USD reclaiming broken support and converting it into support again,</li><li>Rising spot demand rather than futures-driven short covering.</li></ul>
+<p>A bullish move under falling yields would be more credible than a rally occurring while yields and equities remain under pressure.</p>
+<hr>
+<h3>5. Actionable trading implications</h3>
+<h4>For short-term traders</h4>
+<ul><li>Treat the rebound as suspect until BTC-USD establishes a higher-low structure.</li><li>Watch the relationship between BTC-USD and Nasdaq futures, especially during US trading hours.</li><li>Monitor the 10-year yield near and above 5%; renewed yield strength would be a negative confirmation.</li><li>Avoid excessive leverage because miner selling and short squeezes can produce very large intraday reversals.</li><li>A breakdown below the recent low with expanding volume would favor continuation risk; a reclaim of the breakdown zone would weaken the bearish setup.</li></ul>
+<h4>For swing traders</h4>
+<ul><li>Prefer waiting for macro confirmation rather than attempting to catch the first bounce.</li><li>Consider scaling entries rather than using a single entry point if accumulating BTC-USD.</li><li>Treat the $50,000 region as a scenario marker from current reporting, not a guaranteed target.</li><li>A sustained close above prior support, followed by a successful retest, would offer stronger evidence of trend repair.</li></ul>
+<h4>For risk management</h4>
+<ul><li>Keep BTC-USD exposure smaller while cross-asset correlations remain high.</li><li>Use clearly defined invalidation levels rather than relying on mining cost as a floor.</li><li>Separate spot exposure from leveraged futures exposure; the latter is more vulnerable to liquidation cascades.</li><li>Track exchange, custody, and network-security headlines independently from macro news.</li><li>Do not assume that low recession odds imply imminent BTC-USD upside: low recession risk may instead allow the Fed to keep policy restrictive.</li></ul>
+<hr>
+<h3>Key evidence table</h3>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Theme</th><th style="text-align:start">Latest evidence</th><th style="text-align:start">Implication for BTC-USD</th><th style="text-align:start">Trading relevance</th></tr></thead><tbody><tr><td style="text-align:start">Price action</td><td style="text-align:start">BTC-USD reported below $60,000 after a sharp selloff; recent rebound above 3%</td><td style="text-align:start">Potential relief rally, but trend remains damaged</td><td style="text-align:start">Require higher highs/higher lows before turning bullish</td></tr><tr><td style="text-align:start">Downside risk</td><td style="text-align:start">Analyst commentary places $50,000 in play if Nasdaq weakness persists</td><td style="text-align:start">Equity correlation remains a major risk</td><td style="text-align:start">Monitor Nasdaq and BTC-USD jointly</td></tr><tr><td style="text-align:start">Fed policy</td><td style="text-align:start">News reports cite 88.6% odds of a December rate hike; effective fed funds rate was 3.88% in October</td><td style="text-align:start">Liquidity remains restrictive</td><td style="text-align:start">Negative for leveraged and speculative BTC-USD exposure</td></tr><tr><td style="text-align:start">Rate-cut expectations</td><td style="text-align:start">Polymarket: 98% probability of no Fed cuts in 2026</td><td style="text-align:start">Little expectation of near-term monetary rescue</td><td style="text-align:start">Limits upside from policy repricing</td></tr><tr><td style="text-align:start">Treasury yields</td><td style="text-align:start">10-year yield at 5.04% on Nov. 19, up roughly 100 bp year over year</td><td style="text-align:start">Higher discount rates and opportunity cost</td><td style="text-align:start">Falling yields would be a bullish macro catalyst</td></tr><tr><td style="text-align:start">Yield curve</td><td style="text-align:start">10Y–2Y spread at +0.29%, down from +0.58% a year earlier</td><td style="text-align:start">Curve has flattened while rates remain high</td><td style="text-align:start">Restrictive, but not an immediate recession signal</td></tr><tr><td style="text-align:start">Inflation</td><td style="text-align:start">CPI index up 3.82% year over year through October</td><td style="text-align:start">Inflation may constrain easing</td><td style="text-align:start">Persistent inflation is a near-term headwind</td></tr><tr><td style="text-align:start">Employment</td><td style="text-align:start">Unemployment at 4.1% in October</td><td style="text-align:start">Economy remains resilient enough for restrictive policy</td><td style="text-align:start">Low recession risk does not necessarily help BTC-USD</td></tr><tr><td style="text-align:start">Recession pricing</td><td style="text-align:start">Polymarket US recession probability at 3% by end-2026</td><td style="text-align:start">Emergency-easing expectations are limited</td><td style="text-align:start">Favors “higher for longer” rather than rapid stimulus</td></tr><tr><td style="text-align:start">Miner stress</td><td style="text-align:start">BTC-USD reportedly well below JPMorgan’s approximately $86,000 mining-cost estimate</td><td style="text-align:start">Reserve sales and miner deleveraging risk</td><td style="text-align:start">Watch miner flows, hash-rate trends, and mining equities</td></tr><tr><td style="text-align:start">Cross-asset risk</td><td style="text-align:start">Gold, silver, technology stocks, and BTC-USD reportedly declined together</td><td style="text-align:start">Broad cash-raising episode</td><td style="text-align:start">BTC-USD may trade as a high-beta risk asset</td></tr><tr><td style="text-align:start">Network risk</td><td style="text-align:start">Reports reference newly disclosed security vulnerabilities</td><td style="text-align:start">Could create idiosyncratic downside</td><td style="text-align:start">Verify severity before reacting to headlines</td></tr><tr><td style="text-align:start">Bullish confirmation</td><td style="text-align:start">Sustained recovery with lower yields, stronger Nasdaq, and spot-led demand</td><td style="text-align:start">Would indicate more durable trend repair</td><td style="text-align:start">More attractive to add exposure after confirmation, not before</td></tr></tbody></table></div></section><section class="section" id="sentiment"><h2>Sentiment</h2><p><strong>Overall Sentiment:</strong> <strong>Bearish</strong> (Score: 2.8/10) <strong>Confidence:</strong> Low</p>
+<h3>1. Source-by-source breakdown</h3>
+<h4>News headlines (Yahoo Finance aggregation)</h4>
+<p>The available news flow for BTC-USD is predominantly bearish and risk-focused. Multiple headlines describe a sharp drawdown and fragile market conditions: BTC-USD is reportedly struggling below $60,000 after a selloff, with collapsing mining profitability and disclosed network-security vulnerabilities adding pressure. JPMorgan reporting suggests miners may be selling reserves after BTC-USD fell materially below its estimated $86,000 mining-cost level, creating a potential supply overhang. Other coverage says quant funds are shorting BTC-USD below $60,000, while Arthur Hayes warns that a break below a local low could put $50,000 in play if the Nasdaq continues falling.</p>
+<p>Macro and cross-asset risk are also negative. A headline cites an 88.6% probability of a December Federal Reserve rate hike, implying tighter liquidity, and another links weakness in BTC-USD to a broader Nasdaq and AI-related selloff. CleanSpark-related coverage reinforces stress in Bitcoin mining equities, citing weaker Bitcoin prices, financing concerns, debt, and unleased data-center capacity. A personal-finance case describing a Bitcoin holding falling from $150,000 to about $90,000 illustrates the severity of losses for some holders.</p>
+<p>There are a few constructive or adoption-oriented items, but they are secondary to the downside framing: a reported 3% rebound from two-year lows, unusual sub-$20,000 pricing on a Canadian-dollar exchange, consumer spending and payments stories, Coinbase’s sold-out children’s book promotion including $50 of Bitcoin, and a restaurant attributing a 19% sales increase to Bitcoin payments. These support longer-term usage and the possibility of a technical bounce, but they do not offset the dominant market-risk narrative. The news set contains 20 headlines, though several concern broader crypto, Bitcoin-linked equities, or adoption rather than direct BTC-USD price action.</p>
+<h4>StockTwits</h4>
+<p>StockTwits data are unavailable due to an HTTP error. There are therefore no message counts, bullish/bearish ratios, user tags, or representative retail posts to assess. Retail positioning and any potential divergence between fast-moving social sentiment and the news cannot be measured.</p>
+<h4>Reddit</h4>
+<p>Reddit data are unavailable because fetching failed for r/Bitcoin, r/CryptoCurrency, and r/CryptoMarkets. This is explicitly a data-collection failure, not evidence that discussion was absent. No subreddit-specific themes, post bodies, or community sentiment can be reliably inferred.</p>
+<h3>2. Cross-source divergences and alignments</h3>
+<p>The only substantive source is the news feed, and it is internally weighted toward bearish market sentiment. Its negative market headlines align around four related pressures: tight macro liquidity, equity/Nasdaq contagion, miner economics and potential reserve selling, and downside technical/price-risk references. Positive adoption headlines and the reported rebound from two-year lows create a limited counter-signal, but they are not equivalent to broad evidence of renewed bullish positioning.</p>
+<p>Because both social sources are unavailable, there is no valid cross-source confirmation and no basis for claiming that retail traders agree with or oppose the institutional/news framing. The absence of social data materially lowers confidence.</p>
+<h3>3. Dominant narrative themes</h3>
+<ol><li><strong>Liquidity and macro tightening:</strong> The cited 88.6% December rate-hike probability is presented as a cash/liquidity headwind.</li><li><strong>Risk-off correlation:</strong> BTC-USD is described as falling alongside stocks, Nasdaq, AI, gold, and silver, suggesting current behavior is being treated as part of a broader risk-asset selloff rather than an isolated crypto event.</li><li><strong>Mining stress and supply risk:</strong> Lower profitability, BTC-USD trading below an estimated mining-cost benchmark, and possible miner reserve sales raise concerns about forced or defensive selling.</li><li><strong>Downside levels and fragile structure:</strong> Coverage references sub-$60,000 trading, two-year lows, and a possible move toward $50,000 if Nasdaq weakness persists.</li><li><strong>Underlying adoption remains visible:</strong> Spending, promotional, and merchant-payment stories indicate continued real-world experimentation, but adoption headlines are currently being overwhelmed by price and liquidity concerns.</li></ol>
+<h3>4. Catalysts and risks</h3>
+<p><strong>Potentially constructive catalysts:</strong></p>
+<ul><li>The reported rebound of more than 3% from two-year lows could develop into a relief rally if sustained.</li><li>Continued merchant and consumer-payment adoption may support the long-term narrative.</li><li>A reversal in rate expectations, stabilization in the Nasdaq, or reduced forced selling by miners could improve sentiment.</li></ul>
+<p><strong>Key risks:</strong></p>
+<ul><li>A December rate hike or further tightening could extend liquidity pressure.</li><li>Continued Nasdaq weakness may transmit additional risk-off selling to BTC-USD.</li><li>Miner reserve sales could add market supply, especially while profitability is depressed.</li><li>The reported network-security vulnerabilities could damage confidence, even though the supplied headlines do not quantify their scope.</li><li>Technical failure below recent lows could reinforce the cited $50,000 downside scenario.</li><li>Exchange pricing anomalies and fraud reports highlight venue, execution, and investor-protection risks; the under-$20,000 Canadian-dollar-market item should not be treated as representative BTC-USD market pricing.</li></ul>
+<h3>5. Summary table</h3>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Sentiment signal</th><th style="text-align:start">Direction</th><th style="text-align:start">Source</th><th style="text-align:start">Supporting evidence</th></tr></thead><tbody><tr><td style="text-align:start">Tightening liquidity</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">Headline cites an 88.6% chance of a December rate hike.</td></tr><tr><td style="text-align:start">Current price structure</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">BTC-USD reportedly remains below $60,000 and has rebounded from two-year lows.</td></tr><tr><td style="text-align:start">Miner economics</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">Mining profitability is described as plunging; JPMorgan-linked coverage suggests possible reserve selling and cites an $86,000 mining-cost estimate.</td></tr><tr><td style="text-align:start">Cross-asset contagion</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">BTC-USD weakness is linked to Nasdaq, AI, gold, and silver selloffs.</td></tr><tr><td style="text-align:start">Downside technical risk</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">Arthur Hayes headline places $50,000 in play if Nasdaq weakness continues.</td></tr><tr><td style="text-align:start">Short-term bounce potential</td><td style="text-align:start">Mildly bullish</td><td style="text-align:start">News</td><td style="text-align:start">Barron’s headline reports a rebound of more than 3% over 24 hours.</td></tr><tr><td style="text-align:start">Adoption and payments</td><td style="text-align:start">Mildly bullish</td><td style="text-align:start">News</td><td style="text-align:start">Spending, Coinbase promotion, and Steak ’n Shake payment-related headlines indicate ongoing use cases.</td></tr><tr><td style="text-align:start">Retail social positioning</td><td style="text-align:start">Unknown</td><td style="text-align:start">StockTwits</td><td style="text-align:start">Feed unavailable due to HTTPError; no ratio or message sample.</td></tr><tr><td style="text-align:start">Reddit/community sentiment</td><td style="text-align:start">Unknown</td><td style="text-align:start">Reddit</td><td style="text-align:start">Fetch failed for all three subreddits; no posts or engagement data available.</td></tr></tbody></table></div>
+<p>Overall, the supplied evidence supports a <strong>bearish sentiment signal for BTC-USD</strong>, but it is a fragile, low-confidence assessment because two of the three requested data sources were unavailable. This is sentiment information for the trader to weigh alongside technical and other market evidence, not a standalone price forecast.</p></section>
+  <footer>
+    <p>Desk rendering of the daily research notes. Figures and levels follow the source reports.</p>
+    
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GC=F · Gold futures — Sunday, 22 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --paper: #f4f0e6;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #6d655c;
+  --line: #e3d9c8;
+  --accent: #8d5a16;
+  --accent-soft: #f3e4cc;
+  --warn: #8d2f24;
+  --warn-soft: #f8e4df;
+  --good: #1d6b45;
+  --good-soft: #e3f2e9;
+  --mixed: #3e5c4e;
+  --mixed-soft: #e4eee8;
+  --shadow: 0 16px 40px rgba(58, 42, 18, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(141, 90, 22, 0.08), transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+body.lang-fa {
+  font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+body.kind-btc {
+  --accent: #c2410c;
+  --accent-soft: #fde6d8;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
+    var(--paper);
+}
+a { color: var(--accent); }
+.wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 8px;
+}
+.brand {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+.lang { display: flex; gap: 6px; }
+.lang a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang a.on { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+.hero { padding: 12px 0 8px; }
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+body.lang-fa h1, body.lang-fa h2, body.lang-fa h3, body.lang-fa h4 {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
+.sub { margin: 8px 0 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.good { background: var(--good-soft); color: var(--good); }
+.badge.mixed { background: var(--mixed-soft); color: var(--mixed); }
+.badge.neutral { background: #eeeae3; color: #4d463f; }
+.badge small { font-weight: 500; opacity: 0.8; }
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.section { scroll-margin-top: 72px; }
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 22px 22px 8px;
+  margin: 0 0 16px;
+}
+.section h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; }
+.section h3 { margin: 1.3em 0 0.4em; font-size: 22px; line-height: 1.35; }
+.section h4 { margin: 1.1em 0 0.3em; font-size: 18px; }
+.section p { margin: 0.7em 0; }
+.section ul, .section ol { margin: 0.6em 0 0.8em; padding-inline-start: 1.3em; }
+.section li { margin: 0.28em 0; }
+.section hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
+blockquote {
+  margin: 1em 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+body.lang-fa blockquote { border-radius: 12px 0 0 12px; }
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86em;
+  background: #f3ecdf;
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+}
+.formula {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f7f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.table-wrap { overflow-x: auto; margin: 0.8em 0 1em; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.55; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 650; }
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0 36px;
+}
+@media print {
+  body { background: white; }
+  .toc, .lang { display: none; }
+  .section { box-shadow: none; break-inside: avoid; }
+}
+
+</style>
+</head>
+<body class="lang-en kind-gold">
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">Trade Desk</div>
+    <nav class="lang">
+      <a class="on" href="report.html">English</a>
+      <a class="" href="report-fa.html">فارسی</a>
+    </nav>
+  </div>
+  <header class="hero">
+    <p class="kicker">GC=F · Gold Dec 26, COMEX</p>
+    <h1>Gold futures</h1>
+    <p class="sub">Sunday, 22 November 2026</p>
+    <div class="badges"><span class="badge warn">Underweight · کم‌وزن <small>Rating</small></span><span class="badge warn">Sell · فروش <small>Trader action</small></span><span class="badge mixed">Mixed · مختلط 4.9/10 <small>Sentiment</small></span></div>
+  </header>
+  <nav class="toc"><a href="#final">Final decision</a><a href="#trader">Trader plan</a><a href="#plan">Investment plan</a><a href="#market">Market</a><a href="#news">News and macro</a><a href="#sentiment">Sentiment</a><a href="#fundamentals">Fundamentals</a></nav>
+  <section class="section" id="final"><h2>Final decision</h2><p><strong>Rating</strong>: Underweight</p>
+<p><strong>Executive Summary</strong>: If GC=F exposure is above the portfolio limit, reduce it gradually toward about half of a usual allocation. If exposure is already smaller, do not buy merely to reach that target. Consider a fresh sale or a new short only after checking an updated price and confirming that price is holding below the 3,502.90 reference low. Size the trade from the cash loss to the exit, contract value, and total portfolio risk, not with high leverage. The horizon is short term and should be reviewed again before the December 2026 expiry.</p>
+<p><strong>Investment Thesis</strong>: On the 20 November data, GC=F closed at 3,515.40, near the 3,502.90 low and below the lower band at 3,637.92 and the 10-day EMA at 3,805.41. Negative MACD and volume of 323,896 — higher than the other sessions in the supplied table — are stronger evidence for cutting exposure than for keeping a full weight. The reported 10-year yield of 5.04% and the cited odds of a December rate hike add near-term pressure, but they are not guarantees. On the other side, an RSI of 21.57, ATR around 101.15, and a close under the lower band raise the risk of a squeeze and a failed breakdown, so a gradual reduction is a stronger case than a full exit or an immediate short. No live price is available, and these levels should not be treated as standing orders. A quick reclaim of 3,502.90 after a break would weaken a fresh short. Holding above 3,637.92 would call for a review of the underweight, and holding above 3,805.41 would call for a review of adding exposure. The 3,604.05 reference is historical only and must be reset to the real entry and that day's range. Liquidity, margin, and the cost of rolling GC=F should also be checked.</p>
+<p><strong>Price Target</strong>: not provided</p>
+<p><strong>Time Horizon</strong>: Short term, until the next review before the December 2026 expiry</p></section><section class="section" id="trader"><h2>Trader plan</h2><p><strong>Action</strong>: Sell</p>
+<p><strong>Reasoning</strong>: For GC=F, the investment plan is Underweight and the 3,515.40 close is below the lower band at 3,637.92 and the 10-day EMA at 3,805.41. Negative MACD and the high-volume drop also support a downward bias. Even so, an RSI of 21.57 and an ATR of 101.15 raise the risk of a squeeze and of chasing the short. A fresh short is therefore conditional on a sustained break of the 3,502.90 low. An immediate short or high leverage is not recommended. The data are from 20 November 2026, and no live price is available.</p>
+<p><strong>Entry Price</strong>: 3502.9</p>
+<p><strong>Stop Loss</strong>: 3604.05</p>
+<p><strong>Position Sizing</strong>: Target exposure is about 50% of a standard allocation. If the current position is larger, reduce it gradually, and do not buy in order to reach the target. A fresh short only after the break is confirmed, in a limited size scaled to ATR.</p>
+<p>FINAL TRANSACTION PROPOSAL: <strong>SELL</strong></p></section><section class="section" id="plan"><h2>Investment plan</h2><p><strong>Recommendation</strong>: Underweight</p>
+<p><strong>Rationale</strong>: The evidence in GC=F currently favors the bear: 3,515.40 is below the lower band at 3,637.92 and the 10-day EMA at 3,805.41, the longer averages sit higher still, and MACD is negative alongside a high-volume decline. The bull is right that an RSI of 21.57, proximity to 3,502.90, and ATR near 101 raise the risk of a squeeze and of chasing a short, but those facts do not confirm a reversal. High-rate pressure remains in place, and the central-bank buying story plus a year-end 2027 target do not give the December 2026 contract enough dated evidence. A modest cut in exposure is therefore more appropriate than a full sale or an immediate short.</p>
+<p><strong>Strategic Actions</strong>: For GC=F, set the target exposure near 50% of a standard allocation. If the current position is larger, reduce it with liquidity in mind. If it is smaller, do not buy just to reach the target. Defer a fresh long until price holds above 3,637.92, and consider a gradual return toward a standard weight only with a stronger confirmation above 3,805.41. If 3,502.90 breaks and stays broken, review a further reduction or a hedge. A new short only after a confirmed break or a failed rebound, with a loss cap based on ATR near 101 and without heavy leverage. Check the December 2026 expiry, liquidity, margin, and roll cost before any order. The prices cited are from the latest supplied data only.</p></section><section class="section" id="market"><h2>Market</h2><h3>GC=F technical report — as of 22 November 2026</h3>
+<p><strong>Usable data:</strong> 22 November is a Sunday, and the latest trading session on file for <strong>GC=F</strong> is Friday 20 November. The figures below belong to that session, not to a live Sunday price.</p>
+<h4>Trend summary</h4>
+<p>The recent picture is clearly downward. After <strong>GC=F</strong> closed at 4,114.50 on 9 November, price moved mostly lower over the following sessions and closed at <strong>3,515.40</strong> on 20 November. The rebound from 3,940.40 on 3 November to 4,114.50 on 9 November did not last; the next move was another decline.</p>
+<p>In the latest session, <strong>GC=F</strong> opened at 3,633.80, made a high of 3,638.10 and a low of 3,502.90, and closed at 3,515.40. Volume was <strong>323,896</strong>, above every other session in the 30-session snapshot table. A sharp drop together with higher volume shows meaningful selling pressure. By itself it does not prove that selling is finished or that a rebound is certain.</p>
+<h4>Indicator evidence</h4>
+<ul><li><strong>Moving averages:</strong> The 3,515.40 close is below the 10-day EMA at <strong>3,805.41</strong>, the 50-day SMA at <strong>4,110.86</strong>, and the 200-day SMA at <strong>4,444.68</strong>. That alignment fits short-term weakness and a medium- and long-term downtrend. Treat the averages as trend filters and possible supply areas, not as hard resistance.</li><li><strong>MACD:</strong> MACD is <strong>−120.96</strong> and the signal line is <strong>−82.49</strong>. The histogram is <strong>−38.48</strong>. All three are negative, and MACD is below its signal line, which confirms that downward momentum is still in place. This snapshot does not yet show a confirmed bullish turn.</li><li><strong>RSI:</strong> The reading of <strong>21.57</strong> is oversold. That can raise the chance of a corrective bounce or of short covering, but in a strong downtrend RSI can stay low for a while. It is not a buy signal on its own.</li><li><strong>Bollinger Bands:</strong> The lower band is <strong>3,637.92</strong> and the upper band is <strong>4,246.39</strong>. A <strong>GC=F</strong> close below the lower band shows selling pressure and sizable volatility. The gap can fit a short-term snapback, but a durable rebound still needs price confirmation.</li><li><strong>ATR:</strong> A reading of <strong>101.15</strong> says recent daily range matters for risk. Stops and size should match that volatility. A very tight stop can be taken out by ordinary noise.</li></ul>
+<h4>Trading scenarios</h4>
+<p><strong>Base case: cautious, with a downward lean.</strong> While price is under the 10-day EMA and the 50- and 200-day averages, the trend evidence still favors sellers. If trading trend continuation, do not chase the drop immediately after one high-volume session. A break of the 20 November low (<strong>3,502.90</strong>), or a failed rebound that turns back under the lower band, can be a condition to examine. Neither guarantees further decline.</p>
+<p><strong>Rebound case: only with confirmation.</strong> Oversold RSI and a close under the lower band raise the chance of a corrective bounce. A move back above the lower band (<strong>3,637.92</strong>) that holds would be the first sign of short-term improvement. After that, the 10-day EMA (<strong>3,805.41</strong>) is a more important filter for a change in momentum. A brief pierce of these levels is not confirmation. The quality of the closes and follow-through matter.</p>
+<p><strong>Risk management:</strong> With ATR near 101, set stop distance and size to the volatility, and avoid adding leverage in a sharp drop with a low RSI. If price first breaks the 20 November low and then quickly reclaims it, the break may not hold and needs another look. These data alone are not a sufficient basis for one definitive turning point or one stop that fits every trader.</p>
+<h4>Selected indicators</h4>
+<p>The eight selected indicators put short- and long-term trend, momentum, oversold pressure, and volatility side by side. The two Bollinger Bands are counted separately:</p>
+<ol><li><strong>close_10_ema</strong> — short-term reaction and a filter for a momentum change.</li><li><strong>close_50_sma</strong> — medium-term trend.</li><li><strong>close_200_sma</strong> — long-term trend filter.</li><li><strong>macd</strong> — direction and strength of momentum.</li><li><strong>rsi</strong> — intense selling pressure, with the limit that oversold readings can persist in a strong trend.</li><li><strong>atr</strong> — size and risk scaled to current volatility.</li><li><strong>boll_ub</strong> — upper-band reference and the volatility frame.</li><li><strong>boll_lb</strong> — where price sits versus the lower band, and unusual selling pressure.</li></ol>
+<p><strong>Rating</strong>: Bearish</p>
+<p>FINAL TRANSACTION PROPOSAL: Avoid fresh longs; consider shorts only after confirmation, with ATR-adjusted risk.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Theme</th><th style="text-align:start">Evidence through 20 November</th><th style="text-align:start">Cautious reading</th></tr></thead><tbody><tr><td style="text-align:start">Trend</td><td style="text-align:start">Price below the 10-day EMA, 50-day SMA, and 200-day SMA</td><td style="text-align:start">Downward bias; averages are trend filters, not hard resistance</td></tr><tr><td style="text-align:start">Momentum</td><td style="text-align:start">MACD, signal, and histogram are negative</td><td style="text-align:start">Momentum still favors sellers</td></tr><tr><td style="text-align:start">Selling pressure</td><td style="text-align:start">RSI at 21.57 and price under the lower band</td><td style="text-align:start">A corrective bounce is possible, but buying without confirmation is risky</td></tr><tr><td style="text-align:start">Latest session</td><td style="text-align:start">Close 3,515.40; low 3,502.90; volume 323,896</td><td style="text-align:start">High-volume drop; wait for price behavior to confirm a break or a rebound</td></tr><tr><td style="text-align:start">Volatility and risk</td><td style="text-align:start">ATR at 101.15</td><td style="text-align:start">Match size and the stop to volatility</td></tr><tr><td style="text-align:start">Short-term improvement</td><td style="text-align:start">Reclaim of the lower band at 3,637.92, then a look at the 10-day EMA at 3,805.41</td><td style="text-align:start">Holding and follow-through are required; a brief cross is not enough</td></tr></tbody></table></div></section><section class="section" id="news"><h2>News and macro</h2><h3>Weekly market and macro report for GC=F</h3>
+<p><strong>Window reviewed:</strong> 15–22 November 2026 <strong>Instrument:</strong> December 2026 COMEX gold, ticker GC=F</p>
+<h4>Executive summary</h4>
+<p>The week's news backdrop for GC=F was negative in the near term. Reports describe a sharp drop in gold and one of its worst weeks since March. Expectations of higher interest rates, concern about sticky inflation, and liquidity pressure in markets have weakened investment demand for gold. The data on hand fit that story: the effective federal funds rate rose in the monthly series through October, and the US 10-year yield was 5.04% at the latest observation.</p>
+<p>Near-term risk for GC=F still leans down, but selling after a very weak week can produce volatility and corrective bounces. The available data do not support chasing price or taking a large position without chart confirmation. Central-bank buying and the longer-term Goldman Sachs view can support GC=F on a longer horizon, but they do not by themselves mark the end of the current pressure.</p>
+<h4>Gold and GC=F news</h4>
+<ul><li>Weekly reports cite a <strong>drop of close to 9% in gold</strong> and a price near a 15-month low. The week is described as the worst since March. The drivers mentioned are higher rate expectations and asset sales to raise cash during the technology-stock decline.</li><li>A UBS report raises the possibility that pressure on gold lasts into the first quarter of 2027. The argument is a stronger labor market and higher-than-expected inflation, followed by the chance of further rate increases. That is one institution's scenario, not a guaranteed path for GC=F.</li><li>Goldman Sachs, by contrast, stresses central-bank buying as support for gold and reports a target of $4,650 an ounce by the end of 2027. That estimate has a long horizon and should not be treated as a short-term target for GC=F.</li><li>Some items retrieved for the GC=F ticker were not directly about the gold futures price, including general investing pieces and mining-company news. Those are not valid evidence for the short-term direction of GC=F.</li></ul>
+<h4>Macro data and what they imply for GC=F</h4>
+<ul><li><strong>US 10-year Treasury yield:</strong> The latest observation is 5.04% on 19 November. That is below 5.15% on 13 November, but still a high level. Higher yields usually raise the opportunity cost of holding a non-yielding asset such as gold and can be a headwind for GC=F.</li><li><strong>Effective federal funds rate:</strong> The monthly series rose from 3.63% in August to 3.88% in October. That path fits tighter monetary policy and counts as a near-term negative for GC=F.</li><li><strong>CPI index:</strong> The consumer price index rose from 332.813 in July to 337.476 in October, about 1.4% over three months. That comparison is a change in the index, not an official annual or monthly inflation rate. Continued growth in the index does not fit a rapid easing of inflation concerns and can keep rate expectations heavy for GC=F.</li><li><strong>Unemployment:</strong> The unemployment rate was reported at 4.1% in October, unchanged from July, after 4.2% in September. On its own this is not a clear sign of severe labor-market weakness, so it gives only limited support to hopes of rate cuts and a rise in GC=F.</li></ul>
+<h4>Market expectations for the Federal Reserve</h4>
+<p>In the prediction market reviewed, the probability of a 25-basis-point rate increase after the December 2026 meeting was about <strong>90%</strong>. The probability of unchanged rates was 7%, and the probability of a 25-basis-point cut was 0.55%. Volume in that market is meaningful, but prediction-market odds are not a certainty and not an official Federal Reserve forecast. If economic data or policymakers' comments reinforce that expectation, it can add further downward pressure on GC=F. Any retreat from it would raise the chance of a corrective rebound.</p>
+<p>A search of prediction markets for geopolitical events linked to gold found no matching market worth reporting. No specific probability of a geopolitical shock for GC=F can be taken from that source.</p>
+<h4>Scenarios and trading considerations</h4>
+<ul><li><strong>Near-term base case for GC=F — negative and volatile:</strong> The dominant expectation of a rate increase, plus the report of a sharp weekly drop, keeps the risk balance toward the downside. High bond yields may also block a durable recovery.</li><li><strong>Alternative bullish case for GC=F:</strong> Lower hike expectations, a drop in yields, or a return of hedging demand could produce a corrective bounce. Structural support from central-bank buying belongs more to the medium and long term.</li><li><strong>How to act:</strong> Without a live price and confirmed chart levels, a numeric entry or stop for GC=F is not reliable. Do not chase a sharp drop or add to a short without a plan. Traders with a bearish view should wait for confirmed continued weakness in GC=F and define risk in advance. A long needs a sign that rate pressure is easing, or a clear price recovery.</li><li><strong>Event risk:</strong> The Federal Reserve decision on 9 December is, on the prediction market, an important upcoming driver for GC=F. A repricing of rate expectations, inflation and employment data, and moves in bond yields can reverse the price quickly.</li></ul>
+<p><strong>Rating</strong>: Bearish</p>
+<p>FINAL TRANSACTION PROPOSAL: Avoid chasing GC=F after the sharp weekly drop; maintain a cautious, tactically bearish bias and wait for price confirmation before entering or adding to a short position.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Theme</th><th style="text-align:start">Key evidence</th><th style="text-align:start">Likely effect on GC=F</th><th style="text-align:start">Trading reading</th></tr></thead><tbody><tr><td style="text-align:start">Weekly gold move</td><td style="text-align:start">Drop near 9%; a reported 15-month low</td><td style="text-align:start">Negative, with room for a corrective bounce</td><td style="text-align:start">Do not chase price</td></tr><tr><td style="text-align:start">Rates and market odds</td><td style="text-align:start">About 90% for a 25 bp December hike</td><td style="text-align:start">Near-term downward pressure</td><td style="text-align:start">Watch the price reaction to data and the Fed decision</td></tr><tr><td style="text-align:start">10-year yield</td><td style="text-align:start">5.04% at the latest observation</td><td style="text-align:start">A headwind for a non-yielding asset</td><td style="text-align:start">The path of yields matters for GC=F</td></tr><tr><td style="text-align:start">Inflation and jobs</td><td style="text-align:start">Three-month CPI index +1.4%; unemployment 4.1% in October</td><td style="text-align:start">Does not confirm fading rate concerns</td><td style="text-align:start">Fill these figures out with other official inflation measures</td></tr><tr><td style="text-align:start">Longer-term supports</td><td style="text-align:start">Central-bank buying; Goldman's long-term estimate</td><td style="text-align:start">Potentially positive on a longer horizon</td><td style="text-align:start">Do not confuse this with a short-term buy signal for GC=F</td></tr><tr><td style="text-align:start">Event risk</td><td style="text-align:start">Fed meeting on 9 December</td><td style="text-align:start">Scope for volatility and a fast change in expectations</td><td style="text-align:start">Keep size and risk limited in GC=F</td></tr></tbody></table></div></section><section class="section" id="sentiment"><h2>Sentiment</h2><p><strong>Overall Sentiment:</strong> <strong>Mixed</strong> (Score: 4.9/10) <strong>Confidence:</strong> Low</p>
+<h4>Scope and identity</h4>
+<p>This report covers GC=F, the Gold Dec 26 contract on CMX, over 15–22 November 2026. The assessment uses only the data provided. Price, return performance, market positioning, and a supplementary event calendar are not available.</p>
+<h4>1) News: specific and directional evidence</h4>
+<p>Among the items provided, the direct and negative catalyst for gold stands out. A Stocktwits report republished in the news list says a cash grab, or liquidity pressure, pulled gold, silver, and Bitcoin lower, and that the CME FedWatch tool showed an 88.6% chance of a rate increase at the December meeting. That figure is quoted as a claim of the same article, not as a number that can be verified independently here. An Investing.com item citing UBS also sees a headwind for gold into the first quarter of 2027: stronger US labor data and higher-than-expected inflation have reinforced expectations of further Federal Reserve tightening. Higher rates, and a potential cash yield, are a negative risk for a non-yielding asset such as gold.</p>
+<p>On the positive side, Goldman Sachs, according to Investing.com, prefers gold to silver, treats central-bank demand as price support, and puts forward a target of $4,650 an ounce by the end of 2027. That is a long-term forecast and not necessarily a sign of GC=F's short-term direction. News about gold-mining shares points to interest in low-cost producers during equity turmoil, but sentiment toward mining equities should not be equated with a definitive direction for the gold contract. Resource increases or exploration results at Renforth Resources and Arizona Gold &amp; Silver are company-specific and do not show a direct effect on the GC=F price.</p>
+<p>A large share of the other headlines concern equities, ETFs, national economies, or personal finance and carry no reliable direct signal for gold. The news is therefore clearly two-sided: rate and liquidity pressure against central-bank demand and Goldman's constructive long-term view.</p>
+<h4>2) Social media and data limits</h4>
+<p>StockTwits data are unavailable because of an HTTP error, so there is no message count, bullish/bearish tag ratio, or sample post with which to gauge retail sentiment. Reddit is also unavailable: fetches failed for r/wallstreetbets, r/stocks, and r/investing. That should not be read as an absence of discussion or as a neutral community. Missing both social sources blocks any test of whether news diverges from retail traders and lowers overall confidence.</p>
+<h4>3) Alignments and divergences</h4>
+<p>Inside the news flow itself, the shorter-horizon warning of higher rates and a weaker gold price conflicts with the longer-term outlook supported by central-bank demand. The conflict says more about different horizons and drivers than about one directional consensus: rates and liquidity can press in the near term, while Goldman treats central-bank buying as long-term support. Because both social sources are missing, alignment or divergence between institutions and retail investors cannot be assessed.</p>
+<h4>4) Dominant narratives, catalysts, and risks</h4>
+<p>The central narrative is the tension between real rates and Federal Reserve policy expectations on one side and official central-bank demand on the other. The negative catalysts cited are higher-than-expected inflation, a stronger labor market, the chance of a December hike, and tighter liquidity. Those can reduce gold's relative appeal. The supports cited are central-bank demand and Goldman's analytical preference for gold over silver. Horizon matters: the UBS warning runs to the first quarter of 2027, while the Goldman target is for the end of 2027. Analytical risks include reliance on quoted forecasts, the lack of price data and a positioning read, and the complete absence of social data. This report summarizes market sentiment. It is not a price forecast or a trade recommendation.</p>
+<h4>5) Signal summary</h4>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Signal</th><th style="text-align:start">Direction</th><th style="text-align:start">Source</th><th style="text-align:start">Evidence provided</th></tr></thead><tbody><tr><td style="text-align:start">Hike expectations and liquidity pressure</td><td style="text-align:start">Bearish</td><td style="text-align:start">Republished Stocktwits item</td><td style="text-align:start">An 88.6% chance of a December hike, cited from FedWatch; the article's account of gold, silver, and Bitcoin falling together</td></tr><tr><td style="text-align:start">Near-term gold outlook</td><td style="text-align:start">Bearish</td><td style="text-align:start">UBS / Investing.com</td><td style="text-align:start">Possible weakness into Q1 2027, backed by strong labor data and higher-than-expected inflation</td></tr><tr><td style="text-align:start">Central-bank demand and the long-term view</td><td style="text-align:start">Bullish</td><td style="text-align:start">Goldman Sachs / Investing.com</td><td style="text-align:start">A preference for gold over silver and a $4,650 an ounce target by the end of 2027</td></tr><tr><td style="text-align:start">Mining shares and interest in tangible assets</td><td style="text-align:start">Mildly supportive, indirect</td><td style="text-align:start">Simply Wall St. and mining-company news</td><td style="text-align:start">Attention to low-cost producers during equity turmoil; the evidence is about shares and companies, not a direct read of GC=F</td></tr><tr><td style="text-align:start">Retail-trader sentiment</td><td style="text-align:start">Unknown</td><td style="text-align:start">StockTwits</td><td style="text-align:start">Fetch failed; no message count or ratio</td></tr><tr><td style="text-align:start">Forum discussion</td><td style="text-align:start">Unknown</td><td style="text-align:start">Reddit</td><td style="text-align:start">Fetch failed for all three communities; a lack of access, not evidence that discussion was absent</td></tr></tbody></table></div></section><section class="section" id="fundamentals"><h2>Fundamentals</h2><h3>Fundamental report and available data for GC=F</h3>
+<p><strong>Assessment date: 22 November 2026</strong></p>
+<h3>Instrument identity and scope</h3>
+<p>In the reference data for this report, GC=F is the December 2026 gold futures contract on the New York commodity exchange (CMX). GC=F is a commodity contract, not a company share. Company financial statements, an operating balance sheet, and corporate insider transactions do not apply to it in the usual way.</p>
+<p>The retrieved data are limited. The broad report supplied only a few price statistics, and no usable balance-sheet, cash-flow, or income-statement data were available. There is also no supplied series for price changes or specific news over the <strong>past week</strong>, so this note cannot conclude anything about that week's events or about GC=F's weekly performance.</p>
+<h3>Reported price statistics</h3>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Statistic</th><th style="text-align:end">Value</th></tr></thead><tbody><tr><td style="text-align:start">52-week high</td><td style="text-align:end">$5,586.2</td></tr><tr><td style="text-align:start">52-week low</td><td style="text-align:end">$3,502.9</td></tr><tr><td style="text-align:start">50-day moving average</td><td style="text-align:end">$4,110.862</td></tr><tr><td style="text-align:start">200-day moving average</td><td style="text-align:end">$4,430.9893</td></tr></tbody></table></div>
+<p>The 50-day average is about <strong>$320.13</strong> below the 200-day average. The shorter average is roughly <strong>7.2% lower</strong> than the longer one. That alignment fits relative weakness in the medium-term trend, but it is not a definitive sell signal by itself. The current price, the path of the averages, and the exact calculation dates are not in the output, so the contract's position versus these averages, and the timing of any cross, cannot be confirmed.</p>
+<p>The reported 52-week range of GC=F is <strong>$2,083.3</strong>. Without a current price and dated observations, it is not possible to say where GC=F sits in that range or how far it is from the high and the low.</p>
+<h3>Fundamental information and financial statements</h3>
+<ul><li><strong>Balance sheet:</strong> No usable data for GC=F were retrieved.</li><li><strong>Cash flow:</strong> No usable data for GC=F were retrieved.</li><li><strong>Income statement:</strong> No usable data for GC=F were retrieved.</li><li><strong>Broad company information:</strong> The tool returned only the price statistics above. Nothing was reported on revenue, profit, debt, valuation, or the financial condition of a company.</li><li><strong>Insider transactions:</strong> No insider transactions were recorded for GC=F. Given the commodity nature of the contract, this is not a useful fundamental indicator, and "no report" should not be read as "no trades anywhere in the market."</li></ul>
+<p>Company-style fundamental analysis of GC=F is therefore not possible from these data. Company statement figures should not be estimated or assigned to a futures contract.</p>
+<h3>Practical reading for traders</h3>
+<ol><li><strong>A cautious technical sign:</strong> The 50-day average is below the 200-day average. That is worth noting as relative medium-term trend weakness, but without a current price and a history of how the averages have moved it is not enough to set an entry or an exit.</li><li><strong>A short-term trade needs more data:</strong> Before a decision on GC=F, check a live or settlement price, last week's performance, volume and open interest, and the expiry calendar. None of that is in the current output.</li><li><strong>Include expiry risk:</strong> GC=F is the December 2026 future. Rolling into the next expiry, the spread between contracts, and liquidity near expiry can all affect the trade.</li><li><strong>Track gold's own fundamental drivers separately:</strong> Real rates, the dollar, rate expectations, and central-bank demand are relevant to gold. This report supplies no fresh data on them, or on their effect on GC=F over the past week. Treat them as a separate check, not as findings of the data in hand.</li><li><strong>Executive close:</strong> The available evidence shows only a cautious moving-average alignment. Because there is no current price and no weekly data, this information alone is not enough to propose an entry, a stop, or a price target for GC=F.</li></ol>
+<p><strong>Rating</strong>: Neutral</p>
+<p>FINAL TRANSACTION PROPOSAL: NO TRADE — wait for current price and weekly market data</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Topic</th><th style="text-align:start">Data or result for GC=F</th><th style="text-align:start">Trading message</th></tr></thead><tbody><tr><td style="text-align:start">Identity</td><td style="text-align:start">December 2026 gold future, CMX</td><td style="text-align:start">A commodity instrument, not a company with financial statements</td></tr><tr><td style="text-align:start">52-week high</td><td style="text-align:start">$5,586.2</td><td style="text-align:start">No current price with which to measure distance from the high</td></tr><tr><td style="text-align:start">52-week low</td><td style="text-align:start">$3,502.9</td><td style="text-align:start">No current price with which to measure distance from the low</td></tr><tr><td style="text-align:start">50-day average</td><td style="text-align:start">$4,110.862</td><td style="text-align:start">Below the 200-day average</td></tr><tr><td style="text-align:start">200-day average</td><td style="text-align:start">$4,430.9893</td><td style="text-align:start">About $320.13, or 7.2%, above the 50-day average</td></tr><tr><td style="text-align:start">Balance sheet, cash flow, income</td><td style="text-align:start">No usable data</td><td style="text-align:start">Company fundamental analysis is not possible</td></tr><tr><td style="text-align:start">Insider transactions</td><td style="text-align:start">No report available</td><td style="text-align:start">Not a suitable indicator for a futures contract</td></tr><tr><td style="text-align:start">Past-week data</td><td style="text-align:start">Not in the output</td><td style="text-align:start">Not enough for a weekly conclusion or for timing a trade</td></tr><tr><td style="text-align:start">Overall</td><td style="text-align:start">Cautious / neutral given limited data</td><td style="text-align:start">Check the current price and market data before acting</td></tr></tbody></table></div></section>
+  <footer>
+    <p>Desk rendering of the daily research notes. Figures and levels follow the source reports.</p>
+    <p>This page is an English translation of the Persian source report for this date.</p>
+  </footer>
+</div>
+</body>
+</html>

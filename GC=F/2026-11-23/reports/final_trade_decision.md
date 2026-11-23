@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: Underweight GC=F: trim any oversized long toward a risk-limited allocation, using roughly half a standard risk allocation only as a reference, not a universal target; do not initiate a short. If exposure already fits a defined loss budget, no further sale is required; if uninvested, defer a new long. Size for futures leverage, margin, gaps and ATR near 102; reassess over the coming sessions as price and momentum confirm or invalidate the rebound, after verifying current prices and contract expiry/roll details.
+
+**Investment Thesis**: The partial-reduction case wins over maintaining a full allocation: at the supplied 23 November close of 3,623.70, GC=F was below its 10-day EMA (3,772.37), 50-day SMA (4,096.30) and 200-day SMA (4,437.90), with negative MACD. The 32.84-point cushion above the 3,590.86 lower Bollinger Band is only about 0.32 of ATR near 102; reported elevated yields add a potential headwind. An approximately 108-point rebound and RSI of 31.1, alongside possible safe-haven demand and easing rate expectations, argue against an outright exit or fresh short, but do not confirm a bottom; macro reports and sentiment are mixed. A close below roughly 3,590.86 with downside follow-through would favor reducing further; a sustained reclaim of roughly 3,772.37 with improving momentum would favor reconsidering exposure. These snapshot levels are neither live prices nor guaranteed stops, and no subsequent price action or portfolio holdings were provided.
+
+**Price Target**: not provided
+
+**Time Horizon**: Coming sessions to weeks; reassess on price confirmation

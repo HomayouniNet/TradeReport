@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: If GC=F exposure is above the portfolio limit, reduce it gradually toward about half of a usual allocation. If exposure is already smaller, do not buy merely to reach that target. Consider a fresh sale or a new short only after checking an updated price and confirming that price is holding below the 3,502.90 reference low. Size the trade from the cash loss to the exit, contract value, and total portfolio risk, not with high leverage. The horizon is short term and should be reviewed again before the December 2026 expiry.
+
+**Investment Thesis**: On the 20 November data, GC=F closed at 3,515.40, near the 3,502.90 low and below the lower band at 3,637.92 and the 10-day EMA at 3,805.41. Negative MACD and volume of 323,896 — higher than the other sessions in the supplied table — are stronger evidence for cutting exposure than for keeping a full weight. The reported 10-year yield of 5.04% and the cited odds of a December rate hike add near-term pressure, but they are not guarantees. On the other side, an RSI of 21.57, ATR around 101.15, and a close under the lower band raise the risk of a squeeze and a failed breakdown, so a gradual reduction is a stronger case than a full exit or an immediate short. No live price is available, and these levels should not be treated as standing orders. A quick reclaim of 3,502.90 after a break would weaken a fresh short. Holding above 3,637.92 would call for a review of the underweight, and holding above 3,805.41 would call for a review of adding exposure. The 3,604.05 reference is historical only and must be reset to the real entry and that day's range. Liquidity, margin, and the cost of rolling GC=F should also be checked.
+
+**Price Target**: not provided
+
+**Time Horizon**: Short term, until the next review before the December 2026 expiry
