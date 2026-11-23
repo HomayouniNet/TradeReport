@@ -11,6 +11,8 @@ flock -n 9 || { echo "already running"; exit 0; }
 mkdir -p "$(dirname "$LOG")"
 exec >>"$LOG" 2>&1
 echo "===== $(date -Is) ====="
+cd "$REPO"
+git pull --rebase origin main || exit 1
 
 set -a
 # کلیدهای تحلیل TradingAgents؛ زبان را پایین‌تر انگلیسی می‌کنیم
