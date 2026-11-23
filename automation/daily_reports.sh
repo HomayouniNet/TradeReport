@@ -60,16 +60,30 @@ while IFS= read -r ticker || [ -n "$ticker" ]; do
     continue
   fi
 
-  src="$RESULTS/$ticker/$DATE/reports"
-  dst="$REPO/$ticker/$DATE/reports"
-  if ! compgen -G "$src/*.md" > /dev/null; then
-    echo "FAILED no markdown in $src"
-    fail=1
-    continue
-  fi
-  mkdir -p "$dst"
-  cp -a "$src"/*.md "$dst"/
-
+stamp="${DATE//-/}"
+shopt -s nullglob
+candidates=("$RESULTS/reports/${ticker}_${stamp}_"*)
+shopt -u nullglob
+src=""
+if [ ${#candidates[@]} -gt 0 ]; then
+  src="${candidates[-1]}"
+fi
+dst="$REPO/$ticker/$DATE/reports"
+mkdir -p "$dst"
+if [ -n "$src" ]; then
+  [ -f "$src/1_analysts/market.md" ] && cp -a "$src/1_analysts/market.md" "$dst/market_report.md"
+  [ -f "$src/1_analysts/sentiment.md" ] && cp -a "$src/1_analysts/sentiment.md" "$dst/sentiment_report.md"
+  [ -f "$src/1_analysts/news.md" ] && cp -a "$src/1_analysts/news.md" "$dst/news_report.md"
+  [ -f "$src/1_analysts/fundamentals.md" ] && cp -a "$src/1_analysts/fundamentals.md" "$dst/fundamentals_report.md"
+  [ -f "$src/2_research/manager.md" ] && cp -a "$src/2_research/manager.md" "$dst/investment_plan.md"
+  [ -f "$src/3_trading/trader.md" ] && cp -a "$src/3_trading/trader.md" "$dst/trader_investment_plan.md"
+  [ -f "$src/5_portfolio/decision.md" ] && cp -a "$src/5_portfolio/decision.md" "$dst/final_trade_decision.md"
+fi
+if ! compgen -G "$dst/*.md" > /dev/null; then
+  echo "FAILED no markdown for $ticker $DATE"
+  fail=1
+  continue
+fi
   if ! "$REPO/.venv/bin/python" "$REPO/automation/translate_fa.py" "$ticker" "$DATE"; then
     echo "FAILED translation $ticker"
     fail=1
