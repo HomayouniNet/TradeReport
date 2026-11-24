@@ -18,7 +18,7 @@ SECTIONS = [
     "news_report.md",
     "sentiment_report.md",
     "fundamentals_report.md",
-]
+] 
 
 SYSTEM = """You translate financial research markdown from English into formal Persian.
 Rules:
