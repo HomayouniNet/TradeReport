@@ -1,11 +1,11 @@
 **Action**: Sell
 
-**Reasoning**: The research plan is Underweight with moderate conviction, favoring a reduction toward 50% of standard allocation rather than a full exit or new short. GC=F remains below its 10-day EMA, 50-day SMA, and 200-day SMA, with negative MACD; the latest rebound from 3515.40 is not yet a confirmed reversal. The plan identifies a daily close below 3515.40 as the exit level for any remaining tactical long, while 3599.08 is only a review trigger, not confirmed support.
+**Reasoning**: GC=F remains in a pronounced downtrend: the 3,635.30 close is below the 10-day EMA at 3,774.48 and 50-day SMA at 4,096.53, while MACD remains negative and below its signal. The near-oversold RSI and rebound from 3,515.40 argue against chasing an outright short, but the low-volume bounce does not overturn the Underweight plan; reduce excess exposure in staged, liquid orders rather than initiate a short. The supplied prices are dated, so confirm current GC=F prices and contract details before execution.
 
 **Entry Price**: not provided
 
-**Stop Loss**: 3515.4
+**Stop Loss**: not provided
 
-**Position Sizing**: Target 50% of your standard GC=F allocation on a consistent notional/risk basis; trim any excess, retain some existing exposure, and do not initiate a speculative long or a new short. Size to your risk budget, accounting for ATR 106.47 and slippage.
+**Position Sizing**: Target 50% of standard gold-futures allocation by risk-adjusted notional exposure; trim only excess, and do not add if already below target.
 
 FINAL TRANSACTION PROPOSAL: **SELL**
