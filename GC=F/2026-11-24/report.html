@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GC=F · Gold futures — Tuesday, 24 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --paper: #f4f0e6;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #6d655c;
+  --line: #e3d9c8;
+  --accent: #8d5a16;
+  --accent-soft: #f3e4cc;
+  --warn: #8d2f24;
+  --warn-soft: #f8e4df;
+  --good: #1d6b45;
+  --good-soft: #e3f2e9;
+  --mixed: #3e5c4e;
+  --mixed-soft: #e4eee8;
+  --shadow: 0 16px 40px rgba(58, 42, 18, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(141, 90, 22, 0.08), transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+body.lang-fa {
+  font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+body.kind-btc {
+  --accent: #c2410c;
+  --accent-soft: #fde6d8;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
+    var(--paper);
+}
+a { color: var(--accent); }
+.wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 8px;
+}
+.brand {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+.lang { display: flex; gap: 6px; }
+.lang a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang a.on { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+.hero { padding: 12px 0 8px; }
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+body.lang-fa h1, body.lang-fa h2, body.lang-fa h3, body.lang-fa h4 {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
+.sub { margin: 8px 0 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.good { background: var(--good-soft); color: var(--good); }
+.badge.mixed { background: var(--mixed-soft); color: var(--mixed); }
+.badge.neutral { background: #eeeae3; color: #4d463f; }
+.badge small { font-weight: 500; opacity: 0.8; }
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.section { scroll-margin-top: 72px; }
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 22px 22px 8px;
+  margin: 0 0 16px;
+}
+.section h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; }
+.section h3 { margin: 1.3em 0 0.4em; font-size: 22px; line-height: 1.35; }
+.section h4 { margin: 1.1em 0 0.3em; font-size: 18px; }
+.section p { margin: 0.7em 0; }
+.section ul, .section ol { margin: 0.6em 0 0.8em; padding-inline-start: 1.3em; }
+.section li { margin: 0.28em 0; }
+.section hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
+blockquote {
+  margin: 1em 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+body.lang-fa blockquote { border-radius: 12px 0 0 12px; }
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86em;
+  background: #f3ecdf;
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+}
+.formula {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f7f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.table-wrap { overflow-x: auto; margin: 0.8em 0 1em; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.55; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 650; }
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0 36px;
+}
+@media print {
+  body { background: white; }
+  .toc, .lang { display: none; }
+  .section { box-shadow: none; break-inside: avoid; }
+}
+
+</style>
+</head>
+<body class="lang-en kind-gold">
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">Trade Desk</div>
+    <nav class="lang">
+      <a class="on" href="report.html">English</a>
+      <a class="" href="report-fa.html">فارسی</a>
+    </nav>
+  </div>
+  <header class="hero">
+    <p class="kicker">GC=F · Gold Dec 26, COMEX</p>
+    <h1>Gold futures</h1>
+    <p class="sub">Tuesday, 24 November 2026</p>
+    <div class="badges"><span class="badge warn">Underweight · کم‌وزن <small>Rating</small></span><span class="badge warn">Sell · فروش <small>Trader action</small></span><span class="badge mixed">Mixed · مختلط 4.9/10 <small>Sentiment</small></span></div>
+  </header>
+  <nav class="toc"><a href="#final">Final decision</a><a href="#trader">Trader plan</a><a href="#plan">Investment plan</a><a href="#market">Market</a><a href="#news">News and macro</a><a href="#sentiment">Sentiment</a><a href="#fundamentals">Fundamentals</a></nav>
+  <section class="section" id="final"><h2>Final decision</h2><p><strong>Rating</strong>: Underweight</p>
+<p><strong>Executive Summary</strong>: Reduce excessive GC=F (Gold Dec 26, CMX) long exposure through staged limit orders after verifying live prices, contract identity and liquidity; do not initiate a short or average down. Set remaining exposure by portfolio stress-loss and margin capacity, treating approximately half a standard risk-adjusted allocation only as a reference, not a mandatory target or a reason to add. Over the next several reliable trading sessions, monitor the supplied 3,502.90 downside threshold and then-current 10-day EMA (supplied reference 3,736.99), neither of which is a validated execution price or protective stop.</p>
+<p><strong>Investment Thesis</strong>: The bearish case for GC=F wins, but supports Underweight rather than a complete exit. The analysts' repeated SELL language describes partial long reductions, which fits Underweight on the required rating scale. The supplied close of 3,555.10 is below the 10-day EMA of 3,736.99, 50-day SMA of 4,081.30 and 200-day SMA of 4,430.42; MACD is negative and below its signal. As the neutral analyst emphasizes, these are correlated price-derived observations, not independent catalysts, but they consistently indicate that a reversal remains unconfirmed. This favors reduced directional exposure rather than waiting with an excessive position for recovery.</p>
+<p>The conservative and neutral analysts make the stronger sizing argument: unknown holdings, loss limits and margin capacity cannot justify an automatic 50% allocation. Assess actual exposure and stress losses now, promptly reduce any excess, and retain only exposure consistent with documented risk limits and any verified hedge needs. Do not sell solely to meet a generic percentage if exposure is already appropriately reduced; do not add merely to reach it. Futures should be sized by notional and volatility risk, not margin deposited, with margin liquidity and an expiry/delivery exit or roll plan.</p>
+<p>Rebound risk limits conviction in a full exit: RSI is 29.82, price is near the lower Bollinger Band, and 10-year yields retreated from 5.15% to 4.92%. These are counterweights, not evidence of durable support. Reported dollar strength and rate concerns favor caution, but the 98% no-cuts probability is an expectation, sentiment is low-confidence, and real yields, verified positioning and direct GC=F demand evidence are missing. The contradictory yield comparison with 26 October is excluded.</p>
+<p>Execution requires verification: reported volume of 421 versus 336,479, the snapshot/CSV close discrepancy and differing moving averages undermine precise levels. With ATR of 105.78, the 3,502.90 reference is only 52.20 points below the supplied close and is not a defensible tight stop. After validating contract-specific data, two normal-volume closes below that threshold would support further reduction; two closes above the then-current 10-day EMA, with improving price structure and MACD, would support reconsidering exposure. Easing yields or a weaker dollar would strengthen that recovery case. Current tradable quotes, contract specifications and portfolio risk limits are missing, so exact contract count, stop placement and a price target are not justified.</p>
+<p><strong>Price Target</strong>: not provided</p>
+<p><strong>Time Horizon</strong>: Near term; reassess over the next several reliable trading sessions</p></section><section class="section" id="trader"><h2>Trader plan</h2><p><strong>Action</strong>: Sell</p>
+<p><strong>Reasoning</strong>: The research plan recommends Underweight: GC=F remains below its declining 10-day EMA, 50-day SMA, and 200-day SMA, while MACD remains negative and below its signal, so there is no confirmed reversal. Oversold RSI and proximity to the lower Bollinger Band raise rebound risk, and the anomalous latest volume/range makes precise execution levels unreliable; therefore trim toward a reduced allocation rather than initiate a short or average down.</p>
+<p><strong>Entry Price</strong>: not provided</p>
+<p><strong>Stop Loss</strong>: not provided</p>
+<p><strong>Position Sizing</strong>: Target approximately 50% of a standard risk-adjusted long allocation. If above target, trim toward it with limit orders; if already below target or uninvested, do not add solely to reach target.</p>
+<p>FINAL TRANSACTION PROPOSAL: <strong>SELL</strong></p></section><section class="section" id="plan"><h2>Investment plan</h2><p><strong>Recommendation</strong>: Underweight</p>
+<p><strong>Rationale</strong>: For GC=F (Gold Dec 26, CMX), the bear case wins on observed trend and momentum, rather than on proof that another decline is inevitable. The supplied close of 3,555.10 is below the 10-day EMA of 3,736.99, 50-day SMA of 4,081.30 and 200-day SMA of 4,430.42, with MACD below its signal. These are related technical signals, not independent catalysts, but together they show no confirmed reversal. The bull's strongest counterweights are RSI of 29.82, proximity to the reported 3,502.90 low, and the 10-year yield retreat from 5.15% to 4.92%. They justify retaining limited exposure rather than exiting outright, but do not establish support or favorable expected returns. Reported dollar strength and rate concerns reinforce caution; the 98% no-cuts probability is an expectation, not a policy fact. The debate contradicts itself on whether yields were eight basis points above or below 26 October, so that comparison is excluded. The anomalous latest volume and close discrepancy reduce confidence in precise execution levels. Real yields, verified positioning and direct GC=F demand evidence are missing; tokenized-gold growth does not fill those gaps. The bearish evidence is stronger, but rebound risk and data limitations favor Underweight rather than Sell.</p>
+<p><strong>Strategic Actions</strong>: Target GC=F long exposure at approximately 50% of a standard risk-adjusted allocation, subject to the trader and portfolio manager's actual holdings and hedge needs. If above target, trim toward it in liquid trading using limit orders; if already below target or uninvested, do not mechanically add simply to reach 50%. Do not initiate a short or average down on oversold readings. Before execution, reconcile the reported 421 versus 336,479 volume, snapshot/CSV close discrepancy, and contract-specific prices and indicators; verify GC=F's Gold Dec 26 contract mapping, expiry, multiplier, liquidity and margin requirements without substituting another instrument. Treat 3,502.90 as a monitoring threshold, not proven support or a tight stop: it is only 52.20 points below the supplied close, versus ATR of 105.78. Two normal-volume closes below that level would trigger a further reduction toward 0–25% of standard allocation, with any hedge exception requiring portfolio-manager approval. Reassess rebuilding toward standard exposure only after two normal-volume closes above the then-current 10-day EMA (supplied reference 3,736.99), improving price structure and MACD, preferably supported by easing yields or a weaker dollar. Size futures by notional and volatility risk, not margin posted; maintain margin liquidity and an explicit exit or roll plan before expiry/delivery deadlines. Exact contract count and protective-stop placement require current tradable quotes, portfolio risk limits and contract specifications, which are not supplied.</p></section><section class="section" id="market"><h2>Market</h2><h3>GC=F — trend and indicator assessment</h3>
+<p><strong>Overall bias: strongly bearish, with short-term momentum stretched.</strong> The trend indicators, moving averages, and MACD all point lower. RSI is near the conventional oversold threshold, and price is close to the lower Bollinger Band; those conditions warn against chasing a move indiscriminately, but they do <strong>not</strong> establish that a durable reversal has begun.</p>
+<h4>Data-quality note</h4>
+<p>The downloaded daily CSV lists the 2026-11-24 close as <strong>3554.60</strong>, while the required verified snapshot reports <strong>3555.10</strong>. I use the snapshot value as the source of truth below. That snapshot also reports a very small day range (<strong>3554.60–3562.00</strong>) and volume of <strong>421</strong>, versus <strong>336,479</strong> on 2026-11-23. This unusual combination may indicate an incomplete or anomalous session record, so treat the latest bar as weak evidence of a new trading direction until a normal session confirms it.</p>
+<h4>Trend and momentum</h4>
+<ul><li><strong>The larger trend is decisively down.</strong> On 2026-11-24, GC=F closed at <strong>3555.10</strong>, well below its <strong>10-day EMA of 3736.99</strong>, <strong>50-day SMA of 4081.30</strong>, and <strong>200-day SMA of 4430.42</strong>. All three averages were sloping down in their recent readings, and the ordering—price below the 10-day, below the 50-day, below the 200-day—reinforces the bearish trend rather than suggesting a routine pullback within an uptrend.</li><li><strong>Recent price action shows persistent deterioration.</strong> The verified close was <strong>4114.50 on 2026-11-09</strong>, <strong>3885.30 on 2026-11-12</strong>, and <strong>3515.40 on 2026-11-20</strong>. GC=F then closed at <strong>3651.40 on 2026-11-23</strong> before the verified <strong>3555.10</strong> close on 2026-11-24. That rebound was not sustained in the latest verified close.</li><li><strong>MACD confirms negative momentum.</strong> The verified MACD is <strong>−137.046</strong>, below its signal line at <strong>−100.438</strong>, with a negative histogram of <strong>−36.609</strong>. This is consistent with bearish momentum; a single oversold reading would not, by itself, overturn that signal.</li><li><strong>RSI is near oversold, not a confirmed reversal.</strong> RSI is <strong>29.82</strong>, just below the common 30 threshold. It has been below 30 in several recent readings, including <strong>21.57 on 2026-11-20</strong>. In a strong downtrend, RSI can remain depressed. A recovery in RSI accompanied by improving price structure would be more persuasive than the threshold reading alone.</li></ul>
+<h4>Volatility and price location</h4>
+<ul><li>The verified <strong>Bollinger lower band is 3542.07</strong>, with the middle line at <strong>3896.83</strong> and upper band at <strong>4251.59</strong>. The verified close of <strong>3555.10</strong> is only slightly above the lower band. This places GC=F near the lower end of its recent volatility envelope, but price hugging a lower band can reflect trend persistence as well as potential exhaustion.</li><li><strong>ATR is 105.78</strong>, indicating substantial recent typical daily movement relative to the latest reported session range. The small 2026-11-24 range and volume therefore deserve extra caution: they do not look like a normal confirmation bar against the recent volatility backdrop.</li><li>Moving averages and Bollinger levels are useful <strong>reference points</strong>, not proven support or resistance. The data provided does not establish that GC=F has held or bounced from any of those levels.</li></ul>
+<h4>Indicator selection and practical use</h4>
+<p>The eight selected indicators are <strong>close_10_ema, close_50_sma, close_200_sma, macd, rsi, atr, boll_ub, and boll_lb</strong>. They cover short-, medium-, and long-term trend; momentum and potential exhaustion; and volatility/risk context. The two Bollinger bands are selected as a pair to locate price within the volatility envelope. I have not added separate MACD signal or histogram indicators because the verified snapshot supplies those values alongside MACD; adding them would provide overlapping momentum information.</p>
+<p>For traders, the evidence favors <strong>waiting for confirmation rather than assuming an oversold bounce</strong>. A close back above the 10-day EMA, ideally followed by sustained improvement in MACD and RSI, would be an early sign that downside momentum is easing—not proof of a trend reversal. Conversely, continued weak closes near or below the lower band, with MACD still below its signal, would keep the bearish case intact. Given the reported ATR, position sizing and stops should account for wide normal price movement; avoid treating the latest unusually narrow bar as a reliable guide to risk.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Area</th><th style="text-align:start">Verified evidence</th><th style="text-align:start">Trading implication</th></tr></thead><tbody><tr><td style="text-align:start">Trend</td><td style="text-align:start">Close <strong>3555.10</strong> vs. 10 EMA <strong>3736.99</strong>, 50 SMA <strong>4081.30</strong>, 200 SMA <strong>4430.42</strong></td><td style="text-align:start">Bearish trend alignment; reclaiming averages would be needed to improve the trend picture.</td></tr><tr><td style="text-align:start">Momentum</td><td style="text-align:start">MACD <strong>−137.046</strong>, signal <strong>−100.438</strong>, histogram <strong>−36.609</strong></td><td style="text-align:start">Downside momentum remains dominant; look for improvement before treating a bounce as a trend change.</td></tr><tr><td style="text-align:start">Exhaustion</td><td style="text-align:start">RSI <strong>29.82</strong>; lower Bollinger Band <strong>3542.07</strong></td><td style="text-align:start">Oversold/near-band conditions raise rebound risk, but do not confirm a reversal.</td></tr><tr><td style="text-align:start">Volatility</td><td style="text-align:start">ATR <strong>105.78</strong></td><td style="text-align:start">Allow for large price swings when sizing positions and setting risk limits.</td></tr><tr><td style="text-align:start">Latest-bar caution</td><td style="text-align:start">Snapshot range <strong>3554.60–3562.00</strong>, volume <strong>421</strong>; CSV close differs from snapshot</td><td style="text-align:start">Latest record may be incomplete or anomalous; seek a normal-volume session for confirmation.</td></tr></tbody></table></div></section><section class="section" id="news"><h2>News and macro</h2><h3>GC=F — Weekly macro and news report</h3>
+<p><strong>As of 24 November 2026 | Instrument identity: Gold Dec 26, CMX</strong></p>
+<h3>Executive view</h3>
+<p>The near-term backdrop for <strong>GC=F</strong> looks <strong>mixed, with a modest headwind from rates and the dollar</strong>. Recent coverage says gold futures gave back part of the prior session’s Nvidia-driven rally as attention returned to inflation and Fed-rate expectations. Other reports cite rate-hike worries weighing on precious metals and a dollar at its strongest level since March 2025. Those developments can pressure dollar-priced gold by raising the opportunity cost of holding a non-yielding asset.</p>
+<p>There are countervailing supports: U.S. 10-year Treasury yields have eased from their mid-November high, and the week’s stock-market swings illustrate how quickly risk sentiment can change. For <strong>GC=F</strong>, the key question is whether the recent pullback in yields persists—or whether firm inflation and the market’s rate concerns keep real-rate and dollar pressure in place. The supplied data do not include real yields or a live <strong>GC=F</strong> quote, so they do not establish a price target or technical levels.</p>
+<h3>News and market context</h3>
+<p>The <strong>GC=F</strong> news feed for 17–24 November contained few direct, contract-specific catalysts. Its most relevant items were:</p>
+<ul><li><strong>Gold futures gave back part of the previous session’s gains.</strong> The Wall Street Journal attributed the shift to renewed focus on inflation and the Fed-rate outlook, following a rally associated with Nvidia-driven risk appetite.</li><li><strong>Rate-hike concerns weighed on precious metals.</strong> A 24 November report on silver-market weakness cited rate-hike worries. This is indirect evidence for gold, but points to a broader precious-metals sensitivity to rate expectations.</li><li><strong>The dollar reportedly reached its strongest level since March 2025.</strong> If sustained, a stronger dollar is a potential headwind for <strong>GC=F</strong>.</li><li><strong>Risk appetite was volatile.</strong> Coverage described an Nvidia-led rebound followed by renewed technology selling. Gold’s reaction was not consistently defensive: the reported rally was tied to risk-on sentiment, then partly reversed. That cautions against treating short-term equity moves as a reliable gold signal.</li><li><strong>Structural market development:</strong> JPMorgan, HSBC and StoneX reportedly completed wholesale trades in fractional tokenized gold and used it as collateral. This is a market-infrastructure development, not an immediate directional catalyst for <strong>GC=F</strong>.</li></ul>
+<p>The global-news feed returned mostly unrelated company and entertainment stories rather than useful macro reporting. Accordingly, this assessment relies chiefly on the instrument-specific news feed and the supplied FRED data.</p>
+<h3>Macro data relevant to GC=F</h3>
+<ul><li><strong>Treasury yields:</strong> The 10-year Treasury yield was <strong>4.92% on 23 November</strong>, down <strong>8 basis points</strong> from 5.00% on 26 October. It had risen to <strong>5.15% on 13 November</strong> before retreating. The pullback is a potential support for <strong>GC=F</strong>, but the yield remains elevated and the rebound in yields earlier in the month shows that rate pressure can return quickly.</li><li><strong>Policy rate:</strong> The effective federal funds rate rose from <strong>3.63% in August to 3.88% in October</strong>. These are monthly observations, not a live policy-rate decision; they establish that the recent data available here do not show easing.</li><li><strong>Inflation:</strong> CPI rose from <strong>333.979 in May to 337.476 in October</strong>, a <strong>1.05% increase in the index</strong> over that period. This is not a year-over-year inflation rate. The latest readings show the index rising, but the data supplied do not by themselves establish the pace of annual inflation or the Fed’s likely response.</li><li><strong>Labor market:</strong> The unemployment rate was <strong>4.1% in October</strong>, compared with 4.3% in May. That series does not indicate a clear deterioration in the labor market over this window.</li><li><strong>Yield curve:</strong> The 10-year minus 2-year spread was <strong>+0.28 percentage points on 24 November</strong>, down from +0.47 in late August. The curve remains positive, but has flattened over the reported period.</li></ul>
+<p>Taken together, the available macro data do <strong>not</strong> provide a clear easing-driven tailwind for <strong>GC=F</strong>: policy rates rose through October, CPI’s index advanced, unemployment remained relatively low, and news reports highlighted dollar strength and rate concerns. The recent dip in 10-year yields is a counterweight, though it has not erased the preceding rise.</p>
+<h3>Forward-looking market signal</h3>
+<p>Polymarket showed a <strong>98% implied probability</strong> for “no Fed rate cuts in 2026,” with roughly <strong>$9.86 million</strong> in reported volume and resolution on 1 January 2027. This is a market-implied probability, not a certain forecast; it should also be read cautiously alongside the FRED observation that the effective rate rose through October. The result is consistent with a market narrative that policy easing is unlikely this year, which could weigh on <strong>GC=F</strong> if it sustains higher yields or dollar demand.</p>
+<p>No matching open prediction market was returned for the searched geopolitical conflict/ceasefire topic. That means this tool supplied no usable probability for near-term geopolitical risk; it does <strong>not</strong> mean geopolitical risk is absent.</p>
+<h3>Actionable implications for traders</h3>
+<ul><li><strong>Treat sustained dollar strength and renewed Treasury-yield increases as downside risks for GC=F.</strong> The news flow and the 5.15% 10-year yield peak on 13 November make rate repricing worth monitoring. Confirmation would come from yields and the dollar continuing higher, rather than from headlines alone.</li><li><strong>Watch whether the recent yield retreat holds.</strong> A further decline in yields would reduce one source of pressure on <strong>GC=F</strong>; a reversal toward the recent yield high would weaken that support.</li><li><strong>Do not assume equities’ risk-on moves automatically lift gold.</strong> This week’s coverage links a gold rally to Nvidia-driven optimism, followed by a partial reversal as attention returned to rates. For <strong>GC=F</strong>, check whether the move is accompanied by changes in yields and the dollar.</li><li><strong>Avoid drawing price targets or technical levels from this report.</strong> No current <strong>GC=F</strong> price, volume, positioning, real-yield series, or chart levels were supplied. A trade plan should verify those inputs and define risk before entry.</li><li><strong>Use the Fed-probability signal as context, not a stand-alone trigger.</strong> The 98% market-implied odds are meaningful evidence of current expectations, but they are neither an official Fed forecast nor a substitute for monitoring incoming inflation, employment, policy, and rate-market data.</li></ul>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Key point</th><th style="text-align:start">Evidence available as of 24 Nov 2026</th><th style="text-align:start">Implication for GC=F</th></tr></thead><tbody><tr><td style="text-align:start">Near-term tone</td><td style="text-align:start">Gold futures reportedly gave back part of the prior session’s Nvidia-driven rally as focus returned to inflation and Fed rates</td><td style="text-align:start">Mixed; risk-on support appeared fragile when rates retook focus</td></tr><tr><td style="text-align:start">Dollar</td><td style="text-align:start">News report says the dollar reached its strongest level since March 2025</td><td style="text-align:start">Potential headwind if the move persists</td></tr><tr><td style="text-align:start">10-year yield</td><td style="text-align:start">4.92% on 23 Nov; down 8 bp from 26 Oct, after reaching 5.15% on 13 Nov</td><td style="text-align:start">Recent pullback offers some support, but yields remain a key risk</td></tr><tr><td style="text-align:start">Fed policy</td><td style="text-align:start">Effective fed funds rate rose to 3.88% in October from 3.63% in August</td><td style="text-align:start">No easing signal in the supplied monthly data</td></tr><tr><td style="text-align:start">Inflation and labor</td><td style="text-align:start">CPI index rose 1.05% from May to October; unemployment was 4.1% in October</td><td style="text-align:start">Inflation and labor readings do not establish an imminent easing catalyst</td></tr><tr><td style="text-align:start">Curve and market expectations</td><td style="text-align:start">10y–2y spread +0.28%; Polymarket priced 98% for no 2026 Fed cuts</td><td style="text-align:start">Expectations favor a cautious, rates-sensitive approach</td></tr><tr><td style="text-align:start">Main trading check</td><td style="text-align:start">Monitor live <strong>GC=F</strong> price alongside the dollar and Treasury yields</td><td style="text-align:start">Confirm direction and risk levels before acting; no price target is supported here</td></tr></tbody></table></div></section><section class="section" id="sentiment"><h2>Sentiment</h2><p><strong>Overall Sentiment:</strong> <strong>Mixed</strong> (Score: 4.9/10) <strong>Confidence:</strong> Low</p>
+<h3>Sentiment report for GC=F (Gold Dec 26, CMX)</h3>
+<p><strong>Period:</strong> 2026-11-17 to 2026-11-24</p>
+<h4>1. Source-by-source breakdown</h4>
+<p><strong>News headlines (institutional framing): mixed, with near-term headwinds prominent.</strong> The most directly relevant price-action headline says GC=F futures gave back a chunk of the prior session’s Nvidia-driven gains as attention returned to inflation and the Federal Reserve interest-rate outlook. Another Investing.com headline explicitly says gold is “not acting like a safe haven” and that the evidence for buying is two-sided rather than a signal. These are cautious signals. Macro pressure is reinforced by a report that the U.S. dollar reached its strongest level since March 2025, a potential headwind for dollar-denominated gold, and by silver weakness linked to rate-hike worries. On the other hand, the prior-session Nvidia-linked rally shows gold had recently participated in a risk-on move, and coverage of tokenized gold wholesale trades and a 48% increase in tokenized holdings points to financial-market infrastructure interest, not necessarily immediate futures demand. Other headlines cover gold miners, investor education, or unrelated markets and should not be treated as direct GC=F price evidence. No aggregated count of positive versus negative headlines is supplied, so the news balance is qualitative.</p>
+<p><strong>StockTwits (retail): unavailable.</strong> The feed returned an HTTPError, so there are no message counts, bullish/bearish labels, ratios, or posts to assess. Retail positioning cannot be inferred from this source.</p>
+<p><strong>Reddit (community discussion): unavailable.</strong> Fetching r/wallstreetbets, r/stocks, and r/investing failed. This is not evidence that discussion was absent; there are no posts, counts, votes, or comments available to characterize community sentiment.</p>
+<h4>2. Cross-source divergences and alignments</h4>
+<p>The usable news stream itself contains opposing cues: recent Nvidia-related strength and tokenized-gold activity sit beside gold’s subsequent giveback, the strong-dollar headline, rate-hike concerns, and explicit doubts about gold’s safe-haven behavior. Because StockTwits and Reddit are unavailable, no news-versus-retail or news-versus-community divergence can be tested. The accessible evidence is therefore best described as mixed, with the latest macro and price-action references leaning cautious rather than as a clear directional consensus.</p>
+<h4>3. Dominant narrative themes</h4>
+<ol><li><strong>Rates, inflation, and the dollar:</strong> renewed focus on the Fed rate path and inflation, rate-hike worries in the metals complex, and a notably strong dollar frame near-term downside risk for GC=F.</li><li><strong>Safe-haven status versus risk appetite:</strong> one report questions whether gold is functioning as a safe haven, while the Nvidia-driven rally and broader risk-on framing suggest price action may also respond to shifts in risk appetite.</li><li><strong>Market access and gold-related activity:</strong> tokenized-gold trading and holdings growth are constructive signs of product/infrastructure development, but the supplied headline does not establish a direct impact on GC=F futures demand or prices.</li></ol>
+<h4>4. Catalysts and risks surfaced by the data</h4>
+<p><strong>Potential catalysts:</strong> upcoming market reassessment of inflation and the Fed interest-rate outlook; any continuation or reversal of the recent risk-on move; and continued development of tokenized-gold markets (a structural, longer-horizon theme, with no immediate price effect demonstrated here).</p>
+<p><strong>Risks:</strong> a further rise or persistence in the U.S. dollar; markets pricing greater rate-hike risk or otherwise higher interest rates; and further evidence that gold is failing to attract safe-haven flows during volatility. The headlines provide no quantified gold returns, futures positioning, or confirmation of the magnitude and timing of these macro effects.</p>
+<h4>5. Key sentiment signals</h4>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Signal</th><th style="text-align:start">Direction for GC=F</th><th style="text-align:start">Source</th><th style="text-align:start">Supporting evidence</th></tr></thead><tbody><tr><td style="text-align:start">Gold gave back some recent gains</td><td style="text-align:start">Cautious / bearish near term</td><td style="text-align:start">WSJ headline</td><td style="text-align:start">Gold futures retreated after the previous session’s Nvidia-fueled rally as attention returned to inflation and Fed rates.</td></tr><tr><td style="text-align:start">Safe-haven demand questioned</td><td style="text-align:start">Cautious</td><td style="text-align:start">Investing.com headline</td><td style="text-align:start">Says gold is not acting like a safe haven and presents the buy decision as two-sided, not a signal.</td></tr><tr><td style="text-align:start">Strong dollar</td><td style="text-align:start">Headwind</td><td style="text-align:start">24/7 Wall St. headline</td><td style="text-align:start">Dollar reported at its strongest level since March 2025; the supplied item does not quantify the resulting gold impact.</td></tr><tr><td style="text-align:start">Rate-hike worries across metals</td><td style="text-align:start">Headwind</td><td style="text-align:start">Motley Fool headline</td><td style="text-align:start">Silver prices fell amid rate-hike worries; this is indirect evidence for gold, not a direct GC=F price report.</td></tr><tr><td style="text-align:start">Recent Nvidia-linked rally</td><td style="text-align:start">Supportive, but potentially transient</td><td style="text-align:start">WSJ headline</td><td style="text-align:start">Prior session’s gold gain was associated with Nvidia-driven risk-on sentiment; some of that gain was subsequently surrendered.</td></tr><tr><td style="text-align:start">Tokenized-gold market development</td><td style="text-align:start">Structurally constructive, immediate price relevance uncertain</td><td style="text-align:start">Coinspeaker headline</td><td style="text-align:start">JPMorgan, HSBC, and StoneX reportedly completed wholesale tokenized-gold trades; the headline also cites a 48% rise in tokenized holdings.</td></tr><tr><td style="text-align:start">Retail and Reddit sentiment</td><td style="text-align:start">Unknown</td><td style="text-align:start">StockTwits and Reddit</td><td style="text-align:start">Both sources returned unavailable placeholders; no posts, ratios, or message counts were supplied.</td></tr></tbody></table></div>
+<p><strong>Bottom line:</strong> The available GC=F evidence is mixed but tilts cautious at the margin because the clearest current signals are a giveback in futures, renewed rate/inflation focus, safe-haven doubts, and dollar strength. Confidence is low: both social sources failed, and the news evidence is headline-only with no price, flow, or positioning data. This is a sentiment snapshot, not a price forecast or trading recommendation.</p></section><section class="section" id="fundamentals"><h2>Fundamentals</h2><h3>GC=F (Gold Dec 26, CMX): Fundamental and Market-Data Report</h3>
+<p><strong>As of 2026-11-24</strong></p>
+<h3>Executive summary</h3>
+<p>GC=F is identified as <strong>Gold Dec 26</strong>, a COMEX gold futures contract—not an operating company. The available data provide a small set of price reference points, but no company-style financial statements or recent fundamental news. In particular, the tools returned no usable balance sheet, cash-flow statement, or income statement for GC=F, and no insider transactions were reported. Those omissions are expected for a futures contract and should not be interpreted as evidence about a corporate issuer.</p>
+<p>The available market figures show a <strong>50-day average of $4,096.852</strong> and a <strong>200-day average of $4,424.015</strong>. The shorter average is about <strong>7.4% below</strong> the longer one, indicating that the reported medium-term average is below the longer-term average. The latest futures price was not provided, so its position relative to either average—and any current breakout or breakdown—cannot be determined from this report.</p>
+<h3>Instrument profile and scope</h3>
+<ul><li><strong>Ticker:</strong> GC=F</li><li><strong>Resolved instrument:</strong> Gold Dec 26</li><li><strong>Exchange:</strong> CMX</li><li><strong>Instrument type:</strong> Gold futures contract</li></ul>
+<p>As a futures instrument, GC=F is not a company with operating revenue, earnings, corporate assets, liabilities, or insider stock transactions. Accordingly, conventional company fundamentals such as valuation multiples and financial-statement trends are not available or applicable here.</p>
+<h3>Available market data</h3>
+<p>The fundamentals tool returned these price statistics:</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Measure</th><th style="text-align:end">Reported value</th></tr></thead><tbody><tr><td style="text-align:start">52-week high</td><td style="text-align:end">$5,586.20</td></tr><tr><td style="text-align:start">52-week low</td><td style="text-align:end">$3,502.90</td></tr><tr><td style="text-align:start">50-day average</td><td style="text-align:end">$4,096.852</td></tr><tr><td style="text-align:start">200-day average</td><td style="text-align:end">$4,424.015</td></tr></tbody></table></div>
+<p>The 50-day average is approximately <strong>$327.16 (7.4%) below</strong> the 200-day average. This describes the relationship between the two averages; without a current GC=F quote or a time series, it does <strong>not</strong> establish whether the market is presently above or below either level, or whether a crossover occurred during the past week.</p>
+<h3>Financial statements and insider activity</h3>
+<ul><li><strong>Balance sheet:</strong> No usable data available for GC=F.</li><li><strong>Cash-flow statement:</strong> No usable data available for GC=F.</li><li><strong>Income statement:</strong> No usable data available for GC=F.</li><li><strong>Insider transactions:</strong> None reported for GC=F.</li></ul>
+<p>These company-oriented records are not meaningful measures of a futures contract. No financial-statement history or insider activity can be inferred from their absence.</p>
+<h3>Past-week information and fundamental context</h3>
+<p>The available tools did not provide dated news, economic releases, positioning data, or a week-by-week price history for GC=F. Therefore, this report cannot verify what changed specifically over the past week or attribute a price move to a particular event.</p>
+<p>For gold futures, commonly relevant fundamental drivers include <strong>real interest rates, expectations for monetary policy, the U.S. dollar, inflation expectations, central-bank demand, and geopolitical or safe-haven flows</strong>. These are general market drivers, not confirmed explanations for GC=F’s recent performance. Traders should check current releases and news before acting on a macro thesis.</p>
+<h3>Trader-focused observations and conditional framework</h3>
+<ol><li><strong>Treat the average relationship as a caution signal, not a standalone trade.</strong> The 50-day average below the 200-day average indicates weaker positioning of the shorter-term reference versus the longer-term reference. Confirmation would require the current GC=F price and price action; neither was supplied.</li><li><strong>Use the reported averages as reference levels, not guaranteed support or resistance.</strong> A sustained move above the 200-day average at <strong>$4,424.015</strong> could be monitored as a potential improvement in trend conditions; failure to reclaim it may leave the weaker average structure in place. This is conditional, not a forecast.</li><li><strong>Monitor the 50-day average at $4,096.852.</strong> A sustained move below that reference could signal continued weakness, while a recovery above it may improve near-term conditions. Verify these levels against a live GC=F quote and chart before placing orders.</li><li><strong>Keep the 52-week range in context.</strong> The reported extremes are <strong>$3,502.90–$5,586.20</strong>. They offer broad historical reference points, but the data do not establish whether either is currently close to price or likely to act as a level.</li><li><strong>Do not use company-financial or insider signals for GC=F.</strong> Those data are unavailable and structurally unsuitable for analyzing this futures contract. For a fundamental trade, prioritize current macro releases and gold-market data, alongside contract-specific liquidity and expiry considerations.</li></ol>
+<p><strong>Limitations:</strong> This report is restricted to tool results available as of 2026-11-24. It does not include a current GC=F quote, verified past-week news, a complete price history, or independently sourced macroeconomic data. The observations above are descriptive and conditional, not a personalized trading recommendation.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Key point</th><th style="text-align:start">Evidence available</th><th style="text-align:start">Trading relevance / limitation</th></tr></thead><tbody><tr><td style="text-align:start">Instrument identity</td><td style="text-align:start">GC=F is Gold Dec 26, CMX</td><td style="text-align:start">Futures contract, not a company</td></tr><tr><td style="text-align:start">50-day average</td><td style="text-align:start">$4,096.852</td><td style="text-align:start">Reference level; current price versus it is unknown</td></tr><tr><td style="text-align:start">200-day average</td><td style="text-align:start">$4,424.015</td><td style="text-align:start">Reference level; current price versus it is unknown</td></tr><tr><td style="text-align:start">Average relationship</td><td style="text-align:start">50-day average is about 7.4% below 200-day average</td><td style="text-align:start">Cautionary trend context; not sufficient alone to signal a trade</td></tr><tr><td style="text-align:start">52-week range</td><td style="text-align:start">$3,502.90–$5,586.20</td><td style="text-align:start">Broad historical context; present proximity is unknown</td></tr><tr><td style="text-align:start">Financial statements</td><td style="text-align:start">No usable balance-sheet, cash-flow, or income-statement data</td><td style="text-align:start">Company financial analysis is not applicable to GC=F</td></tr><tr><td style="text-align:start">Insider transactions</td><td style="text-align:start">None reported</td><td style="text-align:start">Not a useful signal for this futures contract</td></tr><tr><td style="text-align:start">Past-week developments</td><td style="text-align:start">No dated news or weekly price data returned</td><td style="text-align:start">Cannot verify recent catalysts or weekly performance</td></tr></tbody></table></div></section>
+  <footer>
+    <p>Desk rendering of the daily research notes. Figures and levels follow the source reports.</p>
+    
+  </footer>
+</div>
+</body>
+</html>
