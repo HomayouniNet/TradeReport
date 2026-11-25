@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTC-USD · Bitcoin — Tuesday, 24 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --paper: #f4f0e6;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #6d655c;
+  --line: #e3d9c8;
+  --accent: #8d5a16;
+  --accent-soft: #f3e4cc;
+  --warn: #8d2f24;
+  --warn-soft: #f8e4df;
+  --good: #1d6b45;
+  --good-soft: #e3f2e9;
+  --mixed: #3e5c4e;
+  --mixed-soft: #e4eee8;
+  --shadow: 0 16px 40px rgba(58, 42, 18, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(141, 90, 22, 0.08), transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+body.lang-fa {
+  font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+body.kind-btc {
+  --accent: #c2410c;
+  --accent-soft: #fde6d8;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
+    var(--paper);
+}
+a { color: var(--accent); }
+.wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 8px;
+}
+.brand {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+.lang { display: flex; gap: 6px; }
+.lang a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang a.on { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+.hero { padding: 12px 0 8px; }
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+body.lang-fa h1, body.lang-fa h2, body.lang-fa h3, body.lang-fa h4 {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
+.sub { margin: 8px 0 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.good { background: var(--good-soft); color: var(--good); }
+.badge.mixed { background: var(--mixed-soft); color: var(--mixed); }
+.badge.neutral { background: #eeeae3; color: #4d463f; }
+.badge small { font-weight: 500; opacity: 0.8; }
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.section { scroll-margin-top: 72px; }
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 22px 22px 8px;
+  margin: 0 0 16px;
+}
+.section h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; }
+.section h3 { margin: 1.3em 0 0.4em; font-size: 22px; line-height: 1.35; }
+.section h4 { margin: 1.1em 0 0.3em; font-size: 18px; }
+.section p { margin: 0.7em 0; }
+.section ul, .section ol { margin: 0.6em 0 0.8em; padding-inline-start: 1.3em; }
+.section li { margin: 0.28em 0; }
+.section hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
+blockquote {
+  margin: 1em 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+body.lang-fa blockquote { border-radius: 12px 0 0 12px; }
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86em;
+  background: #f3ecdf;
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+}
+.formula {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f7f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.table-wrap { overflow-x: auto; margin: 0.8em 0 1em; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.55; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 650; }
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0 36px;
+}
+@media print {
+  body { background: white; }
+  .toc, .lang { display: none; }
+  .section { box-shadow: none; break-inside: avoid; }
+}
+
+</style>
+</head>
+<body class="lang-en kind-btc">
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">Trade Desk</div>
+    <nav class="lang">
+      <a class="on" href="report.html">English</a>
+      <a class="" href="report-fa.html">فارسی</a>
+    </nav>
+  </div>
+  <header class="hero">
+    <p class="kicker">BTC-USD · BTC-USD spot</p>
+    <h1>Bitcoin</h1>
+    <p class="sub">Tuesday, 24 November 2026</p>
+    <div class="badges"><span class="badge warn">Underweight · کم‌وزن <small>Rating</small></span><span class="badge warn">Sell · فروش <small>Trader action</small></span><span class="badge mixed">Mixed · مختلط 4.6/10 <small>Sentiment</small></span></div>
+  </header>
+  <nav class="toc"><a href="#final">Final decision</a><a href="#trader">Trader plan</a><a href="#plan">Investment plan</a><a href="#market">Market</a><a href="#news">News and macro</a><a href="#sentiment">Sentiment</a></nav>
+  <section class="section" id="final"><h2>Final decision</h2><p><strong>Rating</strong>: Underweight</p>
+<p><strong>Executive Summary</strong>: Reduce excessive BTC-USD exposure to a conservatively defined portfolio risk budget, retaining a core only if it can withstand substantial adverse moves; 50% of standard BTC-USD allocation is a reference, not a mandatory target or a percentage of portfolio assets. Validate current prices, liquidity, holdings and loss limits before execution, then use staged, unlevered reductions where appropriate without delaying necessary risk reduction; if already conservatively sized, do not force a sale, and if uninvested, defer entry pending stabilization. Treat the supplied $62,676.21 EMA and $55,145.53 lower Bollinger Band as historical review references, not standing orders or automatic stops, and determine actual loss limits from current volatility and portfolio constraints. Maintain this tactical stance over the next several weeks, reassessing weekly and after material price or verified-flow changes.</p>
+<p><strong>Investment Thesis</strong>: The tactical bearish case for BTC-USD outweighs the case for adding exposure, but does not justify a full exit. In the supplied November 24, 2026 snapshot, BTC-USD closed at $59,946.24 versus approximately $80,405 on November 4, a roughly 25% decline. BTC-USD remained below its 10-day EMA of approximately $62,676, 50-day SMA of $75,642 and 200-day SMA of $72,131, with negative MACD below its signal line; the recovery from November 20 through November 23 failed to hold. These are correlated descriptions of weak price structure rather than independent forecasts, but they provide stronger tactical evidence than unquantified adoption potential.</p>
+<p>The aggressive analyst's argument for prompt risk reduction is persuasive, while the conservative and neutral analysts provide the stronger sizing discipline. ATR near $2,992, approximately 5% of the supplied close, warrants a prompt assessment of position-level loss exposure, not an invented sell quantity or stop. Missing holdings and risk limits prevent identifying how much BTC-USD is excessive. Consequently, neither a mandatory half-allocation target nor two compulsory equal tranches is justified; execution pace must reflect actual liquidity and risk tolerance, and a formal limit breach need not precede prudent risk reduction.</p>
+<p>RSI of 25.18 and the steep preceding decline leave meaningful relief-rebound risk. That supports retaining a tolerable core rather than exiting indiscriminately, but does not establish a bottom or justify averaging down. Regulatory guidance and BTC-USD-backed lending developments preserve a plausible longer-term adoption case without demonstrating immediate buying demand. Elevated Treasury yields are a possible headwind, not a directional forecast. The reported $4.7 billion outflows and unusually hawkish rate probabilities are not independently established here and are unnecessary to the decision; social sentiment and company fundamentals are unavailable. The analysts' transaction label 'Sell' describes trimming excess exposure, which maps to Underweight under the requested rating scale rather than Sell's exit recommendation.</p>
+<p>Reconsider increasing BTC-USD exposure only after broader stabilization: an end to lower lows, sustained closes above the updated 10-day EMA, improving momentum and reliable evidence of stabilizing flows. Recovery of the updated longer-term averages would strengthen that case; one moving-average reclaim or oversold RSI alone would not. Fresh lows accompanied by persistent verified outflows would strengthen the case for further reduction. The supplied lower Bollinger Band at $55,145.53 is only a downside review reference, not guaranteed support. All numerical levels are from the supplied snapshot, not independently validated live data; no defensible price target or precise stop can be established from the available evidence.</p>
+<p><strong>Price Target</strong>: not provided</p>
+<p><strong>Time Horizon</strong>: Next several weeks; reassess weekly</p></section><section class="section" id="trader"><h2>Trader plan</h2><p><strong>Action</strong>: Sell</p>
+<p><strong>Reasoning</strong>: The research plan recommends underweighting BTC-USD, and the technical structure supports reducing exposure: price is below the 10-day EMA, 50-day SMA, and 200-day SMA, while MACD remains bearish. RSI at 25.18 leaves room for a relief rebound, but does not confirm a reversal; given ATR near $2,992 and the plan's instruction to validate current execution data, trim excess rather than exit outright and do not use the historical lower Bollinger Band as an automatic stop.</p>
+<p><strong>Entry Price</strong>: not provided</p>
+<p><strong>Stop Loss</strong>: not provided</p>
+<p><strong>Position Sizing</strong>: Provisional target 50% of the manager's standard BTC-USD allocation (not 50% of portfolio assets); if above target, trim the excess in two equal tranches after validating execution data.</p>
+<p>FINAL TRANSACTION PROPOSAL: <strong>SELL</strong></p></section><section class="section" id="plan"><h2>Investment plan</h2><p><strong>Recommendation</strong>: Underweight</p>
+<p><strong>Rationale</strong>: For BTC-USD, the bear wins the tactical allocation decision, but not the claim that long-term demand has structurally failed. In the supplied November 24, 2026 snapshot, BTC-USD closed at $59,946.24, roughly 25% below November 4 and below its 10-day EMA, 50-day SMA and 200-day SMA, with negative MACD. Those indicators are correlated descriptions of price weakness, not independent proof of a permanent demand collapse, but they provide a stronger basis for near-term caution than the bull's unquantified adoption potential. Scarcity and limited regulatory and lending developments preserve a plausible long-term case without demonstrating fresh buying or an attractive valuation. RSI of 25.18 leaves rebound risk, while ATR near $2,992, about 5% of price, argues for reduced sizing. The reported $4.7 billion outflows and 94% rate-hike probability are not established facts and are not necessary to this decision. The supplied 4.92% Treasury yield adds a possible macro headwind. Underweight rather than a full exit reflects the stronger tactical bear case, unresolved long-term opportunity and incomplete demand evidence. Live prices, corroborated flows and actual holdings are unavailable.</p>
+<p><strong>Strategic Actions</strong>: Set a provisional BTC-USD target of 50% of the portfolio manager's standard BTC-USD allocation, subject to the portfolio risk budget; this is not 50% of portfolio assets. If above target, trim the excess in two equal tranches, the first after execution-data validation and the second over the following several sessions, without requiring a rebound. If already at or below target, do not mechanically add merely to reach it; if uninvested, defer initiation until stabilization. Use unlevered exposure and liquidity-aware limit orders; do not average down solely on oversold RSI. These instructions are conditional on validating current prices and recalculating indicators, since only the supplied November 24, 2026 snapshot is available. Reassess weekly and on a material price or flow change. Consider restoring exposure in 25%-of-standard increments only after BTC-USD stops making lower lows, sustains closes above its updated 10-day EMA, momentum improves and reliable flows stabilize; the supplied $62,676.21 EMA is a historical reference, not a standing order level. Recovery of the updated 200-day and 50-day averages would strengthen the broader case. If fresh lows coincide with persistent verified outflows, reduce toward 25% of standard allocation and reassess the remaining position. Use $55,145.53, the supplied lower Bollinger Band, only as a downside review reference, not guaranteed support or an automatic stop. The trader and portfolio manager must set actual unit sizes and loss limits using current volatility and their risk budget.</p></section><section class="section" id="market"><h2>Market</h2><h3>BTC-USD — technical read for 2026-11-24</h3>
+<p><strong>Overall picture:</strong> BTC-USD is in a pronounced short- and medium-term downtrend, with momentum indicators still bearish. RSI is deeply oversold, and BTC-USD remains above the lower Bollinger Band, so a relief rally is possible—but neither condition alone confirms a reversal. Elevated ATR also argues for smaller position sizes and wider, volatility-aware risk limits.</p>
+<h4>Price and trend structure</h4>
+<p>The verified 2026-11-24 close is <strong>$59,946.24</strong>. It is well below the <strong>10-day EMA ($62,676.21)</strong>, <strong>50-day SMA ($75,641.73)</strong>, and <strong>200-day SMA ($72,130.88)</strong>. That alignment is consistent with weakness across short-, medium-, and longer-term trend measures. The 50-day SMA is also above the 200-day SMA, but that older-average relationship does not offset the fact that price is currently below both.</p>
+<p>Recent verified closes show the speed and persistence of the decline: BTC-USD closed at <strong>$80,405.29 on Nov. 4</strong>, <strong>$68,249.27 on Nov. 13</strong>, and <strong>$59,946.24 on Nov. 24</strong>. There was a brief closing-price recovery from <strong>$58,798.98 on Nov. 20</strong> to <strong>$61,210.98 on Nov. 23</strong>, but the Nov. 24 close fell back to $59,946.24. That sequence is evidence of a short-lived recovery in closes, not proof of a durable reversal.</p>
+<h4>Momentum and volatility</h4>
+<ul><li><strong>MACD:</strong> The verified MACD is <strong>−4,786.57</strong>, below its signal line at <strong>−4,371.51</strong>; the histogram is <strong>−415.06</strong>. This supports a bearish momentum reading. The negative histogram is not, by itself, evidence that selling pressure has bottomed.</li><li><strong>RSI:</strong> At <strong>25.18</strong>, RSI is below the conventional 30 threshold. That flags an oversold condition, but in a strong downtrend RSI can remain low. Treat it as a reason to watch for stabilization—not as a standalone buy signal.</li><li><strong>Bollinger Bands:</strong> The verified middle band is <strong>$67,490.27</strong>, with an upper band at <strong>$79,835.01</strong> and lower band at <strong>$55,145.53</strong>. The close is below the middle band but above the lower band. The wide band range is consistent with substantial recent price dispersion; a lower-band reading is not a reversal signal on its own.</li><li><strong>ATR:</strong> ATR is <strong>$2,991.82</strong>, about 5% of the verified close. That is a large daily-range yardstick for risk planning, not a forecast of the next day’s move. A fixed, tight stop may be vulnerable to ordinary volatility; traders should size positions accordingly.</li></ul>
+<h4>Actionable, conditional approach</h4>
+<p><strong>For trend-following traders:</strong> The prevailing evidence favors caution on bullish entries while BTC-USD remains below the 10-day EMA and MACD remains below its signal line. A close back above the 10-day EMA would be an initial short-term improvement, but would not by itself reverse the broader picture while price remains below the 50- and 200-day SMAs.</p>
+<p><strong>For reversal-oriented traders:</strong> RSI below 30 makes a relief move plausible, but confirmation matters. Look for price stabilization and improving momentum—such as MACD narrowing toward its signal line—rather than buying solely because RSI is oversold. The verified lower Bollinger Band at $55,145.53 is a band reference, not guaranteed support.</p>
+<p><strong>For risk management:</strong> Use ATR to calibrate exposure and stop distance to the strategy and entry; at roughly $2,992, even a one-ATR move is meaningful. Avoid treating that figure as a recommended stop price without an entry, timeframe, and risk budget.</p>
+<p><strong>Data note:</strong> The initial OHLCV result lists the Nov. 24 close as <strong>$59,946.21</strong>, while the required verified snapshot reports <strong>$59,946.24</strong>. This report uses the verified value as the source of truth. Other exact latest-row and indicator values below are from that snapshot.</p>
+<h4>Selected indicators</h4>
+<p>These eight indicators give complementary views of trend, momentum, volatility, and risk. The Bollinger upper and lower bands are included as a pair to show the range around the middle benchmark.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Indicator</th><th style="text-align:start">Verified reading / role</th><th style="text-align:start">Trading relevance</th></tr></thead><tbody><tr><td style="text-align:start"><code>close_10_ema</code></td><td style="text-align:start">$62,676.21</td><td style="text-align:start">Short-term trend reference; BTC-USD is below it.</td></tr><tr><td style="text-align:start"><code>close_50_sma</code></td><td style="text-align:start">$75,641.73</td><td style="text-align:start">Medium-term trend reference; price is substantially below it.</td></tr><tr><td style="text-align:start"><code>close_200_sma</code></td><td style="text-align:start">$72,130.88</td><td style="text-align:start">Longer-term trend filter; price is below it, despite the 50-day SMA remaining above the 200-day SMA.</td></tr><tr><td style="text-align:start"><code>macd</code></td><td style="text-align:start">−4,786.57; signal −4,371.51; histogram −415.06</td><td style="text-align:start">Confirms negative momentum; watch for improvement rather than assuming an imminent cross.</td></tr><tr><td style="text-align:start"><code>rsi</code></td><td style="text-align:start">25.18</td><td style="text-align:start">Flags oversold conditions, but does not confirm a bottom.</td></tr><tr><td style="text-align:start"><code>boll_ub</code></td><td style="text-align:start">$79,835.01</td><td style="text-align:start">Upper boundary for the current Bollinger range.</td></tr><tr><td style="text-align:start"><code>boll_lb</code></td><td style="text-align:start">$55,145.53</td><td style="text-align:start">Lower boundary; price is above it, with no reversal implication by itself.</td></tr><tr><td style="text-align:start"><code>atr</code></td><td style="text-align:start">$2,991.82</td><td style="text-align:start">Volatility measure for position sizing and stop planning.</td></tr></tbody></table></div></section><section class="section" id="news"><h2>News and macro</h2><h3>BTC-USD — Weekly news and macro trading report</h3>
+<p><strong>As of 24 November 2026 | Review period: 17–24 November 2026</strong></p>
+<h3>Executive view</h3>
+<p>The near-term backdrop for <strong>BTC-USD</strong> looks <strong>risk-off and unusually uncertain</strong>. The most consequential asset-specific headlines point to a sharp selloff, reported record withdrawals from Bitcoin investment funds, and weakness in crypto-treasury vehicles. Those signals outweigh the week’s constructive—but narrower—regulatory and lending developments in the immediate trading picture.</p>
+<p>Macro data add pressure: the 10-year Treasury yield is elevated at <strong>4.92%</strong>, and the effective federal funds rate has risen to <strong>3.88%</strong> in the latest available monthly reading. Meanwhile, Polymarket pricing is strikingly hawkish on the December Fed meeting, assigning <strong>94%</strong> to a 25-basis-point hike. That is a market-implied probability, not a confirmed policy outlook, and it should be treated cautiously.</p>
+<p><strong>Trading implication:</strong> avoid treating positive regulatory headlines as a near-term reversal signal while selling pressure and ETF-flow concerns dominate. Because the supplied news and prediction-market data do not give a consistent, complete read on the current spot price, use live price and flow data to confirm levels before acting.</p>
+<h3>BTC-USD news and market signals</h3>
+<h4>Bearish near-term signals</h4>
+<ul><li>A 24 November report says <strong>BTC-USD fell below $60,000</strong>, citing record <strong>$4.7 billion</strong> outflows from Bitcoin investment funds. This is a material bearish claim, but it comes from a single retrieved headline and is <strong>not independently corroborated</strong> in the supplied data. Confirm the flow figure and reporting period before relying on it.</li><li>Other coverage describes a broader crypto-treasury selloff, including Bitmine shares falling <strong>8.6%</strong>, and reports that Strategy traded below the value of its Bitcoin holdings. These are indirect signals rather than direct spot-flow data, but they suggest investors were discounting crypto-exposed balance sheets and treasury strategies.</li><li>The reported BTC-USD decline alongside weakness in technology shares reinforces its sensitivity to broader risk appetite. If equity or technology-market weakness persists, BTC-USD may remain vulnerable even if crypto-specific news is neutral.</li></ul>
+<h4>Constructive, but limited, developments</h4>
+<ul><li>CFTC staff guidance reportedly allows eligible exchanges and trading platforms to count BTC-USD, ether, and stablecoins toward certain financial-resource requirements. This may support institutional integration, but it is <strong>not equivalent to a broad regulatory endorsement</strong> or permission for all firms to treat BTC-USD as unrestricted collateral.</li><li>Cross River Bank reportedly launched Bitcoin-backed consumer loans of up to <strong>$250,000</strong>. That expands a use case for BTC-USD but also introduces collateral and liquidation risks if prices fall.</li><li>ECB coverage concerns the potential use of <strong>eligible tokenized securities</strong> as collateral under its DLT framework. That should not be read as confirmation that BTC-USD itself is eligible.</li><li>Coverage of BTCS selling more than half of its ether to repay an Aave loan is a warning about leveraged crypto-treasury balance sheets, but it is not direct evidence of BTC-USD selling.</li></ul>
+<p><strong>Read-through:</strong> regulatory and product developments may improve longer-term market infrastructure, but the retrieved headlines do not establish that these developments are large enough to offset current reported outflows or risk aversion.</p>
+<h3>Macro backdrop</h3>
+<ul><li><strong>Rates:</strong> The effective federal funds rate was <strong>3.88% in October</strong>, up from <strong>3.63% in May</strong>. This is a monthly effective-rate series, not the Fed’s meeting-by-meeting target range.</li><li><strong>Treasury yields:</strong> The 10-year yield was <strong>4.92% on 23 November</strong>, up <strong>0.26 percentage points</strong> from 26 August. A high or rising long-term yield can weigh on non-yielding risk assets such as BTC-USD by tightening financial conditions and increasing the appeal of yield-bearing alternatives.</li><li><strong>Yield curve:</strong> The 10-year minus 2-year spread was <strong>+0.28 percentage points on 24 November</strong>, down from <strong>+0.47</strong> on 26 August. The curve remains positive in the supplied reading, but its recent flattening bears watching.</li><li><strong>Inflation:</strong> The CPI index rose from <strong>333.979 in May to 337.476 in October</strong>—a <strong>1.05% increase over those five monthly intervals</strong>. This calculation is not a year-over-year inflation rate, and the supplied data do not establish the latest annual inflation trend.</li><li><strong>Labor:</strong> The unemployment rate was <strong>4.1% in October</strong>, compared with <strong>4.3% in May</strong>. That indicates a comparatively resilient labor-market reading over the period shown, but it does not by itself determine the Fed’s next decision.</li></ul>
+<p>Taken together, these readings are not an obvious liquidity tailwind for BTC-USD: long yields have risen over the cited window, while the supplied prediction-market data price a highly hawkish December outcome. However, the macro series and prediction-market signal should not be mistaken for a single confirmed forecast.</p>
+<h3>Forward-looking market pricing</h3>
+<p>Polymarket’s returned <strong>BTC-USD</strong> contracts include a <strong>10%</strong> probability for the price to be between <strong>$62,000 and $64,000 on 25 November</strong>, and low probabilities for prices below <strong>$54,000</strong> over the listed near-term dates. These are individual contract prices, not a complete probability distribution, and they do not establish the current spot price. They also sit uneasily alongside the retrieved headline saying BTC-USD had fallen below $60,000. Treat that discrepancy as a <strong>data-quality and timing warning</strong>; verify the live price and contract details before using either as a level.</p>
+<p>For the December Fed meeting, the retrieved Polymarket contracts assign <strong>94%</strong> to a <strong>25-basis-point hike</strong>, <strong>4%</strong> to no change, and <strong>0.25%</strong> to a 25-basis-point cut. These are market-implied odds, not an official Fed forecast. Given how unusually strong the hike pricing is relative to the supplied data, check contract wording, resolution criteria, and a separate rates-market source before making a macro trade on it.</p>
+<h3>Actionable considerations for BTC-USD</h3>
+<ol><li><strong>Prioritize confirmation over headline trading.</strong> Verify live BTC-USD spot levels, ETF flow data, and timestamps. The retrieved price headline and event-market contracts do not give a clean, internally consistent snapshot.</li><li><strong>Treat confirmed outflows as a key risk trigger.</strong> If reliable flow data confirm large and persistent withdrawals, that would support a cautious stance and could amplify weakness during equity-market selloffs. If flows stabilize, it would reduce—but not eliminate—the immediate pressure.</li><li><strong>Watch rates and risk appetite together.</strong> A sustained rise in Treasury yields or renewed technology-share weakness would be a headwind for BTC-USD. Falling yields and improving risk appetite would be more supportive, particularly if accompanied by better crypto flows.</li><li><strong>Separate structural news from short-term catalysts.</strong> CFTC-related collateral guidance and new lending products are potentially constructive over time, but do not by themselves demonstrate near-term spot demand. Do not treat ECB tokenized-securities news as a direct BTC-USD collateral development.</li><li><strong>Keep risk defined around high volatility.</strong> If trading BTC-USD, size positions for sharp moves and set invalidation levels using live market data; the sources reviewed here do not support a reliable technical entry, stop, or price target.</li></ol>
+<h3>Source limitations</h3>
+<p>The global-news retrieval returned mostly unrelated company and entertainment headlines, so it offered little usable macroeconomic context for this review. The BTC-USD news feed is dominated by headlines and video summaries; the reported ETF outflow figure and price move should be independently checked. FRED series are useful context, but the latest CPI, unemployment, and effective-rate observations supplied here are monthly and lag current market conditions.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Key point</th><th style="text-align:start">Evidence from retrieved data</th><th style="text-align:start">BTC-USD trading relevance</th></tr></thead><tbody><tr><td style="text-align:start">Reported risk-off move</td><td style="text-align:start">24 Nov headline says BTC-USD fell below $60,000; single-source report</td><td style="text-align:start">Confirm live price and timestamp; do not trade from the headline alone</td></tr><tr><td style="text-align:start">Reported ETF outflows</td><td style="text-align:start">Headline cites record $4.7bn withdrawals; not independently corroborated here</td><td style="text-align:start">Potentially bearish if verified and persistent</td></tr><tr><td style="text-align:start">Treasury-market headwind</td><td style="text-align:start">10-year yield 4.92% on 23 Nov; +0.26 pp since 26 Aug</td><td style="text-align:start">Elevated yields can pressure non-yielding risk assets</td></tr><tr><td style="text-align:start">Fed pricing</td><td style="text-align:start">Polymarket: 94% probability of a 25 bp December hike</td><td style="text-align:start">Strongly hawkish signal, but verify independently and check market terms</td></tr><tr><td style="text-align:start">Labor and inflation readings</td><td style="text-align:start">Unemployment 4.1% in Oct; CPI index +1.05% from May to Oct</td><td style="text-align:start">Context only; supplied figures do not establish current annual inflation</td></tr><tr><td style="text-align:start">Regulatory/product developments</td><td style="text-align:start">CFTC guidance on eligible platform resources; BTC-backed lending launch</td><td style="text-align:start">Structural support, but not proof of immediate BTC-USD demand</td></tr><tr><td style="text-align:start">Data consistency</td><td style="text-align:start">News headline below $60,000; returned price contracts show only selected bands</td><td style="text-align:start">Treat quoted probabilities as incomplete and verify live market data</td></tr><tr><td style="text-align:start">Practical stance</td><td style="text-align:start">Flow and price confirmation remain essential</td><td style="text-align:start">Favor conditional, risk-defined decisions over an unconfirmed directional call</td></tr></tbody></table></div></section><section class="section" id="sentiment"><h2>Sentiment</h2><p><strong>Overall Sentiment:</strong> <strong>Mixed</strong> (Score: 4.6/10) <strong>Confidence:</strong> Low</p>
+<h3>Sentiment assessment — BTC-USD (2026-11-17 to 2026-11-24)</h3>
+<h4>1. Source-by-source breakdown</h4>
+<p><strong>News (20 supplied headlines; mixed, with the latest direct market reports notably bearish).</strong> The strongest near-term negative evidence is the Nov. 24 Motley Fool headline reporting BTC-USD fell below $60,000 alongside record $4.7 billion ETF outflows, described as adding selling pressure and raising concern about resilience to another technology-stock downturn. A separate Nov. 24 headline says Bitcoin fell below $70,000 amid Nvidia-related turmoil; the supplied headlines do not explain the difference between the two stated thresholds, so they should be treated as separate reported framings rather than reconciled. Other negative or cautionary coverage includes Bitmine shares falling 8.6% amid a wider crypto-treasury sell-off, concern about waning confidence, and coverage of Strategy trading below the value of its Bitcoin holdings / whether Michael Saylor's strategy is losing appeal. These point to weak risk appetite and pressure on vehicles and companies associated with crypto, as well as direct BTC-USD selling pressure.</p>
+<p>The counterweight is a cluster of structural-adoption and regulatory headlines. Several Yahoo Finance videos describe CFTC guidance allowing Bitcoin, ether, and stablecoins to count toward qualifying financial-resource requirements for eligible exchanges or platforms; another covers Cross River Bank's Bitcoin-backed consumer loans of $10,000–$250,000. Coverage of the ECB's expanded DLT framework concerns eligible tokenized securities as collateral, a potentially supportive development for tokenized finance but not a direct change in BTC-USD demand. TheStreet characterizes Saylor as receiving a regulator's nod, while noting it was not at full price. These developments are constructive for regulatory integration and collateral use, but are not evidence in this feed of near-term inflows or a price floor.</p>
+<p>Other items are tangential or provide limited directional evidence for BTC-USD: a CleanSpark report mixes profit on Bitcoin gains with a 46% revenue decline during an AI shift; a possible Tesla–SpaceX merger is framed around potential control of their Bitcoin holdings; and the WSJ roundup mentions spot Bitcoin ETFs without a specific flow figure in the supplied excerpt. The remaining company, banking, tokenization, and market headlines do not establish a clear direct BTC-USD signal. Several Yahoo videos share the same host and overlap on the CFTC/loan developments, so these are not fully independent confirmations.</p>
+<p><strong>StockTwits (unavailable).</strong> The feed returned an HTTP error. There are no message counts, user-tag ratios, stance counts, or post examples to assess; this is missing data, not evidence that retail discussion was absent or neutral.</p>
+<p><strong>Reddit (unavailable).</strong> Fetch failed for r/Bitcoin, r/CryptoCurrency, and r/CryptoMarkets. There are no post excerpts or engagement figures to evaluate. This must not be interpreted as an absence of discussion or as a sentiment reading.</p>
+<h4>2. Cross-source alignment and divergence</h4>
+<p>Only the news source supplied usable sentiment evidence, so a genuine three-source confirmation or a retail-versus-news divergence cannot be established. Within the news, the main divergence is between <strong>near-term market stress</strong>—reported sharp price weakness, record ETF outflows, and crypto-treasury selling—and <strong>longer-horizon institutional/regulatory integration</strong>, including CFTC treatment of crypto as eligible resources and Bitcoin-backed lending. The former is more directly tied to current BTC-USD trading conditions; the latter is potentially supportive but does not offset the reported outflows on the evidence provided. The sources offer headlines and excerpts rather than a complete flow series, market data, or detailed policy texts.</p>
+<h4>3. Dominant narrative themes</h4>
+<ol><li><strong>Outflows and risk-off pressure:</strong> The most direct bearish narrative is the reported $4.7 billion in record ETF withdrawals alongside BTC-USD weakness. The news also links crypto weakness to concern about technology-stock turbulence.</li><li><strong>Stress in crypto-linked treasury vehicles:</strong> Strategy's valuation reportedly below its Bitcoin holdings and the wider crypto-treasury sell-off suggest reduced investor appetite for leveraged or equity-mediated Bitcoin exposure. These are signals about associated securities and confidence, not direct measurements of BTC-USD holdings or flows.</li><li><strong>Gradual institutional and regulatory integration:</strong> CFTC guidance, Bitcoin-backed consumer loans, and broader tokenized-collateral developments offer a constructive longer-term narrative. The ECB item is about eligible tokenized securities, not specifically Bitcoin collateral.</li><li><strong>Macro/technology-market sensitivity:</strong> Headlines connect Bitcoin's weakness to Nvidia and technology-market concerns, implying risk-asset sensitivity in this coverage; no broader macroeconomic data is supplied to verify that relationship.</li></ol>
+<h4>4. Catalysts and risks surfaced by the data</h4>
+<p><strong>Potentially supportive catalysts:</strong> implementation and market uptake of the CFTC guidance; expansion of Bitcoin-backed lending; and further development of institutional collateral and tokenization frameworks. The feed does not quantify adoption, lending volumes, or resulting BTC-USD purchases.</p>
+<p><strong>Risks:</strong> continued ETF redemptions (with the cited $4.7 billion record figure); further deterioration in risk appetite if technology equities remain under pressure; persistence of crypto-treasury share-price discounts or selling; and confidence damage if BTC-USD remains weak. Headlines provide no confirmation of whether these conditions continued after Nov. 24, nor enough detail to assess the durability of the reported flows.</p>
+<h4>5. Key sentiment signals</h4>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Signal</th><th style="text-align:start">Direction for BTC-USD sentiment</th><th style="text-align:start">Source</th><th style="text-align:start">Supporting evidence</th></tr></thead><tbody><tr><td style="text-align:start">Reported ETF redemptions and price weakness</td><td style="text-align:start">Bearish, direct and near-term</td><td style="text-align:start">Motley Fool, Nov. 24</td><td style="text-align:start">Headline reports BTC-USD below $60,000 and record $4.7 billion ETF outflows adding selling pressure.</td></tr><tr><td style="text-align:start">Reported Bitcoin drop amid market turmoil</td><td style="text-align:start">Bearish</td><td style="text-align:start">Motley Fool, Nov. 24</td><td style="text-align:start">Separate headline says BTC-USD fell below $70,000 and questions whether the dip is a buying opportunity.</td></tr><tr><td style="text-align:start">Crypto-treasury confidence</td><td style="text-align:start">Bearish / cautionary</td><td style="text-align:start">Motley Fool and Yahoo Finance Video</td><td style="text-align:start">Bitmine shares down 8.6% with a wider treasury sell-off; Strategy reportedly below the value of its BTC holdings.</td></tr><tr><td style="text-align:start">CFTC recognition of crypto assets</td><td style="text-align:start">Constructive, structural</td><td style="text-align:start">Yahoo Finance Video; TheStreet</td><td style="text-align:start">Guidance described as allowing BTC and other crypto assets to count toward certain eligible financial-resource requirements.</td></tr><tr><td style="text-align:start">Bitcoin-backed consumer credit</td><td style="text-align:start">Mildly constructive, adoption-related</td><td style="text-align:start">Yahoo Finance Video</td><td style="text-align:start">Cross River Bank / LendingUSA offering Bitcoin-backed loans from $10,000 to $250,000.</td></tr><tr><td style="text-align:start">Tokenized collateral framework</td><td style="text-align:start">Indirectly constructive</td><td style="text-align:start">Yahoo Finance Video</td><td style="text-align:start">ECB expands DLT framework for eligible tokenized securities; not a direct BTC-USD demand signal.</td></tr><tr><td style="text-align:start">Retail/social sentiment</td><td style="text-align:start">Unknown</td><td style="text-align:start">StockTwits and Reddit</td><td style="text-align:start">Both feeds unavailable; no ratios, counts, or post content supplied.</td></tr></tbody></table></div>
+<p><strong>Overall:</strong> Mixed sentiment, tilted toward near-term caution: the most direct current-market headlines are bearish, while regulatory and collateral developments are constructive but longer-horizon and not accompanied by evidence of offsetting demand. This is a sentiment reading from incomplete headline data, not a price forecast. Confidence is low because both social sources failed and the news feed includes overlapping and tangential coverage.</p></section>
+  <footer>
+    <p>Desk rendering of the daily research notes. Figures and levels follow the source reports.</p>
+    
+  </footer>
+</div>
+</body>
+</html>
