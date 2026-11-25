@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XRP-USD · XRP — Wednesday, 25 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --paper: #f4f0e6;
+  --card: #fffdf8;
+  --ink: #1c1915;
+  --muted: #6d655c;
+  --line: #e3d9c8;
+  --accent: #8d5a16;
+  --accent-soft: #f3e4cc;
+  --warn: #8d2f24;
+  --warn-soft: #f8e4df;
+  --good: #1d6b45;
+  --good-soft: #e3f2e9;
+  --mixed: #3e5c4e;
+  --mixed-soft: #e4eee8;
+  --shadow: 0 16px 40px rgba(58, 42, 18, 0.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(141, 90, 22, 0.08), transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+body.lang-fa {
+  font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+body.kind-btc {
+  --accent: #c2410c;
+  --accent-soft: #fde6d8;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
+    var(--paper);
+}
+body.kind-xrp {
+  --accent: #0e7490;
+  --accent-soft: #d7eef3;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(14, 116, 144, 0.08), transparent 50%),
+    var(--paper);
+}
+a { color: var(--accent); }
+.wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 8px;
+}
+.brand {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+.lang { display: flex; gap: 6px; }
+.lang a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang a.on { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+.hero { padding: 12px 0 8px; }
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+body.lang-fa h1, body.lang-fa h2, body.lang-fa h3, body.lang-fa h4 {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
+.sub { margin: 8px 0 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.good { background: var(--good-soft); color: var(--good); }
+.badge.mixed { background: var(--mixed-soft); color: var(--mixed); }
+.badge.neutral { background: #eeeae3; color: #4d463f; }
+.badge small { font-weight: 500; opacity: 0.8; }
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.section { scroll-margin-top: 72px; }
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 22px 22px 8px;
+  margin: 0 0 16px;
+}
+.section h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; }
+.section h3 { margin: 1.3em 0 0.4em; font-size: 22px; line-height: 1.35; }
+.section h4 { margin: 1.1em 0 0.3em; font-size: 18px; }
+.section p { margin: 0.7em 0; }
+.section ul, .section ol { margin: 0.6em 0 0.8em; padding-inline-start: 1.3em; }
+.section li { margin: 0.28em 0; }
+.section hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
+blockquote {
+  margin: 1em 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 12px 12px 0;
+}
+body.lang-fa blockquote { border-radius: 12px 0 0 12px; }
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86em;
+  background: #f3ecdf;
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+}
+.formula {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f7f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.table-wrap { overflow-x: auto; margin: 0.8em 0 1em; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.55; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 650; }
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0 36px;
+}
+@media print {
+  body { background: white; }
+  .toc, .lang { display: none; }
+  .section { box-shadow: none; break-inside: avoid; }
+}
+
+</style>
+</head>
+<body class="lang-en kind-xrp">
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">Trade Desk</div>
+    <nav class="lang">
+      <a class="on" href="report.html">English</a>
+      <a class="" href="report-fa.html">فارسی</a>
+    </nav>
+  </div>
+  <header class="hero">
+    <p class="kicker">XRP-USD · XRP-USD spot</p>
+    <h1>XRP</h1>
+    <p class="sub">Wednesday, 25 November 2026</p>
+    <div class="badges"><span class="badge warn">Underweight · کم‌وزن <small>Rating</small></span><span class="badge warn">Sell · فروش <small>Trader action</small></span><span class="badge warn">Mildly Bearish 4.0/10 <small>Sentiment</small></span></div>
+  </header>
+  <nav class="toc"><a href="#final">Final decision</a><a href="#trader">Trader plan</a><a href="#plan">Investment plan</a><a href="#market">Market</a><a href="#news">News and macro</a><a href="#sentiment">Sentiment</a></nav>
+  <section class="section" id="final"><h2>Final decision</h2><p><strong>Rating</strong>: Underweight</p>
+<p><strong>Executive Summary</strong>: For XRP-USD, reduce exposure above a provisional ceiling of 50% of your standard allocation in two or three limit-order tranches after checking current executable quotes and venue depth; apply a lower ceiling if your portfolio risk budget requires it. This is not 50% of total portfolio value or a target to fill: if already below the ceiling or uninvested, do not add, average down, or use leverage. A daily close below $0.891479 lowers the ceiling to 25% of standard allocation, while weakness toward $0.838754 warrants an immediate exit review; define a separate maximum tolerable portfolio loss and act earlier if that limit requires it. Manage XRP-USD tactically over the next several weeks with daily reassessment, refreshing all supplied data before execution.</p>
+<p><strong>Investment Thesis</strong>: The bearish case wins with moderate conviction for XRP-USD, supporting partial reduction rather than a full exit. The supplied decline from $1.32959 to $0.9343 is approximately 30%, and the reference close is below the 10-day EMA ($0.952149), 50-day SMA ($1.18976), and 200-day SMA ($1.23175). RSI of 32.2339 and negative MACD reinforce the weak trend. The positive MACD histogram of 0.00481663 and consolidation near $0.93 indicate easing downside momentum, not a confirmed reversal, but are meaningful reasons not to require an outright exit. The trader's SELL instruction therefore describes trimming transactions, not the appropriate full-exit portfolio rating.</p>
+<p>The conservative analyst correctly identifies that ATR near 6.1% of price, missing stop-loss protection, and possible liquidity deterioration make waiting for a daily close risky. Those objections justify a portfolio-specific loss limit and earlier reductions when necessary, but do not establish that 25% of standard allocation is universally preferable now. Neither proposed allocation percentage is empirically optimal; the research plan's 50% ceiling is a provisional risk-management convention, subordinate to the caller's actual risk budget and other crypto exposures. Staged limit orders can remain unfilled, and neither stops nor close-based triggers guarantee an execution price. The downside references are review rules, not assured support.</p>
+<p>Reported elevated inflation, long yields, and hawkish market-implied policy odds add caution but are not verified policy outcomes. Low-confidence headline sentiment, unavailable social data, and unverified flow, supply, and concentration claims receive little weight; concentrated activity in one order book does not establish liquidity across XRP-USD venues. Ripple Custody and RLUSD developments do not demonstrate incremental XRP-USD demand, although that evidentiary gap does not prove the asset has no value. XRP-USD is a crypto allocation decision, not a company-fundamentals valuation.</p>
+<p>Reconsider the negative stance after two consecutive daily closes above $0.952149, followed by a sustained reclaim of $1.00129, using refreshed indicators. Restoring exposure toward standard also requires credible evidence of incremental XRP-USD usage or demand; the supplied 50-day and 200-day averages remain broader trend checkpoints, not guaranteed resistance. Current quotes, actual holdings, portfolio risk limits, venue-specific liquidity, and independently verified token-demand data are missing. All quoted observations are supplied debate data, not independently verified or live prices, and no defensible price target is supported.</p>
+<p><strong>Price Target</strong>: not provided</p>
+<p><strong>Time Horizon</strong>: Next several weeks, with daily reassessment</p></section><section class="section" id="trader"><h2>Trader plan</h2><p><strong>Action</strong>: Sell</p>
+<p><strong>Reasoning</strong>: The research plan calls for an underweight XRP-USD position: the verified 0.9343 close is below the 10 EMA (0.952149), 50 SMA (1.18976), and 200 SMA (1.23175), following a substantial decline. The positive MACD histogram and consolidation near 0.93 suggest downside momentum may be easing, but they do not confirm a reversal, so reduce excess exposure rather than exit completely or add. Treat 0.9343 only as the supplied snapshot reference for staged limit orders, not a live executable quote; a daily close below 0.891479 is the plan's reassessment trigger, while 0.838754 warrants an exit review.</p>
+<p><strong>Entry Price</strong>: 0.9343</p>
+<p><strong>Stop Loss</strong>: not provided</p>
+<p><strong>Position Sizing</strong>: Target no more than 50% of the standard portfolio allocation; if above that level, trim the excess in 2–3 limit-order tranches after checking executable quotes and venue depth. If already at or below the cap, do not add. No leverage; reassess the cap at 25% after a daily close below 0.891479.</p>
+<p>FINAL TRANSACTION PROPOSAL: <strong>SELL</strong></p></section><section class="section" id="plan"><h2>Investment plan</h2><p><strong>Recommendation</strong>: Underweight</p>
+<p><strong>Rationale</strong>: For XRP-USD, the bear case wins with moderate conviction: the supplied 25 November 2026 close of $0.9343 follows an approximately 30% decline and sits below the 10-day, 50-day, and 200-day averages. The bull's positive MACD histogram and consolidation near $0.93 suggest easing downside momentum, but not a confirmed reversal. Ecosystem developments offer conditional upside, yet neither custody adoption nor RLUSD growth demonstrates incremental XRP-USD demand. The bear does not need to prove permanent failure to justify reducing exposure today. However, missing token-demand evidence is not proof of no value, and tentative stabilization argues against a full exit. Reported macro conditions reinforce caution; unverified supply and concentration claims, incomplete sentiment, and speculative price targets receive little weight. This is a crypto risk-allocation decision, not a company valuation. All figures are supplied debate observations, not independently verified or live market data.</p>
+<p><strong>Strategic Actions</strong>: For XRP-USD, target no more than 50% of the portfolio manager's standard allocation, subject to the portfolio's risk limits. If above that level, trim the excess in two or three limit-order tranches after checking executable quotes and venue depth; do not wait for a rebound to begin reducing risk. If already below that level or uninvested, do not add merely to reach the cap. Use no leverage and do not average down. Treat the supplied $0.8915 session low as a reassessment trigger: a daily close below it calls for reducing the remaining allocation cap to 25% of standard; continued weakness toward $0.8388 calls for an immediate exit review, not an assumption of support. These are proposed execution rules, not proven predictive levels. ATR of about 6.1% of price makes tight stops vulnerable to routine volatility; neither close-based triggers nor stops guarantee an execution price. Reassess after two consecutive daily closes above $0.9521 and then $1.0013, using refreshed indicators before live trading. A technical reclaim alone is not authorization to add: require credible evidence of incremental XRP-USD usage or demand before restoring exposure toward standard. The supplied 50-day and 200-day averages at $1.1898 and $1.2318 remain broader trend checkpoints, not guaranteed resistance. Request primary-source verification of net supply changes and venue-specific liquidity; XRPL order-book concentration does not establish depth across all XRP-USD trading venues. Current quotes, actual holdings, portfolio risk limits, and independently verified token-demand data are missing.</p></section><section class="section" id="market"><h2>Market</h2><h3>XRP-USD technical report — 2026-11-25</h3>
+<p><strong>Bias: bearish trend, with a tentative improvement in short-term momentum.</strong> XRP-USD closed at <strong>0.9343</strong> in the verified snapshot, still below its short-, medium-, and long-term moving averages. RSI is weak but not currently below the conventional 30 oversold threshold. MACD remains negative, although its positive histogram suggests downside momentum may be easing. That combination supports caution: a short-term bounce is possible, but the indicators do not yet confirm a trend reversal.</p>
+<h3>Price and trend context</h3>
+<p>The verified 2026-11-25 candle opened at <strong>0.924372</strong>, reached <strong>0.944982</strong>, fell to <strong>0.891479</strong>, and closed at <strong>0.9343</strong>. Its close sits below the <strong>10 EMA at 0.952149</strong>, the <strong>50 SMA at 1.18976</strong>, and the <strong>200 SMA at 1.23175</strong>. The sizeable gap to the longer averages is consistent with a market under sustained pressure; those averages may act as overhead reference points if price recovers, but they are not guaranteed resistance.</p>
+<p>Recent closes in the verified snapshot show XRP-USD moving from <strong>1.32959 on 2026-10-27</strong> to <strong>0.9343 on 2026-11-25</strong>, with a sequence of lower closes through much of November. The most recent closes have clustered around 0.93: <strong>0.931362 on Nov. 21, 0.927381 on Nov. 22, 0.939599 on Nov. 23, 0.924372 on Nov. 24, and 0.9343 on Nov. 25</strong>. This suggests near-term consolidation after the decline, not yet a demonstrated recovery.</p>
+<p>The moving-average readings are also declining in the supplied indicator series: the 50 SMA fell from about <strong>1.4025 on Oct. 26</strong> to <strong>1.18976 on Nov. 25</strong>, and the 200 SMA from about <strong>1.2786</strong> to <strong>1.23175</strong> over the same period. The 50 SMA’s faster decline reflects the more recent weakness; both averages remain above price.</p>
+<h3>Momentum and volatility</h3>
+<ul><li><strong>RSI: 32.2339.</strong> This is weak and close to, but above, the conventional oversold threshold of 30. It can be consistent with a market that has sold off heavily, but it is not by itself a reversal signal—RSI can remain depressed in a sustained downtrend.</li><li><strong>MACD: −0.0816558; MACD signal: −0.0864724; histogram: +0.00481663.</strong> The MACD line is still negative, so the broader momentum reading remains bearish. Its position above the signal line, reflected in the positive histogram, points to a modest improvement in short-term momentum. It is a possible early stabilisation clue, not confirmation that the downtrend has ended.</li><li><strong>Bollinger levels:</strong> middle <strong>1.00129</strong>, upper <strong>1.16382</strong>, lower <strong>0.838754</strong>. The close is below the middle band but above the lower band. That places price in the lower half of the current band range; it does not establish that the lower band will hold as support.</li><li><strong>ATR: 0.0571227.</strong> This indicates substantial day-to-day movement relative to XRP-USD’s current price. As a rough scale, ATR is about <strong>6.1% of the verified close</strong>. Traders should account for this volatility when sizing positions or placing stops; a tight fixed-price stop may be vulnerable to ordinary fluctuations.</li></ul>
+<h3>Practical levels and scenarios</h3>
+<p><strong>For a recovery case:</strong> the <strong>10 EMA at 0.952149</strong> is a nearby first test. A sustained close above it would be a modest improvement, but stronger evidence would require reclaiming the Bollinger middle at <strong>1.00129</strong>. The 50 SMA (<strong>1.18976</strong>) and 200 SMA (<strong>1.23175</strong>) are much higher trend references, not near-term targets implied by the current setup.</p>
+<p><strong>For continued weakness:</strong> the verified session low of <strong>0.891479</strong> is a useful immediate downside reference, not proven support. A decisive move below it would weaken the consolidation case; the lower Bollinger band at <strong>0.838754</strong> is another indicator reference to monitor, not a guaranteed floor.</p>
+<p><strong>Execution and risk:</strong> given the negative trend alignment and elevated ATR, waiting for confirmation may be preferable to treating the positive MACD histogram or near-oversold RSI as standalone buy signals. For any trade, define invalidation and size the position around volatility; ATR can inform risk planning, but it does not determine a suitable stop on its own.</p>
+<h3>Selected indicators</h3>
+<p>These eight indicators were selected to cover trend at three horizons, momentum, volatility context, and risk sizing without using several closely overlapping MACD outputs.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Indicator</th><th style="text-align:end">Latest reading</th><th style="text-align:start">How it contributes</th></tr></thead><tbody><tr><td style="text-align:start"><code>close_10_ema</code></td><td style="text-align:end">0.952149</td><td style="text-align:start">Short-term trend and a nearby recovery test.</td></tr><tr><td style="text-align:start"><code>close_50_sma</code></td><td style="text-align:end">1.18976</td><td style="text-align:start">Medium-term trend context; price remains well below it.</td></tr><tr><td style="text-align:start"><code>close_200_sma</code></td><td style="text-align:end">1.23175</td><td style="text-align:start">Longer-term trend benchmark, also above price.</td></tr><tr><td style="text-align:start"><code>macd</code></td><td style="text-align:end">−0.0816558</td><td style="text-align:start">Shows momentum remains negative overall.</td></tr><tr><td style="text-align:start"><code>rsi</code></td><td style="text-align:end">32.2339</td><td style="text-align:start">Shows weak momentum, near but not at the usual oversold threshold.</td></tr><tr><td style="text-align:start"><code>boll_ub</code></td><td style="text-align:end">1.16382</td><td style="text-align:start">Upper volatility-band reference for any stronger rebound.</td></tr><tr><td style="text-align:start"><code>boll_lb</code></td><td style="text-align:end">0.838754</td><td style="text-align:start">Lower volatility-band reference; not a guaranteed support level.</td></tr><tr><td style="text-align:start"><code>atr</code></td><td style="text-align:end">0.0571227</td><td style="text-align:start">Helps assess current volatility and calibrate risk.</td></tr></tbody></table></div>
+<p><strong>Data note:</strong> the initial OHLCV CSV and verified snapshot differ slightly for Nov. 25: the CSV reports a close of <strong>0.9342</strong> and volume of <strong>2,070,406,528</strong>, while the verified snapshot reports <strong>0.9343</strong> and <strong>2,070,431,232</strong>. This report uses the verified snapshot as the source of truth for current price and indicator claims.</p></section><section class="section" id="news"><h2>News and macro</h2><h3>XRP-USD: Weekly news and macro trading report</h3>
+<p><strong>As of 25 November 2026 | News window: 18–25 November 2026</strong></p>
+<h3>Executive view</h3>
+<p>The near-term setup for <strong>XRP-USD</strong> is fragile: recent coverage describes the token below $1 and near a one-year low, while reported fund-flow weakness and concentrated order-book activity raise liquidity and follow-through risks. Ripple-related developments—including a Turkish bank’s reported adoption of Ripple Custody and growth in RLUSD—are positive for Ripple’s business, but do <strong>not</strong> by themselves establish new demand for XRP-USD.</p>
+<p>The macro backdrop is also unfavorable for risk assets. The latest FRED observations show U.S. CPI up <strong>3.82% year over year</strong> through October, core PCE up <strong>3.10%</strong>, and the 10-year Treasury yield at <strong>4.91%</strong> on 24 November, still 90 basis points above a year earlier. Polymarket’s December Fed-meeting contracts price a <strong>94% chance of a 25 bp hike</strong>—a market-implied probability, not a confirmed policy outcome. Traders should be alert to further pressure on speculative assets if inflation or rates surprise higher.</p>
+<p><strong>Practical stance:</strong> treat XRP-USD as high-risk and event-sensitive. Avoid treating a bullish long-term price target or a Ripple partnership headline as a near-term buy signal. For short-term decisions, watch whether XRP-USD can reclaim and hold $1; downside references in the week’s coverage include $0.94, $0.87, and $0.80. These are reported analyst levels, not independently verified support or forecasts.</p>
+<h3>XRP-USD: developments this week</h3>
+<h4>Price weakness is the dominant signal</h4>
+<p>Several articles characterize XRP-USD as having fallen below $1 or trading near a one-year low. One report describes the token around $0.90; another frames $0.94 as a level that could be swept before potential declines toward $0.87 or $0.80. These are media and analyst references, not a live price feed. The prediction-market data is consistent with a market pricing in more downside risk than a rapid recovery: the contract for a dip to $0.80 by month-end stood at <strong>15%</strong>, while contracts for reaching $2 or $3 in November were below 1%.</p>
+<p>The pricing signals have limitations: the prediction-market contracts have relatively modest reported volume compared with major financial markets, and their odds are not probabilities of a particular longer-term outcome. Still, they suggest traders are not pricing an imminent sharp rally.</p>
+<h4>Ripple adoption is not necessarily XRP-USD adoption</h4>
+<p>Coverage reports that Türkiye’s Yapı Kredi will use Ripple Custody for its digital-asset business. This could support Ripple’s institutional services, but custody infrastructure does not necessarily require the bank to buy, hold, or use XRP-USD. The distinction matters: the headline may improve sentiment toward Ripple without creating direct token demand.</p>
+<p>News reports also say RLUSD’s circulating supply reached roughly <strong>$2.87 billion</strong> and overtook a competing stablecoin. That may indicate growth in Ripple’s stablecoin activity, but the available reporting does not establish how much of that activity translates into XRP-USD usage or value capture. Similarly, coverage of a bullish Standard Chartered target for 2028 is a long-horizon opinion, not evidence that near-term price pressure has ended.</p>
+<h4>Market structure and supply deserve caution</h4>
+<p>One report, citing XRP treasury company Evernorth, says ten accounts generated <strong>65% of XRPL order-book volume in Q3</strong>, despite daily order-book volume reportedly rising 26% quarter over quarter. If accurate, that concentration may mean observed activity is less broadly distributed than headline volume implies; it also makes liquidity and slippage worth monitoring. This is a reported statistic, not an independently verified market-depth measurement.</p>
+<p>The week’s coverage includes competing commentary on token supply growth, escrow releases, and insider selling. These claims should not be treated as confirmed catalysts without checking primary data. News also quotes Ripple CTO emeritus David Schwartz pushing back on claims about the scale and timing of his XRP sales. The available material does not establish a new, verified insider-sale event.</p>
+<h3>Macro and cross-market context</h3>
+<h4>Inflation remains elevated</h4>
+<p>FRED’s October CPI index reading implies an approximately <strong>3.82% year-over-year increase</strong>, while the core PCE index implies an approximately <strong>3.10% year-over-year increase</strong>. These rates are derived from the reported October 2026 index values relative to October 2025; they are not separate seasonally adjusted percentage readings in the tool output. Both measures remain materially above the Federal Reserve’s 2% inflation objective.</p>
+<h4>Rates are restrictive, with a hawkish market signal</h4>
+<p>The effective federal funds rate was <strong>3.88% in October</strong>, unchanged from November 2025 after moving lower early in 2026 and then rising in September and October. The 10-year Treasury yield was <strong>4.91% on 24 November</strong>: down from its late-September level of 5.29%, but up <strong>0.90 percentage point</strong> from 25 November 2025.</p>
+<p>Polymarket priced a <strong>94% chance of a 25 bp Fed increase</strong> after the December meeting, 4% for no change, and 2% for a 50 bp or larger increase. Those odds are notably hawkish; they are a market snapshot, not official guidance. If that pricing persists or rate expectations rise further, it would generally be a headwind for non-yielding, high-volatility crypto assets such as XRP-USD. Conversely, a benign inflation surprise or a material repricing toward lower rates could ease that pressure.</p>
+<p>Unemployment was <strong>4.1% in October</strong>, down from 4.5% a year earlier. That suggests the available labor-market series does not show a sharp deterioration over this period, though one monthly measure alone is not enough to infer the broader economic outlook.</p>
+<h4>Broader news feed was not a useful macro catalyst</h4>
+<p>The global-news results returned for this week were dominated by gaming, technology, and equity commentary, rather than clear, directly relevant macroeconomic developments. No major global headline catalyst for XRP-USD can be established from that feed. The economic data and rate expectations above therefore provide the clearest macro context available from the requested sources.</p>
+<h3>Trading implications and catalysts</h3>
+<ul><li><strong>Near-term bias:</strong> Cautious while XRP-USD remains below $1, as described in the week’s coverage. A sustained reclaim and hold above $1 would be more constructive than a brief move through it; failure to reclaim it keeps the reported $0.94/$0.87/$0.80 downside map relevant.</li><li><strong>Event risk:</strong> Watch the upcoming U.S. PCE release referenced in the XRP-USD coverage, and subsequent Fed-rate repricing. A hotter inflation reading could reinforce the already hawkish December-meeting odds; a cooler reading could relieve some pressure. The FRED series supplied here runs through October and does not include that upcoming release.</li><li><strong>Positioning and execution:</strong> Given the reported concentration of order-book activity, use conservative sizing and limit orders where practical. Avoid assuming that quoted volume guarantees deep liquidity.</li><li><strong>Catalyst quality:</strong> Separate Ripple corporate developments from direct XRP-USD demand. The custody deal and RLUSD growth are relevant to the Ripple ecosystem, but the available reports do not show a direct, quantified increase in XRP-USD purchases or use.</li><li><strong>Risk discipline:</strong> Avoid relying on far-dated price targets or historical-pattern claims as trade triggers. Define an invalidation level and maximum loss before entry; the levels cited above are media-reported references, not validated technical support.</li></ul>
+<p>This is a news-and-macro assessment, not a live quote or personalized trading advice. The available tools do not provide verified current XRP-USD spot price, exchange-level order books, or confirmed fund-flow data, so price levels and flow claims should be checked against primary market data before execution.</p>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Key point</th><th style="text-align:start">Evidence available this week</th><th style="text-align:start">Trading relevance</th></tr></thead><tbody><tr><td style="text-align:start">XRP-USD is under pressure</td><td style="text-align:start">Coverage describes XRP-USD below $1 / near a one-year low; reports cite $0.94, $0.87, and $0.80 as downside levels</td><td style="text-align:start">Cautious until price action confirms a durable recovery; levels are analyst references, not verified support</td></tr><tr><td style="text-align:start">Upside odds appear muted near term</td><td style="text-align:start">Polymarket: 15% chance of a dip to $0.80 by month-end; under 1% for $2 or $3 in November</td><td style="text-align:start">Signals caution, but contracts have limited volume and are not forecasts</td></tr><tr><td style="text-align:start">Ripple custody deal</td><td style="text-align:start">Yapı Kredi reportedly selected Ripple Custody</td><td style="text-align:start">Positive for Ripple services, but not proof of direct XRP-USD buying</td></tr><tr><td style="text-align:start">RLUSD growth</td><td style="text-align:start">Media reports RLUSD supply near $2.87 billion</td><td style="text-align:start">Ecosystem development; direct benefit to XRP-USD is unproven</td></tr><tr><td style="text-align:start">Concentrated order-book activity</td><td style="text-align:start">Reported 65% of XRPL order-book volume from ten accounts in Q3</td><td style="text-align:start">Potential liquidity and slippage concern; statistic requires primary-source verification</td></tr><tr><td style="text-align:start">Inflation remains above target</td><td style="text-align:start">October CPI approximately +3.82% y/y; core PCE approximately +3.10% y/y, derived from FRED indices</td><td style="text-align:start">Sticky inflation may sustain restrictive rates and weigh on speculative assets</td></tr><tr><td style="text-align:start">Fed outlook is hawkishly priced</td><td style="text-align:start">Polymarket prices 94% for a 25 bp December hike; October fed funds rate 3.88%</td><td style="text-align:start">Watch inflation releases and rate repricing as macro catalysts</td></tr><tr><td style="text-align:start">Long yields remain elevated</td><td style="text-align:start">10-year Treasury yield at 4.91% on 24 Nov, +90 bp y/y</td><td style="text-align:start">Higher yields remain a potential headwind despite retreat from the September peak</td></tr></tbody></table></div></section><section class="section" id="sentiment"><h2>Sentiment</h2><p><strong>Overall Sentiment:</strong> <strong>Mildly Bearish</strong> (Score: 4.0/10) <strong>Confidence:</strong> Low</p>
+<h3>XRP-USD sentiment report (2026-11-18 to 2026-11-25)</h3>
+<h4>1. Source-by-source breakdown</h4>
+<p><strong>News headlines (Yahoo Finance): bearish near-term framing dominates, with a smaller constructive/contrarian strand.</strong> The feed contains 20 headlines; roughly 15 are directly about XRP or Ripple, while several are unrelated crypto/finance items and should not be treated as XRP-specific evidence. Among the XRP-relevant coverage, the immediate price and flow language is notably weak: headlines say XRP fell below $1, hit a one-year low, was down 26%, or had lost three quarters of its value. Several pieces flag further downside, including a forecast toward $0.87 and potentially $0.80 after a sweep above $0.94, and a warning that charts and fund flows remain concerning near $0.90. This is negative framing, not independent confirmation of the underlying price or flow data.</p>
+<p>A recurring skeptical angle is that Ripple ecosystem or institutional milestones may not accrue directly to XRP holders. Coverage of a Turkish bank adopting Ripple Custody asks whether the deal matters for XRP; another headline notes XRP/Lira trading down despite that deal. RLUSD reaching a reported $2.87 billion circulating supply and surpassing USD1 is presented alongside XRP weakness and questions about what XRP holders gain. Supply growth is another risk theme: one article attributes a 5.4% annualized growth estimate to XRP, versus lower cited figures for ETH and BTC, while other coverage discusses escrow releases. There is also a concentration/liquidity concern: one report says ten accounts drove 65% of XRPL order-book volume in Q3, though it also reports daily order-book volume rose 26% quarter over quarter.</p>
+<p>Constructive coverage is present but tends to be longer-horizon, conditional, or explicitly contrarian. Headlines cite Standard Chartered’s $12.60 target by 2028, a historical pattern said to have preceded a near-200% rally, potential new use cases, Ripple’s bank relationship, RLUSD growth, and a Ripple CEO’s expectation of a post-IPO crypto rally. These are counterpoints, but the supplied headlines do not establish that the catalysts are already driving XRP demand or price. Some coverage is itself cautionary: the $12.60 target article highlights the gap between the forecast and current weakness, and the $100 article emphasizes supply and valuation constraints. Other XRP headlines address speculative claims about secret large-scale buying, a prominent holder’s alleged sell-off, and an analyst’s planned selling levels; these indicate uncertainty and polarized expectations rather than confirmed buying or selling by the market as a whole.</p>
+<p><strong>StockTwits: unavailable.</strong> The feed returned an HTTPError placeholder, so there are no message counts, labeled bullish/bearish ratios, or post examples to assess. This is missing data, not evidence that retail traders were silent or neutral.</p>
+<p><strong>Reddit: unavailable.</strong> The r/CryptoCurrency and r/CryptoMarkets fetch failed. There are no post excerpts, counts, or engagement measures to evaluate. This likewise cannot be interpreted as an absence of discussion.</p>
+<h4>2. Cross-source alignment and divergence</h4>
+<p>There is no usable social-media evidence to compare with the news flow: both StockTwits and Reddit are unavailable. Within the headlines themselves, near-term price coverage and concerns about fund flows, supply growth, and the weak link between Ripple business wins and XRP-holder value lean bearish. The opposing case rests mainly on longer-dated price targets, possible use cases, institutional adoption of Ripple services, and ecosystem/stablecoin milestones. That creates a meaningful fundamental-narrative versus token-price divergence: Ripple-related activity is described as progressing in some areas while XRP is described as falling. The headlines do not resolve whether those activities will create material XRP demand.</p>
+<h4>3. Dominant narrative themes</h4>
+<ol><li><strong>Price deterioration and downside caution:</strong> sub-$1 trading, a one-year low, a reported steep drawdown, and near-term downside scenarios dominate the immediate framing.</li><li><strong>Ripple adoption does not automatically equal XRP demand:</strong> custody and stablecoin developments are newsworthy, but coverage repeatedly questions the direct benefit to XRP holders.</li><li><strong>Supply and market-structure concerns:</strong> escrow/supply growth, a cited inflation estimate, fund-flow warnings, and concentrated order-book activity are highlighted as headwinds or fragility risks.</li><li><strong>A contested contrarian recovery thesis:</strong> long-term targets, a historical-pattern comparison, and emerging-use-case arguments offer upside narratives, but remain forecasts or interpretations rather than confirmed near-term catalysts.</li></ol>
+<h4>4. Catalysts and risks surfaced by the data</h4>
+<p><strong>Potential catalysts:</strong> the reported Yapı Kredi/Ripple Custody relationship; further progress in XRP use cases; RLUSD expansion and its possible ecosystem effects; and the longer-term bullish scenarios or pattern cited in the coverage. These are possibilities surfaced by headlines, not proof of incremental XRP purchases or value capture.</p>
+<p><strong>Risks:</strong> persistent price weakness and the possibility of further technical downside; the cited concern about fund flows; supply growth and escrow releases; concentrated order-book volume; and the risk that Ripple business or RLUSD growth does not translate into demand for XRP. A U.S. PCE inflation release is specifically mentioned as a near-term macro catalyst in one downside-oriented forecast. The provided material does not report the result of that release. Social sentiment could not be checked, and the headline set cannot establish market-wide positioning.</p>
+<h4>5. Key sentiment signals</h4>
+<div class="table-wrap"><table><thead><tr><th style="text-align:start">Signal</th><th style="text-align:start">Direction</th><th style="text-align:start">Source</th><th style="text-align:start">Supporting evidence</th></tr></thead><tbody><tr><td style="text-align:start">Immediate price and technical framing</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">Headlines describe XRP below $1 / at a one-year low and give downside scenarios toward $0.87 or $0.80; another warns of chart and fund-flow weakness near $0.90.</td></tr><tr><td style="text-align:start">Ripple adoption translating to XRP value</td><td style="text-align:start">Bearish / uncertain</td><td style="text-align:start">News</td><td style="text-align:start">Turkish bank custody coverage questions whether the deal benefits XRP; RLUSD growth is juxtaposed with XRP declines and questions about holder value.</td></tr><tr><td style="text-align:start">Supply and market structure</td><td style="text-align:start">Bearish</td><td style="text-align:start">News</td><td style="text-align:start">Coverage cites escrow-related supply growth, a 5.4% annualized growth estimate, and ten accounts responsible for 65% of Q3 XRPL order-book volume.</td></tr><tr><td style="text-align:start">Long-term recovery narratives</td><td style="text-align:start">Bullish, but conditional</td><td style="text-align:start">News</td><td style="text-align:start">Headlines cite a $12.60 2028 target, a historical pattern associated with a potential rally, and prospective use cases; these are forecasts or thesis pieces.</td></tr><tr><td style="text-align:start">Retail message sentiment</td><td style="text-align:start">Unknown</td><td style="text-align:start">StockTwits</td><td style="text-align:start">Fetch returned HTTPError; no sample, counts, or sentiment tags available.</td></tr><tr><td style="text-align:start">Crypto-community discussion</td><td style="text-align:start">Unknown</td><td style="text-align:start">Reddit</td><td style="text-align:start">Fetch failed for both subreddits; no post content or engagement data available.</td></tr></tbody></table></div>
+<p><strong>Overall read:</strong> Mildly bearish for XRP-USD over this window, with bearish near-term price and risk framing outweighing the more speculative, longer-horizon bullish narratives. Confidence is low because both social sources are unavailable and the remaining evidence is headline-level rather than a complete measure of market positioning. This is a sentiment signal, not a price prediction.</p></section>
+  <footer>
+    <p>Desk rendering of the daily research notes. Figures and levels follow the source reports.</p>
+    
+  </footer>
+</div>
+</body>
+</html>
