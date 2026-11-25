@@ -35,6 +35,13 @@ ASSETS = {
         "contract_fa": "بیت‌کوین به دلار",
         "kind": "btc",
     },
+    "XRP-USD": {
+        "en": "XRP",
+        "fa": "ریپل",
+        "contract_en": "XRP-USD spot",
+        "contract_fa": "ریپل به دلار",
+        "kind": "xrp",
+    },
 }
 
 MONTHS_FA = [
@@ -464,6 +471,13 @@ body.kind-btc {
     radial-gradient(1200px 400px at 100% -10%, rgba(194, 65, 12, 0.08), transparent 50%),
     var(--paper);
 }
+body.kind-xrp {
+  --accent: #0e7490;
+  --accent-soft: #d7eef3;
+  background:
+    radial-gradient(1200px 400px at 100% -10%, rgba(14, 116, 144, 0.08), transparent 50%),
+    var(--paper);
+}
 a { color: var(--accent); }
 .wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
 .topbar {
@@ -774,6 +788,7 @@ def build_index(entries: list[tuple[str, str]]) -> None:
 .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }}
 .kind-card h2 {{ font-size: 28px; }}
 .kind-card.btc {{ --accent: #c2410c; --accent-soft: #fde6d8; }}
+.kind-card.xrp {{ --accent: #0e7490; --accent-soft: #d7eef3; }}
 a.badge {{ text-decoration: none; }}
 </style>
 </head>

@@ -1,2 +1,3 @@
 BTC-USD
 GC=F
+XRP-USD
